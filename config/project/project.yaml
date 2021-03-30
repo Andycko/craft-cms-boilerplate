@@ -1,4 +1,4 @@
-dateModified: 1617116179
+dateModified: 1617118312
 email:
   fromEmail: dev@fortytwo.studio
   fromName: 'Future Forestry'
@@ -15,6 +15,7 @@ plugins:
   freeform:
     edition: lite
     enabled: true
+    licenseKey: G1OSD5DGMQDOF1ZPWRHTAK3J
     schemaVersion: 3.3.0
     settings:
       ajaxByDefault: true
