@@ -1,5 +1,5 @@
 {
-  "name": "fortytwo/craft-cms-boilerplate",
+  "name": "fortytwo-studio/craft-cms-boilerplate",
   "description": "This is a boilerplate for Craft CMS",
   "require": {
     "craftcms/aws-s3": "^1.2.11",
