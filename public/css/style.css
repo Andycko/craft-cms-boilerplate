@@ -1,0 +1,30 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  margin-bottom: 3rem;
+}
+
+main {
+  margin-bottom: 3rem;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

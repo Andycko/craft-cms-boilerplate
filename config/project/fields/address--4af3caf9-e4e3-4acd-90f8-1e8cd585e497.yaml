@@ -1,0 +1,27 @@
+contentColumnType: text
+fieldGroup: 431efb4a-9ace-451f-8b70-aeda20b1f83f # Globals
+handle: address
+instructions: ''
+name: Address
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: true
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

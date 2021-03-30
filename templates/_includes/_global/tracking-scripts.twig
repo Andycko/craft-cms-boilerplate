@@ -1,0 +1,5 @@
+{% if not craft.app.config.general.devMode %}
+  {% if siteInfo['googleAnalytics'] is defined %}
+    {{ siteInfo.googleAnalytics is not empty ? siteInfo.googleAnalytics|raw }}
+  {% endif %}
+{% endif %}

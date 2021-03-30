@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en-GB
+name: 'Craft CMS Boilerplate'
+primary: true
+siteGroup: f99d20c5-6966-4180-8dc1-595df3b8f876 # Craft CMS Boilerplate
+sortOrder: 1

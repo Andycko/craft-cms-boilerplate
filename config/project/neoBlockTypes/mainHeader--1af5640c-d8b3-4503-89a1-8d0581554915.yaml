@@ -1,0 +1,74 @@
+childBlocks: ''
+field: d783368e-a494-4457-9e99-5a027ae72a18 # Page Header
+fieldLayouts:
+  6b4ac8f3-0289-4f15-a21e-a56d7c9cab3a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 2f64efd3-101a-4ed1-a31e-96657d6dc6e5 # Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4870444e-6820-4ab0-a141-99e310305629 # Background Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Main Content'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6c4a2320-184d-4f3b-9482-070fc8b8194a # Bottom Spacing
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Settings
+        sortOrder: 2
+handle: mainHeader
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Main Header'
+sortOrder: 1
+topLevel: true

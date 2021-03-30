@@ -1,0 +1,48 @@
+contentColumnType: string
+fieldGroup: 431efb4a-9ace-451f-8b70-aeda20b1f83f # Globals
+handle: socialProfiles
+instructions: ''
+name: 'Social Profiles'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - f63d3738-c5aa-4de0-84fd-0deb6570d894
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 3037eaf7-b2d6-4e6f-b616-b9911cf6f5c2
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 0b7ca9a0-694c-4733-bfee-d1c56b3aa669
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - d960a7c1-c036-40d9-b547-47325ed6c97b
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_socialprofiles}}'
+  fieldLayout: table
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

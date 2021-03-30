@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 6b6833e3-09b6-4302-8492-fd06e3f794e4 # Summary
+handle: pageSummary
+instructions: ''
+name: 'Page Summary'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

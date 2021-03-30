@@ -1,0 +1,64 @@
+contentColumnType: text
+fieldGroup: 7bbeec1d-6526-44a3-9897-d6d1e5918a05 # Settings
+handle: bottomSpacing
+instructions: ''
+name: 'Bottom Spacing'
+searchable: false
+settings:
+  displayAsGraphic: ''
+  displayFullwidth: ''
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - None
+        -
+          - showLabel
+          - '1'
+        -
+          - value
+          - pb-default
+        -
+          - imageUrl
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Normal
+        -
+          - showLabel
+          - '1'
+        -
+          - value
+          - 'pb-lg-3 pb-md-3 pb-3'
+        -
+          - imageUrl
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Larger
+        -
+          - showLabel
+          - '1'
+        -
+          - value
+          - 'pb-lg-5 pb-md-5 pb-4'
+        -
+          - imageUrl
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: supercool\buttonbox\fields\Buttons

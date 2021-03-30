@@ -1,0 +1,119 @@
+dateModified: 1617116179
+email:
+  fromEmail: dev@fortytwo.studio
+  fromName: 'Future Forestry'
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.2'
+  buttonbox:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  freeform:
+    edition: lite
+    enabled: true
+    schemaVersion: 3.3.0
+    settings:
+      ajaxByDefault: true
+      alertNotificationRecipients: null
+      autoScrollToErrors: true
+      badgeType: all
+      blockedEmails: null
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: null
+      blockedKeywords: null
+      blockedKeywordsError: 'Invalid Entry Data'
+      clientDigestFrequency: 1
+      clientDigestRecipients: null
+      customErrorMessage: null
+      customHoneypotName: null
+      defaultTemplates: true
+      defaultView: dashboard
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: null
+      displayFeed: true
+      emailTemplateDirectory: null
+      emailTemplateStorage: db
+      fieldDisplayOrder: name
+      fillWithGet: false
+      footerScripts: false
+      formSubmitDisable: true
+      formSubmitExpiration: null
+      formTemplateDirectory: null
+      formattingTemplate: flexbox.html
+      freeformHoneypot: true
+      freeformHoneypotEnhancement: false
+      hideBannerDemo: true
+      hideBannerOldFreeform: false
+      minimumSubmitTime: null
+      pluginName: null
+      purgableSpamAgeInDays: null
+      purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      recaptchaBehaviour: display_error
+      recaptchaEnabled: ''
+      recaptchaErrorMessage: 'Please verify that you are not a robot.'
+      recaptchaKey: 6Ld4jYAaAAAAABhDk0P5QXtr8pop2g6DvJ5iOg6E
+      recaptchaMinScore: '0.5'
+      recaptchaSecret: 6Ld4jYAaAAAAAE5wnMBwPoYrZEyYvFLM30ll7yLJ
+      recaptchaSize: normal
+      recaptchaTheme: light
+      recaptchaType: v2_checkbox
+      removeNewlines: false
+      renderFormHtmlInCpViews: true
+      salesforce_client_id: null
+      salesforce_client_secret: null
+      salesforce_password: null
+      salesforce_username: null
+      scriptInsertLocation: footer
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: false
+      showErrorsForBlockedKeywords: false
+      showTutorial: false
+      spamFolderEnabled: true
+      spamProtectionBehaviour: simulate_success
+      submissionThrottlingCount: null
+      submissionThrottlingTimeFrame: null
+      twigInHtml: true
+      twigInHtmlIsolatedMode: true
+      updateSearchIndexes: true
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: R3VO5MHTQ00EOEKHK3EANI9N
+    schemaVersion: 1.0.21
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: 6CVLNUD6DPTQ61KABAO823E5
+    schemaVersion: 2.8.16
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.1.1
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+system:
+  edition: solo
+  live: true
+  name: 'Craft CMS Boilerplate'
+  retryDuration: null
+  schemaVersion: 3.6.7
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

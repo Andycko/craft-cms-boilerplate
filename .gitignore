@@ -1,0 +1,5 @@
+/.idea
+/vendor
+/config/license.key
+/config/license.key.1
+.DS_Store

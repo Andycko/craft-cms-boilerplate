@@ -1,0 +1,14 @@
+{% if header.backgroundImage.one() %}
+    {% set bg = 'background-image: url("' ~ header.backgroundImage.one.url() ~ '");'%}
+{% else %}
+    {% set bg = ''%}
+{% endif %}
+
+<header class="container {{ header.topSpacing }} {{ header.bottomSpacing }} {{ header.backgroundColor }} mainHeader" style="{{ bg }}">
+    <div class="row pb-5">
+        <div class="col-12">
+            <h1>{{ header.header }}</h1>
+            <div class="copy">{{ header.copy }}</div>
+        </div>
+    </div>
+</header>

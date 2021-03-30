@@ -1,0 +1,45 @@
+fieldLayouts:
+  d4df5b39-edcc-44f4-9b34-c6e29bad800d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4af3caf9-e4e3-4acd-90f8-1e8cd585e497 # Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3cca813e-09a9-4025-8efa-d5ba11d4dd89 # Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 386e1cf1-acc9-4336-90e1-fb74daefd6f5 # Phone Number
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 13d35453-527a-4094-b642-42292f193f8c # Social Profiles
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: companyInfo
+name: 'Company Info'
