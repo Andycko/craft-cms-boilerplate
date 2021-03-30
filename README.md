@@ -7,7 +7,7 @@ Firstly you need to **create a database** on your localhost.
 
 To set up the boilerplate, you can use **composer**:
 ```
-composer create-project fortytwo-studio/craft-cms-boilerplate
+composer create-project fortytwo-studio/craft-cms-boilerplate [path]
 ```
 
 Alternatively you can:
