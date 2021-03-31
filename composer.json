@@ -1,6 +1,7 @@
 {
   "name": "fortytwo-studio/craft-cms-boilerplate",
   "description": "This is a boilerplate for Craft CMS",
+  "license": "MIT",
   "require": {
     "craftcms/aws-s3": "^1.2.11",
     "craftcms/cms": "^3.6.4",
