@@ -13,6 +13,6 @@ composer create-project fortytwo-studio/craft-cms-boilerplate [path]
 Alternatively you can:
 1. Clone the repo
 2. Run `composer install`
-3. Run `./craft setup`
-4. Run `./craft db/restore ./storage/setup/default_db.sql` or manually import this to your db
+    - The `post-install-cmd` hook will run the setup, db import and finally removes the post-install-cmd scripts
+    
 

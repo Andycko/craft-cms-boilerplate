@@ -33,8 +33,11 @@
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
     "post-install-cmd": [
-      "./craft setup",
-      "./craft db/restore ./storage/setup/default_db.sql"
+      "./craft setup/db",
+      "./craft setup/app-id",
+      "./craft setup/security-key",
+      "./craft db/restore ./storage/setup-boilerplate/default_db.sql",
+      "php ./storage/setup-boilerplate/after_setup.php"
     ]
   }
 }
