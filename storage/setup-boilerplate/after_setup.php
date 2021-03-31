@@ -1,8 +1,8 @@
 <?php
 /**
  * This script runs after the setup of the boilerplate finishes
- * and removes the post-install-scripts so that after composer
- * install is run again, it run anything else
+ * and removes the post-install-cmd scripts so that after composer
+ * install is run again, it won't run any scripts
  */
 
 $json_in = json_decode(file_get_contents("composer.json"), true);     // Read composer.json and decode
