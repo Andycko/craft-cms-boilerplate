@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: about
+name: About
+propagationMethod: all
+siteSettings:
+  18d78006-3985-4ea4-b620-67bae10d9c2d: # Craft CMS Boilerplate
+    enabledByDefault: true
+    hasUrls: true
+    template: about/_index
+    uriFormat: about
+type: single

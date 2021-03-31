@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: contact
+name: Contact
+propagationMethod: all
+siteSettings:
+  18d78006-3985-4ea4-b620-67bae10d9c2d: # Craft CMS Boilerplate
+    enabledByDefault: true
+    hasUrls: true
+    template: contact/_index
+    uriFormat: contact
+type: single
