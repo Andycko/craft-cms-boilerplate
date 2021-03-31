@@ -1,8 +1,32 @@
-<nav class="container">
-    <div class="row">
-        <div class="col-12">
-            Hi, I'm your NAV and I live in <strong>"[root]/templates/_includes/_globals/nav.twig"</strong>
+{% set mainNav = craft.navigation.nodes().handle('mainNavigation').level(1).all() %}
+
+<nav id="main-nav">
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-4 navbar-logo d-flex align-items-center">
+                <a href="{{ siteUrl() }}">
+                    <img src="https://via.placeholder.com/300x100.jpg" alt="Site logo">
+                </a>
+            </div>
+            <div class="col-8 navbar-links d-flex justify-content-end align-items-center">
+                {% for item in mainNav %}
+                    <div class="item {{ item.active ? 'active' }} px-3">
+                        <a href="{{ item.url }}" class="link">{{ item.title }}</a>
+                        {% if item.children %}
+                            <div class="sub-menu d-flex flex-column">
+                                {% for child in item.children.all() %}
+                                    <a class="link" href="{{ child.url }}">{{ child.title }}</a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
+</nav>
+
+<nav id="mobile-nav">
+
 </nav>
 
