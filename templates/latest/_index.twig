@@ -7,10 +7,29 @@
         {% include '_includes/_page-headers/_' ~ header.type.handle %}
     {% endif %}
 
-    {% if entry.contentBuilder %}
-        {% for block in entry.contentBuilder.all() %}
-            {% include '_includes/_content-builder/_blocks/' ~ block.type.handle %}
-        {% endfor %}
-    {% endif %}
+    <div class="container">
+        <div class="row">
+            {% for item in craft.entries.section('latest').all() %}
+                <div class="col-12 col-md-6 col-lg-4 mb-4 latest-article">
+                    <a href="{{ item.url }}" class="d-flex flex-column">
+                        {% if item.summaryImage.one %}
+                            <div class="img mb-4">
+                                <img src="{{ item.summaryImage.one.url }}" alt="{{ item.title }}" class="w-100">
+                            </div>
+                        {% else %}
+                            <div class="img mb-4">
+                                <img src="https://via.placeholder.com/375x220?text=Missing+Summary+Image" alt="{{ item.title }}" class="w-100">
+                            </div>
+                        {% endif %}
+                        <h4 class="title pt-2 mb-3"><span>{{ item.title|length > 45 ? item.title|slice(0, 45) ~ '...' : item.title }}</span></h4>
+                        {% if item.pageSummary %}
+                            <div class="copy mb-3">{{ item.pageSummary|length > 170 ? item.pageSummary|slice(0, 170) ~ '...' : item.pageSummary }}</div>
+                        {% endif %}
+                        <h6>{{ item.postDate | date("M d, Y") | upper }}</h6>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 
 {% endblock %}
