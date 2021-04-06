@@ -1,4 +1,7 @@
+// Import bootstrap styles
 @use "node_modules/bootstrap/scss/bootstrap";
+
+// Import custom styles
 @use "style-imports/general.sass";
 @use "style-imports/nav.sass";
 @use "style-imports/page-headers.sass";
