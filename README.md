@@ -13,8 +13,12 @@ composer create-project fortytwo-studio/craft-cms-boilerplate [path]
 Alternatively you can:
 1. Clone the repo
 2. Run `composer install`
-    - The `post-install-cmd` hook will run the setup, db import and finally removes the post-install-cmd scripts
+    - The `post-install-cmd` hook will run the setup, db import, npm install and finally removes the post-install-cmd scripts
     
+#### Gulp
+Gulp is utilised in the project to watch and build **sass** and **js**.
+Use ```gulp``` in the terminal to turn on the watchers.
+ 
 ### Plugins installed
 - [craftcms/aws-s3](https://plugins.craftcms.com/aws-s3)
 - [supercool/buttonbox](https://plugins.craftcms.com/buttonbox)
@@ -24,3 +28,10 @@ Alternatively you can:
 - [craftcms/redactor](https://plugins.craftcms.com/redactor)
 - [ether/seo](https://plugins.craftcms.com/seo)
 - [verbb/super-table](https://plugins.craftcms.com/super-table)
+
+### Bootstrap
+Bootstrap is installed as a node module and is imported in ```./public/css/style.scss```
+
+### JQuery
+JQuery is installed as a node module and is imported an initialized in ```./public/js.main.js```
+
