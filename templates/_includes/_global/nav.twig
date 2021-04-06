@@ -9,10 +9,32 @@
                 </a>
             </div>
             <div class="col-8 navbar-links d-flex justify-content-end align-items-center">
+                <!-- Desktop navigation links -->
                 {% for item in mainNav %}
                     <div class="item {{ item.active ? 'active' }} px-3">
                         <a href="{{ item.url }}" class="link">{{ item.title }}</a>
-                        {% if item.children %}
+                        {% if item.children | length %}
+                            <div class="sub-menu d-flex flex-column">
+                                {% for child in item.children.all() %}
+                                    <a class="link" href="{{ child.url }}">{{ child.title }}</a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                <!-- Mobile navigation hamburger -->
+                <div id="mobile-navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- Mobile navigation links -->
+            <div class="col-12 mobile-navbar-links text-center d-flex flex-column align-items-center" id="mobile-navbar-links">
+                {% for item in mainNav %}
+                    <div class="item {{ item.active ? 'active' }} p-2">
+                        <a href="{{ item.url }}" class="link">{{ item.title }}</a>
+                        {% if item.children | length %}
                             <div class="sub-menu d-flex flex-column">
                                 {% for child in item.children.all() %}
                                     <a class="link" href="{{ child.url }}">{{ child.title }}</a>
@@ -25,8 +47,3 @@
         </div>
     </div>
 </nav>
-
-<nav id="mobile-nav">
-
-</nav>
-
