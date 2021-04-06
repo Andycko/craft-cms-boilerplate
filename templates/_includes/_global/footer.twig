@@ -1,10 +1,29 @@
 {% set footerNav = craft.navigation.nodes().handle('footerNavigation').level(1).all() %}
 
 <footer>
-    <div class="container text-center text-sm-left">
+    <div class="container text-center text-md-left">
         <div class="row py-4">
-            <div class="col-12 col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nemo odit praesentium quas quidem suscipit totam vel! Aliquid assumenda autem blanditiis ducimus minima non. Commodi delectus dolorem iure mollitia voluptate.</div>
-            <div class="col-12 col-sm-6 footer-nav-links d-flex flex-column align-items-center align-items-sm-end pt-4 pt-sm-0">
+            <div class="col-12 col-md-4">
+                {% if companyInfo.address | length %}
+                    <a href="" class="address">
+                        <div>
+                            {{ companyInfo.address }}
+                        </div>
+                    </a>
+                {% endif %}
+                {% if companyInfo.email | length %}
+                    <div class="email">
+                        <a href="mailto:{{ companyInfo.email }}" >{{ companyInfo.email }}</a>
+                    </div>
+                {% endif %}
+                {% if companyInfo.phoneNumber | length %}
+                    <div class="tel">
+                        <a href="tel:{{ companyInfo.phoneNumber }}">{{ companyInfo.phoneNumber }}</a>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="col-12 col-md-4 pt-4 pt-md-0 copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nemo odit praesentium quas quidem suscipit totam vel! Aliquid assumenda autem blanditiis ducimus minima non. Commodi delectus dolorem iure mollitia voluptate.</div>
+            <div class="col-12 col-md-4 footer-nav-links d-flex flex-column align-items-center align-items-md-end pt-4 pt-md-0">
                 {% for item in footerNav %}
                     <div class="item px-3">
                         <a href="{{ item.url }}" class="link">{{ item.title }}</a>
