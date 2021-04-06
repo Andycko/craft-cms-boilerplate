@@ -1,7 +1,23 @@
-<footer class="container">
-    <div class="row">
-        <div class="col-12">
-            Hi, I'm your FOOTER and I live in <strong>"[root]/templates/_includes/_globals/footer.twig"</strong>
+{% set footerNav = craft.navigation.nodes().handle('footerNavigation').level(1).all() %}
+
+<footer>
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nemo odit praesentium quas quidem suscipit totam vel! Aliquid assumenda autem blanditiis ducimus minima non. Commodi delectus dolorem iure mollitia voluptate.</div>
+            <div class="col-6 footer-nav-links d-flex flex-column align-items-end">
+                {% for item in footerNav %}
+                    <div class="item px-3">
+                        <a href="{{ item.url }}" class="link">{{ item.title }}</a>
+                        {% if item.children | length %}
+                            <div class="sub-menu">
+                                {% for child in item.children.all() %}
+                                    <a class="link" href="{{ child.url }}">{{ child.title }}</a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </footer>

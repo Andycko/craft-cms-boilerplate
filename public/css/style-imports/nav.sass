@@ -1,9 +1,9 @@
-$nav-background: #b1adad
+@use './variables'
 
 nav#main-nav
   position: relative
   z-index: 1000
-  background-color: $nav-background
+  background-color: variables.$nav-background
   .navbar-logo
     img
       position: relative
@@ -95,7 +95,7 @@ nav#main-nav
     top: 0
     right: -100%
     padding: 8rem 1rem
-    background-color: $nav-background
+    background-color: variables.$nav-background
     opacity: 0
     visibility: hidden
     transition: right .3s ease-in-out, visibility 0s .3s, opacity 0s .3s
