@@ -1,4 +1,6 @@
-window.onload = () => {
+const $ = require('jquery');
+
+$(function () {
     const nav_hamburger = document.querySelector('#mobile-navbar-toggle');
     const mobile_nav = document.querySelector('#mobile-navbar-links');
     nav_hamburger.onclick = () => {
@@ -9,5 +11,5 @@ window.onload = () => {
     const toggleClass = (node, className) => {
         if (node.classList.contains(className)) node.classList.remove(className);
         else node.classList.add(className);
-    }
-};
+    };
+});
