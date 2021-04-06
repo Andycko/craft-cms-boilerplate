@@ -1,5 +1,20 @@
 /.idea
-/vendor
-/config/license.key
-/config/license.key.1
 .DS_Store
+# COMPOSER
+/vendor
+
+# CRAFT ENVIRONMENT
+.env.php
+.env.sh
+.env
+
+# CRAFT STORAGE
+/storage/*
+!/storage/.gitkeep
+
+# Craft CMS #
+#####################
+craft/config/license.key
+craft/.htaccess
+
+/node_modules
