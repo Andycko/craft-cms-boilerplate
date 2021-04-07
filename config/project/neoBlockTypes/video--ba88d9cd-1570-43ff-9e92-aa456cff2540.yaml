@@ -1,7 +1,7 @@
 childBlocks: ''
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  de116c4b-6fdd-4504-a503-62e66fb88f12:
+  2394efd8-b6b2-418c-8ce4-99bfc647be17:
     tabs:
       -
         elements:
@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 181f8d87-6d88-42ed-96e8-26a3a728eef8 # Images
+            fieldUid: 4b0ce80c-181f-4c40-bcce-5146dc8c903e # Video
             instructions: null
             label: null
             required: false
@@ -56,10 +56,10 @@ fieldLayouts:
             width: 100
         name: Settings
         sortOrder: 2
-handle: imageSlider
+handle: video
 maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
-name: 'Image Slider'
-sortOrder: 6
+name: Video
+sortOrder: 7
 topLevel: true

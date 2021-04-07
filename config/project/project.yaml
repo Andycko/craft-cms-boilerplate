@@ -1,4 +1,4 @@
-dateModified: 1617725286
+dateModified: 1617789243
 email:
   fromEmail: dev@fortytwo.studio
   fromName: 'Future Forestry'
@@ -93,6 +93,10 @@ plugins:
     enabled: true
     licenseKey: 6CVLNUD6DPTQ61KABAO823E5
     schemaVersion: 2.8.16
+  oembed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
   redactor:
     edition: standard
     enabled: true

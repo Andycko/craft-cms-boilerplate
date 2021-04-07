@@ -12,7 +12,8 @@
     "supercool/buttonbox": "^2.0.4",
     "verbb/navigation": "^1.4.15",
     "verbb/super-table": "^2.6.7",
-    "vlucas/phpdotenv": "^3.4.0"
+    "vlucas/phpdotenv": "^3.4.0",
+    "wrav/oembed": "1.3.6"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
@@ -34,8 +35,8 @@
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
     "post-install-cmd": [
-      "./craft setup/app-id",
       "./craft setup/security-key",
+      "./craft setup/app-id",
       "./craft setup/db",
       "./craft db/restore ./storage/setup-boilerplate/default_db.sql",
       "npm install",

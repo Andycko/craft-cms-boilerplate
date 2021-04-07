@@ -3,7 +3,7 @@
 <footer>
     <div class="container text-center text-md-left">
         <div class="row py-4">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-3">
                 {% if companyInfo.address | length %}
                     <a href="" class="address">
                         <div>
@@ -22,8 +22,8 @@
                     </div>
                 {% endif %}
             </div>
-            <div class="col-12 col-md-4 pt-4 pt-md-0 copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nemo odit praesentium quas quidem suscipit totam vel! Aliquid assumenda autem blanditiis ducimus minima non. Commodi delectus dolorem iure mollitia voluptate.</div>
-            <div class="col-12 col-md-4 footer-nav-links d-flex flex-column align-items-center align-items-md-end pt-4 pt-md-0">
+            <div class="col-12 col-md-6 pt-4 pt-md-0 copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nemo odit praesentium quas quidem suscipit totam vel! Aliquid assumenda autem blanditiis ducimus minima non. Commodi delectus dolorem iure mollitia voluptate.</div>
+            <div class="col-12 col-md-3 footer-nav-links d-flex flex-column align-items-center align-items-md-end pt-4 pt-md-0">
                 {% for item in footerNav %}
                     <div class="item px-3">
                         <a href="{{ item.url }}" class="link">{{ item.title }}</a>

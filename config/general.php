@@ -14,24 +14,32 @@ $isDev = App::env('ENVIRONMENT') === 'dev';
 $isProd = App::env('ENVIRONMENT') === 'production';
 
 return [
-    // Default Week Start Day (0 = Sunday, 1 = Monday...)
-    'defaultWeekStartDay' => 1,
+    '*' => [
+        // Default Week Start Day (0 = Sunday, 1 = Monday...)
+        'defaultWeekStartDay' => 1,
 
-    // Whether generated URLs should omit "index.php"
-    'omitScriptNameInUrls' => true,
+        // Whether generated URLs should omit "index.php"
+        'omitScriptNameInUrls' => true,
 
-    // The URI segment that tells Craft to load the control panel
-    'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
+        // The URI segment that tells Craft to load the control panel
+        'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
 
-    // The secure key Craft will use for hashing and encrypting data
-    'securityKey' => App::env('SECURITY_KEY'),
+        // The secure key Craft will use for hashing and encrypting data
+        'securityKey' => App::env('SECURITY_KEY'),
 
-    // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
-    'devMode' => $isDev,
+        // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
+        'devMode' => $isDev,
 
-    // Whether administrative changes should be allowed
-    'allowAdminChanges' => $isDev,
+        // Whether administrative changes should be allowed
+        'allowAdminChanges' => $isDev,
 
-    // Whether crawlers should be allowed to index pages and following links
-    'disallowRobots' => !$isProd,
+        // Whether crawlers should be allowed to index pages and following links
+        'disallowRobots' => !$isProd,
+    ],
+    
+    'dev' => [
+        // Backup commands for usage with MAMP on local dev env
+        'backupCommand' => App::env('BACKUP_COMMAND'),
+        'restoreCommand' => App::env('RESTORE_COMMAND'),
+    ]
 ];

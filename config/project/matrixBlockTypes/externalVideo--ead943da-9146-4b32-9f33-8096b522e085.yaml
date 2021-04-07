@@ -1,0 +1,33 @@
+field: 4b0ce80c-181f-4c40-bcce-5146dc8c903e # Video
+fieldLayouts:
+  9d1dd6bd-ecbd-4cec-a43f-fe57ed410352:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7d034fae-78a0-49b6-a213-aa01fcdf690e # Video
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7d034fae-78a0-49b6-a213-aa01fcdf690e: # Video
+    contentColumnType: text
+    fieldGroup: null
+    handle: video
+    instructions: 'Enter the URL of the video.'
+    name: Video
+    searchable: false
+    settings:
+      url: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: wrav\oembed\fields\OembedField
+handle: externalVideo
+name: 'External Video'
+sortOrder: 1

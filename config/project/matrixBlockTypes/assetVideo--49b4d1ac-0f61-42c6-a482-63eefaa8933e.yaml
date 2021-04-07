@@ -1,0 +1,54 @@
+field: 4b0ce80c-181f-4c40-bcce-5146dc8c903e # Video
+fieldLayouts:
+  8be94203-c156-4c39-9b45-466e97070395:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 588b4c33-d66a-429a-a796-a6146b14a0f8 # Video
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  588b4c33-d66a-429a-a796-a6146b14a0f8: # Video
+    contentColumnType: string
+    fieldGroup: null
+    handle: video
+    instructions: ''
+    name: Video
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - video
+      defaultUploadLocationSource: ''
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: ''
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: assetVideo
+name: 'Asset Video'
+sortOrder: 2

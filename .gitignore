@@ -8,10 +8,6 @@
 .env.sh
 .env
 
-# CRAFT STORAGE
-/storage/*
-!/storage/.gitkeep
-
 # Craft CMS #
 #####################
 craft/config/license.key

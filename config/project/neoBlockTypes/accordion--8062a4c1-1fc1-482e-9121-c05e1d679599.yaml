@@ -1,7 +1,7 @@
 childBlocks: ''
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  de116c4b-6fdd-4504-a503-62e66fb88f12:
+  03e13715-9e15-411e-9502-fb9b8a38cb3b:
     tabs:
       -
         elements:
@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 181f8d87-6d88-42ed-96e8-26a3a728eef8 # Images
+            fieldUid: b2c6e66f-5fcd-4220-b710-2624b1ef531d # Accordion Matrix
             instructions: null
             label: null
             required: false
@@ -28,7 +28,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Color
+            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
             required: false
@@ -46,7 +46,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Color
             instructions: null
             label: null
             required: false
@@ -56,10 +56,10 @@ fieldLayouts:
             width: 100
         name: Settings
         sortOrder: 2
-handle: imageSlider
+handle: accordion
 maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
-name: 'Image Slider'
-sortOrder: 6
+name: Accordion
+sortOrder: 8
 topLevel: true

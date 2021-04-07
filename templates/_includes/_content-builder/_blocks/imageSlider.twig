@@ -1,5 +1,10 @@
 <div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} {{ block.backgroundColor }} imageSlider-block">
-    <div class="row py-5">
+    <div class="row pt-5">
+        <div class="col-12">
+            <h2>{{ block.header }}</h2>
+        </div>
+    </div>
+    <div class="row pt-3 pb-5">
         <div class="col-12 slider-wrap" id="image-slider">
             {% if block.images.all() | length %}
                 {% for item in block.images.all() %}

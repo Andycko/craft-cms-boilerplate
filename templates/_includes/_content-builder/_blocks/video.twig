@@ -1,0 +1,36 @@
+<div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} {{ block.backgroundColor }} video-block">
+    <div class="row pt-5">
+        <div class="col-12">
+            <h2>{{ block.header }}</h2>
+        </div>
+    </div>
+    <div class="row pt-3 pb-5">
+        <div class="col-12">
+            <div class="video-wrapper d-flex justify-content-center align-items-center">
+                {% set vid = block.video.one %}
+                {% if vid.type == 'externalVideo' %}
+                    {% if vid.video.media.type == 'video' %}
+                        {{
+                        vid.video.render({
+                            params: {
+                                autoplay: 1,
+                                controls: 0,
+                                loop: 1,
+                                mute: 1,
+                            }
+                        })
+                        }}
+                    {% endif %}
+                {% else %}
+                    {% if vid.video.one %}
+                        <video src="{{ vid.video.url }}" alt="{{ vid.video }}"></video>
+                    {% else %}
+                        <video autoplay loop>
+                            <source src="./img/video_placeholder.mp4">
+                        </video>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

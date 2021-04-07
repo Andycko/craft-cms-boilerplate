@@ -1,0 +1,68 @@
+field: ae523ce4-60b9-4674-8ed4-cbfa6ff0c20c # Button
+fieldLayouts:
+  88a967f0-7417-4348-a669-4842b7aae7af:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: bd1a9dd9-c492-4932-ad06-98c72a16cfd8 # Button Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3fb11a52-50bf-49c5-a8dd-c2ee482358ee # Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3fb11a52-50bf-49c5-a8dd-c2ee482358ee: # Button Link
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonLink
+    instructions: 'Enter a valid URL starting with - http://, https://, mailto:, tel:, ... '
+    name: 'Button Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bd1a9dd9-c492-4932-ad06-98c72a16cfd8: # Button Title
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonTitle
+    instructions: ''
+    name: 'Button Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: externalLink
+name: 'External Link'
+sortOrder: 2
