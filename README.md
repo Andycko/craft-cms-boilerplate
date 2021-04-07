@@ -17,7 +17,8 @@ Alternatively you can:
     
 #### Gulp
 Gulp is utilised in the project to watch and build **sass** and **js**.
-Use ```gulp``` in the terminal to turn on the watchers.
+Therefore you will need to have ```gulp-cli``` installed to rebuild files. You can install it with node - ```npm install --global gulp-cli```.
+After that, just use ```gulp``` in the terminal to turn on the file watchers.
  
 ### Plugins installed
 - [craftcms/aws-s3](https://plugins.craftcms.com/aws-s3)
