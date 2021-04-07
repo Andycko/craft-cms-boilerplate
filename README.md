@@ -35,3 +35,6 @@ Bootstrap is installed as a node module and is imported in ```./public/css/style
 ### JQuery
 JQuery is installed as a node module and is imported an initialized in ```./public/js.main.js```
 
+### Dependencies
+- [Composer](https://getcomposer.org/)
+- [PHP >= 7.3](https://www.php.net/)
