@@ -1,0 +1,4 @@
+Sitemap: https://websitedomain.com/sitemap.xml
+User-agent: *
+# Don't allow web crawlers to index Craft CMS
+Disallow: /craft/
