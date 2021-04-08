@@ -34,4 +34,7 @@ return [
 
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
+
+    // Set the custom template for errors (will not show in dev mode)
+    'errorTemplatePrefix' => '/_errors/',
 ];
