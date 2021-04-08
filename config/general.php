@@ -11,6 +11,7 @@
 use craft\helpers\App;
 
 $isDev = App::env('ENVIRONMENT') === 'dev';
+$isStaging = App::env('ENVIRONMENT') === 'staging';
 $isProd = App::env('ENVIRONMENT') === 'production';
 
 return [
@@ -28,18 +29,24 @@ return [
         'securityKey' => App::env('SECURITY_KEY'),
 
         // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
-        'devMode' => $isDev,
+        'devMode' => $isDev or $isStaging,
 
         // Whether administrative changes should be allowed
         'allowAdminChanges' => $isDev,
 
         // Whether crawlers should be allowed to index pages and following links
         'disallowRobots' => !$isProd,
+
+        // Set the custom template for errors (will not show in dev mode)
+        'errorTemplatePrefix' => '/_errors/',
     ],
     
     'dev' => [
         // Backup commands for usage with MAMP on local dev env
         'backupCommand' => App::env('BACKUP_COMMAND'),
         'restoreCommand' => App::env('RESTORE_COMMAND'),
+
+        // Set the custom template for errors (will not show in dev mode)
+        'errorTemplatePrefix' => '/_errors/',
     ]
 ];

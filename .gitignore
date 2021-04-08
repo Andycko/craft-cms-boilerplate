@@ -1,5 +1,9 @@
 /.idea
 .DS_Store
+
+/public/cache
+/scripts/.env.sh_backup
+
 # COMPOSER
 /vendor
 
@@ -8,9 +12,49 @@
 .env.sh
 .env
 
+# CRAFT STORAGE
+/storage/*
+!/storage/.gitkeep
+
 # Craft CMS #
 #####################
+craft/storage
+/craft/app/
 craft/config/license.key
 craft/.htaccess
 
-/node_modules
+# BUILD FILES
+/bower_components/*
+node_modules
+/build/*
+/yarn-error.log
+/npm-debug.log
+
+# Sass #
+#####################
+.sass-cache
+*.css.map
+
+# MISC FILES
+.cache
+.idea
+.project
+.settings
+*.esproj
+*.sublime-workspace
+*.sublime-project
+*.tmproj
+*.tmproject
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+config.codekit3
+prepros-6.config
+license.key
+/backup/*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
