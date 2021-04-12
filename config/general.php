@@ -45,8 +45,5 @@ return [
         // Backup commands for usage with MAMP on local dev env
         'backupCommand' => App::env('BACKUP_COMMAND'),
         'restoreCommand' => App::env('RESTORE_COMMAND'),
-
-        // Set the custom template for errors (will not show in dev mode)
-        'errorTemplatePrefix' => '/_errors/',
     ]
 ];

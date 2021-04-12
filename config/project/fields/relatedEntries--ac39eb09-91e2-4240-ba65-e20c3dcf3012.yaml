@@ -1,0 +1,20 @@
+contentColumnType: string
+fieldGroup: 70f3e289-0ffa-4d8a-a2a4-e8c6db06ee3c # Content Builder Fields
+handle: relatedEntries
+instructions: ''
+name: 'Related Entries'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '6'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries
