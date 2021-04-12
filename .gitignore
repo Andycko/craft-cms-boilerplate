@@ -21,6 +21,7 @@
 craft/storage
 /craft/app/
 craft/config/license.key
+config/license.key
 craft/.htaccess
 
 # BUILD FILES
