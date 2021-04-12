@@ -1,0 +1,68 @@
+field: c4480af9-afa8-430b-b22c-e0eddbe00de3 # Map Coordinates
+fieldLayouts:
+  c73d0244-1249-48a5-bf40-692e2bf5641d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 42ffab40-fc4c-47cc-a21b-f6998da1d15a # Latitude
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d9a8f905-7705-41f9-a662-e8966f03085f # Longitude
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  42ffab40-fc4c-47cc-a21b-f6998da1d15a: # Latitude
+    contentColumnType: text
+    fieldGroup: null
+    handle: latitude
+    instructions: ''
+    name: Latitude
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d9a8f905-7705-41f9-a662-e8966f03085f: # Longitude
+    contentColumnType: text
+    fieldGroup: null
+    handle: longitude
+    instructions: ''
+    name: Longitude
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: coordinates
+name: Coordinates
+sortOrder: 1
