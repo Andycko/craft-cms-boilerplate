@@ -19,7 +19,7 @@ const wait = require('gulp-wait');
  |--------------------------------------------------------------------------
 */
 gulp.task('mainJS', function() {
-    return browserify('./public/js/main.js')
+    return browserify('./src/js/main.js')
         .transform(babelify, {presets: ["es2015"]})
         .bundle()
         .pipe(wait(1500)) // time delay so ftp finished stransfering
@@ -38,7 +38,7 @@ gulp.task('mainJS', function() {
  */
 
 var styleList = [
-    './public/css/style.scss'
+    './src/css/style.sass'
 ];
 
 gulp.task('styles', function() {
@@ -56,9 +56,9 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('./public/css/**/*.sass', gulp.series('styles'));
-    gulp.watch('./public/js/components/*.js', gulp.series('mainJS'));
-    gulp.watch('./public/js/main.js', gulp.series('mainJS'));
+    gulp.watch('./src/css/**/*.sass', gulp.series('styles'));
+    gulp.watch('./src/js/components/*.js', gulp.series('mainJS'));
+    gulp.watch('./src/js/main.js', gulp.series('mainJS'));
 });
 
 gulp.task('default', gulp.parallel('styles', 'mainJS', 'watch'));
