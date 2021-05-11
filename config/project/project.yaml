@@ -1,4 +1,4 @@
-dateModified: 1620736242
+dateModified: 1620737931
 email:
   fromEmail: dev@fortytwo.studio
   fromName: 'Future Forestry'
@@ -16,7 +16,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: G1OSD5DGMQDOF1ZPWRHTAK3J
-    schemaVersion: 3.3.0
+    schemaVersion: 3.3.1
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
@@ -104,7 +104,7 @@ plugins:
   seo:
     edition: standard
     enabled: true
-    schemaVersion: 3.1.1
+    schemaVersion: 3.2.0
   super-table:
     edition: standard
     enabled: true
@@ -114,7 +114,7 @@ system:
   live: true
   name: 'Craft CMS Boilerplate'
   retryDuration: null
-  schemaVersion: 3.6.7
+  schemaVersion: 3.6.8
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
