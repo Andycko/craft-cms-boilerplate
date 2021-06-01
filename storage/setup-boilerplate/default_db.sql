@@ -727,7 +727,7 @@ CREATE TABLE `freeform_feed_messages` (
   PRIMARY KEY (`id`),
   KEY `freeform_feed_messages_feedId_fk` (`feedId`),
   CONSTRAINT `freeform_feed_messages_feedId_fk` FOREIGN KEY (`feedId`) REFERENCES `freeform_feeds` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -748,7 +748,7 @@ CREATE TABLE `freeform_feeds` (
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `freeform_feeds_hash_unq_idx` (`hash`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -875,7 +875,7 @@ CREATE TABLE `freeform_lock` (
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `freeform_lock_key_dateCreated_idx` (`key`,`dateCreated`)
-) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1774,7 +1774,7 @@ CREATE TABLE `queue` (
   PRIMARY KEY (`id`),
   KEY `idx_tizdkonjgbkpfjltylcrrvcytafvzrdqfttu` (`channel`,`fail`,`timeUpdated`,`timePushed`),
   KEY `idx_zftexwixzmbulwvrhzklbdrxtfbsjoonlgev` (`channel`,`fail`,`timeUpdated`,`delay`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2598,7 +2598,7 @@ CREATE TABLE `widgets` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-11 13:59:29
+-- Dump completed on 2021-06-01 12:00:59
 -- MySQL dump 10.13  Distrib 5.7.32, for osx10.12 (x86_64)
 --
 -- Host: localhost    Database: boilerplate
@@ -2899,7 +2899,7 @@ commit;
 LOCK TABLES `freeform_feed_messages` WRITE;
 /*!40000 ALTER TABLE `freeform_feed_messages` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `freeform_feed_messages` VALUES (1,2,'Freeform 3.11 is now available! New features include the ability to edit other Craft Elements and map to Calendar Events with the Element Connections feature, full-screen HTML & Twig and Rich Text editor inside the form builder, ability to update file-based email notification templates directly inside the CP, support for searching by submissions\' field values in the CP Submissions index, more granular submission viewing and management permissions, ability to lazy load reCAPTCHA scripts, various improvements to the Freeform JS plugin, and a wide variety of other improvements!','[]','info',0,'2021-04-20 06:00:00','2021-05-11 08:16:23','2021-05-11 08:16:23','99607100-cd39-4120-b0ed-3ff13ed6b663');
+INSERT INTO `freeform_feed_messages` VALUES (1,2,'Freeform 3.11 is now available! New features include the ability to edit other Craft Elements and map to Calendar Events with the Element Connections feature, full-screen HTML & Twig and Rich Text editor inside the form builder, ability to update file-based email notification templates directly inside the CP, support for searching by submissions\' field values in the CP Submissions index, more granular submission viewing and management permissions, ability to lazy load reCAPTCHA scripts, various improvements to the Freeform JS plugin, and a wide variety of other improvements!','[]','info',0,'2021-04-20 06:00:00','2021-05-11 08:16:23','2021-05-11 08:16:23','99607100-cd39-4120-b0ed-3ff13ed6b663'),(2,4,'Added the ability to edit other Craft Elements, including special support for Craft Users (Pro).','[]','new',0,'2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','1e975932-ea3f-444f-a0d7-49014d5a8812'),(3,4,'Added the ability to map to Calendar Events with the Element Connections feature (Pro).','[]','new',0,'2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','6b91fdac-b7b4-4c99-bd00-e31de6c53353'),(4,4,'Added a full-screen HTML & Twig and Rich Text editor inside the form builder.','[]','new',0,'2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','de2ffcc5-73ca-4ccd-b81d-dad114354ad0'),(5,4,'Added the ability to update file-based email notification templates directly inside the CP (optional). Included a migration tool for migrating from Database to File-based email notifications.','[]','new',0,'2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','1c619ade-3272-4ace-8665-5ba6c1649e7b'),(6,4,'Added support for searching by submissions\' field values in the CP Submissions index.','[]','new',0,'2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','52d5903e-b364-42b1-9f05-473e81fb9b82'),(7,4,'Added more granular submission viewing and management permissions. You can now set read-only permissions in addition to management permissions.','[]','new',0,'2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','774c8878-851d-4756-a239-5da2cbe5c3fd'),(8,4,'Added a setting that allows you to optionally restrict the Forms element field type to only show forms which the user has manage permissions for.','[]','new',0,'2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','7c07495d-d33f-4ac6-a2ed-81d72f980599'),(9,4,'Added ability to load reCAPTCHA scripts (and checkbox field if using v2 Checkbox) only once the site visitor interacts with the form.','[]','new',0,'2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','63b4ac44-8004-432d-b1e3-20e07fda8ad9'),(10,4,'Added export profile developer events, allowing the addition of custom exporters.','[]','new',0,'2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','074d6e22-1d67-4a65-9d67-62c8c75309df'),(11,4,'Various improvements to Freeform\'s JS, including optimization to no longer include excess polyfills, no longer fetching field-specific scripts if the fields aren\'t present in the form, loading the JS as a separate \'freeform/plugin.js\' file path, and \'freeform.loadFreeformPlugin()\' to load the JS manually in your template.','[]','new',0,'2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','826ad95c-6950-4e5e-b220-925baada6e57');
 /*!40000 ALTER TABLE `freeform_feed_messages` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -2911,7 +2911,7 @@ commit;
 LOCK TABLES `freeform_feeds` WRITE;
 /*!40000 ALTER TABLE `freeform_feeds` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `freeform_feeds` VALUES (1,'f0c92527-abde-4656-bba0-c0e01b277f92','3.0.0','3.99.999','2021-03-31 19:51:00','2021-04-06 08:30:44','2021-04-06 08:30:44','034c0614-8044-47b8-baf0-9f1f87a644f7'),(2,'64d6bb16-d222-465d-bfdc-6931b5dca7da','3.9.0','3.10.999','2021-04-20 06:00:00','2021-05-11 08:16:23','2021-05-11 08:16:23','73306e05-72b0-4fdf-95d7-b54622ba4b11');
+INSERT INTO `freeform_feeds` VALUES (1,'f0c92527-abde-4656-bba0-c0e01b277f92','3.0.0','3.99.999','2021-03-31 19:51:00','2021-04-06 08:30:44','2021-04-06 08:30:44','034c0614-8044-47b8-baf0-9f1f87a644f7'),(2,'64d6bb16-d222-465d-bfdc-6931b5dca7da','3.9.0','3.10.999','2021-04-20 06:00:00','2021-05-11 08:16:23','2021-05-11 08:16:23','73306e05-72b0-4fdf-95d7-b54622ba4b11'),(3,'845bd916-c335-4d28-a447-285a2cdf646f','3.11.0','3.11.1','2021-04-28 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','94a4f6cb-e912-4dd0-8646-85ea73019a1d'),(4,'77b09f1c-f154-4511-806f-823859ade875','3.11.0','3.99.999','2021-04-20 13:00:00','2021-05-11 13:16:44','2021-05-11 13:16:44','541809e6-369b-41c8-aadb-72d10f65cbb6'),(5,'4db9825a-9de7-424c-9650-a10a4fa6bd1d','3.11.4','3.11.4','2021-05-12 13:00:00','2021-05-25 08:43:23','2021-05-25 08:43:23','0cc2a6a0-1ff7-4ca3-a9e2-3fbade4b87a2');
 /*!40000 ALTER TABLE `freeform_feeds` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -2969,7 +2969,7 @@ commit;
 LOCK TABLES `freeform_lock` WRITE;
 /*!40000 ALTER TABLE `freeform_lock` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `freeform_lock` VALUES (49,'freeform-purge-cache-key','2021-05-11 08:16:21','2021-05-11 08:16:21','08571ee4-ad3b-4b4d-88c2-204d9570442b'),(50,'freeform-feed-cache-key','2021-05-11 08:16:22','2021-05-11 08:16:22','4a8ce972-b04d-4ed0-9565-83ee922d9299'),(51,'freeform-digest-cache-key','2021-05-11 08:16:23','2021-05-11 08:16:23','220c1783-d926-4778-af85-c39f5210dd79'),(52,'freeform-purge-cache-key','2021-05-11 12:28:40','2021-05-11 12:28:40','27efe754-df94-4a87-81f2-2d657cfab50a'),(53,'freeform-digest-cache-key','2021-05-11 12:28:41','2021-05-11 12:28:41','4983e50c-a1d2-4b5d-865e-d753a9b90e3b');
+INSERT INTO `freeform_lock` VALUES (60,'freeform-purge-cache-key','2021-05-25 11:16:13','2021-05-25 11:16:13','15d4a67d-f7f0-40f2-880f-87b09c56bc50'),(61,'freeform-purge-cache-key','2021-06-01 09:59:18','2021-06-01 09:59:18','b20fb5f2-7176-417a-92ab-1ce0648ce03b'),(62,'freeform-feed-cache-key','2021-06-01 09:59:19','2021-06-01 09:59:19','2c4c2513-f194-4777-a14d-2d056a707770'),(63,'freeform-digest-cache-key','2021-06-01 09:59:20','2021-06-01 09:59:20','785a162f-d85c-4271-bcf8-6141519850c6');
 /*!40000 ALTER TABLE `freeform_lock` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3350,7 +3350,7 @@ commit;
 LOCK TABLES `plugins` WRITE;
 /*!40000 ALTER TABLE `plugins` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `plugins` VALUES (1,'neo','2.9.7','2.8.16','mismatched','standard','2021-03-30 09:23:22','2021-03-30 09:23:22','2021-05-11 12:59:14','cad07713-6957-45e4-9438-f0caf451e14b'),(3,'buttonbox','2.0.4','1.0.0','unknown',NULL,'2021-03-30 09:26:37','2021-03-30 09:26:37','2021-05-11 12:59:14','44f05977-bb62-4bb0-a498-01a403fd74f4'),(4,'redactor','2.8.7','2.3.0','unknown',NULL,'2021-03-30 09:26:57','2021-03-30 09:26:57','2021-05-11 12:59:14','d49b778c-8031-4dde-a1d0-828c0616cb95'),(5,'super-table','2.6.7','2.2.1','unknown',NULL,'2021-03-30 09:27:19','2021-03-30 09:27:19','2021-05-11 12:59:14','26b97ad7-53cb-45d3-93e1-376de19fba6c'),(6,'seo','3.7.1','3.2.0','unknown',NULL,'2021-03-30 09:27:41','2021-03-30 09:27:41','2021-05-11 12:59:14','bfa9f957-774d-4bf0-ac79-0ee6a4d4553f'),(7,'aws-s3','1.2.11','1.2','unknown',NULL,'2021-03-30 09:28:07','2021-03-30 09:28:07','2021-05-11 12:59:14','39a8ef93-ba4d-4bda-810e-c8a74e0c879c'),(8,'navigation','1.4.16','1.0.21','mismatched','standard','2021-03-30 11:13:20','2021-03-30 11:13:20','2021-05-11 12:59:14','6b71802d-1bf0-4c44-889b-800d18212a6d'),(9,'freeform','3.11.4','3.3.1','trial',NULL,'2021-03-30 13:30:11','2021-03-30 13:30:11','2021-05-11 12:59:14','05f7bcfb-f377-4924-b867-599434fa1be0'),(10,'oembed','1.3.6','1.0.1','unknown',NULL,'2021-04-07 08:21:16','2021-04-07 08:21:16','2021-05-11 12:59:14','3cb8ef30-337a-463a-baa6-e7bf1e042caa');
+INSERT INTO `plugins` VALUES (1,'neo','2.9.10','2.8.16','mismatched','standard','2021-03-30 09:23:22','2021-03-30 09:23:22','2021-06-01 10:00:30','cad07713-6957-45e4-9438-f0caf451e14b'),(3,'buttonbox','2.0.4','1.0.0','unknown',NULL,'2021-03-30 09:26:37','2021-03-30 09:26:37','2021-06-01 10:00:11','44f05977-bb62-4bb0-a498-01a403fd74f4'),(4,'redactor','2.8.7','2.3.0','unknown',NULL,'2021-03-30 09:26:57','2021-03-30 09:26:57','2021-06-01 10:00:11','d49b778c-8031-4dde-a1d0-828c0616cb95'),(5,'super-table','2.6.8','2.2.1','unknown',NULL,'2021-03-30 09:27:19','2021-03-30 09:27:19','2021-06-01 10:00:30','26b97ad7-53cb-45d3-93e1-376de19fba6c'),(6,'seo','3.7.3','3.2.0','unknown',NULL,'2021-03-30 09:27:41','2021-03-30 09:27:41','2021-06-01 10:00:30','bfa9f957-774d-4bf0-ac79-0ee6a4d4553f'),(7,'aws-s3','1.2.11','1.2','unknown',NULL,'2021-03-30 09:28:07','2021-03-30 09:28:07','2021-06-01 10:00:11','39a8ef93-ba4d-4bda-810e-c8a74e0c879c'),(8,'navigation','1.4.16','1.0.21','mismatched','standard','2021-03-30 11:13:20','2021-03-30 11:13:20','2021-06-01 10:00:11','6b71802d-1bf0-4c44-889b-800d18212a6d'),(9,'freeform','3.11.4.1','3.3.1','trial',NULL,'2021-03-30 13:30:11','2021-03-30 13:30:11','2021-06-01 10:00:30','05f7bcfb-f377-4924-b867-599434fa1be0'),(10,'oembed','1.3.6','1.0.1','unknown',NULL,'2021-04-07 08:21:16','2021-04-07 08:21:16','2021-06-01 10:00:11','3cb8ef30-337a-463a-baa6-e7bf1e042caa');
 /*!40000 ALTER TABLE `plugins` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3386,6 +3386,7 @@ commit;
 LOCK TABLES `queue` WRITE;
 /*!40000 ALTER TABLE `queue` DISABLE KEYS */;
 set autocommit=0;
+INSERT INTO `queue` VALUES (3,'queue',_binary 'O:48:\"Solspace\\Freeform\\Jobs\\PurgeUnfinalizedAssetsJob\":4:{s:3:\"age\";i:180;s:11:\"description\";N;s:30:\"\0craft\\queue\\BaseJob\0_progress\";i:0;s:35:\"\0craft\\queue\\BaseJob\0_progressLabel\";N;}','Purge Unfinalized Assets',1621935807,300,0,1024,NULL,NULL,0,NULL,NULL,0,NULL,NULL),(4,'queue',_binary 'O:48:\"Solspace\\Freeform\\Jobs\\PurgeUnfinalizedAssetsJob\":4:{s:3:\"age\";i:180;s:11:\"description\";N;s:30:\"\0craft\\queue\\BaseJob\0_progress\";i:0;s:35:\"\0craft\\queue\\BaseJob\0_progressLabel\";N;}','Purge Unfinalized Assets',1621941373,300,0,1024,NULL,NULL,0,NULL,NULL,0,NULL,NULL),(5,'queue',_binary 'O:48:\"Solspace\\Freeform\\Jobs\\PurgeUnfinalizedAssetsJob\":4:{s:3:\"age\";i:180;s:11:\"description\";N;s:30:\"\0craft\\queue\\BaseJob\0_progress\";i:0;s:35:\"\0craft\\queue\\BaseJob\0_progressLabel\";N;}','Purge Unfinalized Assets',1622541558,300,0,1024,NULL,NULL,0,NULL,NULL,0,NULL,NULL);
 /*!40000 ALTER TABLE `queue` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3409,7 +3410,7 @@ commit;
 LOCK TABLES `resourcepaths` WRITE;
 /*!40000 ALTER TABLE `resourcepaths` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `resourcepaths` VALUES ('10e942ca','@app/web/assets/matrix/dist'),('11632c99','@lib/prismjs'),('13e52610','@lib/jquery-touch-events'),('14411ad2','@lib/picturefill'),('152b88c4','@supercool/buttonbox/assetbundles/buttonbox/dist'),('1ae43a83','@lib/d3'),('1fcb60fe','@app/web/assets/editentry/dist'),('20906d8f','@app/web/assets/updates/dist'),('221e4cb3','@craft/awss3/resources'),('22a45443','@lib/datepicker-i18n'),('252ddd','@app/web/assets/dbbackup/dist'),('29592d05','@lib/garnishjs'),('316bb7d5','@lib/xregexp'),('380a8cb0','@app/web/assets/fields/dist'),('3b07f35f','@lib/selectize'),('3c1ff93b','@lib/fabric'),('3ef1b0fb','@app/web/assets/deprecationerrors/dist'),('3f6da2fe','@app/web/assets/dashboard/dist'),('403f3756','@lib/selectize'),('41debb06','@wrav/oembed/assetbundles/oembed/dist/js'),('4610121f','@craft/web/assets/cp/dist'),('47273d32','@lib/fabric'),('4a5373dc','@lib/xregexp'),('4f6b2262','@craft/web/assets/pluginstore/dist'),('5261e90c','@lib/garnishjs'),('57e3122d','@app/web/assets/edituser/dist'),('599c904a','@lib/datepicker-i18n'),('5a020035','@craft/redactor/assets/field/dist'),('5ba8a986','@app/web/assets/updates/dist'),('5c6ecb8e','@craft/web/assets/updateswidget/dist'),('61a866ae','@app/web/assets/admintable/dist'),('61dcfe8a','@lib/d3'),('628a67e6','@craft/redactor/assets/redactor-plugins/dist/fullscreen'),('62d489e0','@craft/web/assets/recententries/dist'),('68dde219','@lib/jquery-touch-events'),('6b17cfbf','@craft/web/assets/updater/dist'),('6bb6c824','@wrav/oembed/assetbundles/oembed/dist/css'),('6f79dedb','@lib/picturefill'),('75ac2ba9','@lib/timepicker'),('7791df25','@lib/fileupload'),('779924d5','@app/web/assets/editsection/dist'),('7b1de9d4','@app/web/assets/dbbackup/dist'),('7b32e032','@lib/iframe-resizer'),('7da6efed','@app/web/assets/plugins/dist'),('857ba70c','@app/web/assets/feed/dist'),('875828bb','@app/web/assets/cp/dist'),('8964d128','@lib/velocity'),('95437ec0','@lib/jquery.payment'),('98eb2655','@bower/jquery/dist'),('9924a1a8','@verbb/base/resources/dist'),('9a0cb70','@app/web/assets/sites/dist'),('9e1bae23','@app/web/assets/utilities/dist'),('a243b','@lib/iframe-resizer'),('b4b1f363','@app/web/assets/matrixsettings/dist'),('b51664bc','@ether/seo/web/assets'),('b622cecd','@lib/axios'),('b77b8da0','@lib/element-resize-detector'),('b8a83730','@freeform/Resources/js/scripts/front-end/plugin'),('bc0c839b','@verbb/navigation/resources/dist'),('bcf58e84','@lib/jquery-ui'),('bd942608','@craft/web/assets/dashboard/dist'),('c063658','@freeform/Resources'),('c4d700c3','@craft/web/assets/feed/dist'),('c7cd4a8d','@lib/jquery-ui'),('ca91b2c','@lib/fileupload'),('cb33e540','@app/web/assets/generalsettings/dist'),('cc4349a9','@lib/element-resize-detector'),('cd1a0ac4','@lib/axios'),('cd5b380f','@craft/redactor/assets/redactor-plugins/dist/video'),('cf0e2bac','@craft/redactor/assets/redactor/dist'),('cfc2db6e','@app/web/assets/updater/dist'),('d1052590','@app/web/assets/craftsupport/dist'),('d2d4aa08','@app/web/assets/fieldsettings/dist'),('df978951','@app/web/assets/updateswidget/dist'),('e0f1a9b1','@lib/vue'),('e12dcb3f','@app/web/assets/recententries/dist'),('e3d3e25c','@bower/jquery/dist'),('e5236a2a','@app/web/assets/utilities/dist'),('e758a199','@app/web/assets/pluginstore/dist'),('ee7bbac9','@lib/jquery.payment'),('f25c1521','@lib/velocity'),('f62a9c1d','@verbb/supertable/resources/dist'),('f85ef9cc','@app/web/assets/login/dist'),('fbc23d87','@craft/web/assets/craftsupport/dist'),('fc60ecb2','@app/web/assets/cp/dist'),('ffa57a6b','@benf/neo/resources');
+INSERT INTO `resourcepaths` VALUES ('10e942ca','@app/web/assets/matrix/dist'),('11632c99','@lib/prismjs'),('13e52610','@lib/jquery-touch-events'),('14411ad2','@lib/picturefill'),('152b88c4','@supercool/buttonbox/assetbundles/buttonbox/dist'),('1a90a2a7','@app/web/assets/admintable/dist'),('1ae43a83','@lib/d3'),('1fcb60fe','@app/web/assets/editentry/dist'),('20906d8f','@app/web/assets/updates/dist'),('221e4cb3','@craft/awss3/resources'),('22a45443','@lib/datepicker-i18n'),('24fdb3fd','@benf/neo/resources'),('252ddd','@app/web/assets/dbbackup/dist'),('29592d05','@lib/garnishjs'),('316bb7d5','@lib/xregexp'),('380a8cb0','@app/web/assets/fields/dist'),('3b07f35f','@lib/selectize'),('3c1ff93b','@lib/fabric'),('3ef1b0fb','@app/web/assets/deprecationerrors/dist'),('3f6da2fe','@app/web/assets/dashboard/dist'),('403f3756','@lib/selectize'),('41debb06','@wrav/oembed/assetbundles/oembed/dist/js'),('433248b9','@app/web/assets/fields/dist'),('445566f7','@app/web/assets/dashboard/dist'),('4610121f','@craft/web/assets/cp/dist'),('47273d32','@lib/fabric'),('4a5373dc','@lib/xregexp'),('4f6b2262','@craft/web/assets/pluginstore/dist'),('5261e90c','@lib/garnishjs'),('57e3122d','@app/web/assets/edituser/dist'),('599c904a','@lib/datepicker-i18n'),('5a020035','@craft/redactor/assets/field/dist'),('5ba8a986','@app/web/assets/updates/dist'),('5c6ecb8e','@craft/web/assets/updateswidget/dist'),('61a866ae','@app/web/assets/admintable/dist'),('61dcfe8a','@lib/d3'),('628a67e6','@craft/redactor/assets/redactor-plugins/dist/fullscreen'),('62d489e0','@craft/web/assets/recententries/dist'),('68dde219','@lib/jquery-touch-events'),('6b17cfbf','@craft/web/assets/updater/dist'),('6bb6c824','@wrav/oembed/assetbundles/oembed/dist/css'),('6f79dedb','@lib/picturefill'),('75ac2ba9','@lib/timepicker'),('7791df25','@lib/fileupload'),('779924d5','@app/web/assets/editsection/dist'),('7b1de9d4','@app/web/assets/dbbackup/dist'),('7b32e032','@lib/iframe-resizer'),('7da6efed','@app/web/assets/plugins/dist'),('83663dc5','@app/web/assets/login/dist'),('857ba70c','@app/web/assets/feed/dist'),('875828bb','@app/web/assets/cp/dist'),('8964d128','@lib/velocity'),('95437ec0','@lib/jquery.payment'),('98eb2655','@bower/jquery/dist'),('9924a1a8','@verbb/base/resources/dist'),('9a0cb70','@app/web/assets/sites/dist'),('9a150f36','@app/web/assets/recententries/dist'),('9bc96db8','@lib/vue'),('9c606590','@app/web/assets/pluginstore/dist'),('9e1bae23','@app/web/assets/utilities/dist'),('a243b','@lib/iframe-resizer'),('a4af4d58','@app/web/assets/updateswidget/dist'),('a9ec6e01','@app/web/assets/fieldsettings/dist'),('aa3de199','@app/web/assets/craftsupport/dist'),('b4b1f363','@app/web/assets/matrixsettings/dist'),('b51664bc','@ether/seo/web/assets'),('b622cecd','@lib/axios'),('b77b8da0','@lib/element-resize-detector'),('b8a83730','@freeform/Resources/js/scripts/front-end/plugin'),('bc0c839b','@verbb/navigation/resources/dist'),('bcf58e84','@lib/jquery-ui'),('bd942608','@craft/web/assets/dashboard/dist'),('c063658','@freeform/Resources'),('c4d700c3','@craft/web/assets/feed/dist'),('c7cd4a8d','@lib/jquery-ui'),('ca91b2c','@lib/fileupload'),('cb33e540','@app/web/assets/generalsettings/dist'),('cc4349a9','@lib/element-resize-detector'),('cd1a0ac4','@lib/axios'),('cd5b380f','@craft/redactor/assets/redactor-plugins/dist/video'),('cf0e2bac','@craft/redactor/assets/redactor/dist'),('cf89376a','@app/web/assets/matrixsettings/dist'),('cfc2db6e','@app/web/assets/updater/dist'),('d1052590','@app/web/assets/craftsupport/dist'),('d2d4aa08','@app/web/assets/fieldsettings/dist'),('df978951','@app/web/assets/updateswidget/dist'),('e0f1a9b1','@lib/vue'),('e12dcb3f','@app/web/assets/recententries/dist'),('e3d3e25c','@bower/jquery/dist'),('e5236a2a','@app/web/assets/utilities/dist'),('e758a199','@app/web/assets/pluginstore/dist'),('ee7bbac9','@lib/jquery.payment'),('f25c1521','@lib/velocity'),('f62a9c1d','@verbb/supertable/resources/dist'),('f85ef9cc','@app/web/assets/login/dist'),('fbc23d87','@craft/web/assets/craftsupport/dist'),('fc60ecb2','@app/web/assets/cp/dist'),('fe436305','@app/web/assets/feed/dist'),('ffa57a6b','@benf/neo/resources');
 /*!40000 ALTER TABLE `resourcepaths` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3706,7 +3707,7 @@ commit;
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `users` VALUES (1,'Admin',NULL,'','','dev@fortytwo.studio','$2y$13$3Zv9sh4HRXyqD1tNq/gmoegINdaet8OFyxoyZBbIXMV5yBALD7J0q',1,0,0,0,'2021-05-11 12:30:00',NULL,NULL,NULL,'2021-03-30 14:46:59',NULL,1,NULL,NULL,NULL,0,'2021-03-30 14:54:18','2021-03-30 09:20:12','2021-05-11 12:30:00','e35059a4-d1ca-4c44-9793-7ff136cc1bfc');
+INSERT INTO `users` VALUES (1,'Admin',NULL,'','','dev@fortytwo.studio','$2y$13$3Zv9sh4HRXyqD1tNq/gmoegINdaet8OFyxoyZBbIXMV5yBALD7J0q',1,0,0,0,'2021-05-25 08:43:30',NULL,NULL,NULL,'2021-03-30 14:46:59',NULL,1,NULL,NULL,NULL,0,'2021-03-30 14:54:18','2021-03-30 09:20:12','2021-05-25 08:43:30','e35059a4-d1ca-4c44-9793-7ff136cc1bfc');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -3760,4 +3761,4 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-11 13:59:30
+-- Dump completed on 2021-06-01 12:00:59
