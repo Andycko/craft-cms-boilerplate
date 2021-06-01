@@ -98,12 +98,14 @@ nav#main-nav
     background-color: variables.$nav-background
     opacity: 0
     visibility: hidden
-    transition: right .3s ease-in-out, visibility 0s .3s, opacity 0s .3s
+    transform: scaleY(0)
+    transition: right .3s ease-in-out, visibility 0s .3s, opacity 0s .3s, transform 0s .3s
     &.active
       right: 0
       opacity: 1
       visibility: visible
-      transition: right .3s ease-in-out, visibility 0s 0s, opacity 0s 0s
+      transform: scaleY(1)
+      transition: right .3s ease-in-out, visibility 0s 0s, opacity 0s 0s, transform 0s 0s
 
     .item
       font-size: 19px
