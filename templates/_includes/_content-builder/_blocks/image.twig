@@ -1,11 +1,14 @@
-<div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} {{ block.backgroundColor }} image-block">
-    <div class="row py-4 justify-content-center">
-        <div class="col-8">
-            {% if block.image.one() %}
-                <img class="w-100" src="{{ block.image.one.url() }}" alt="{{ block.image.one() }}">
-            {% else %}
-                <img class="w-100" src="https://via.placeholder.com/1920x1080.jpg?text=Missing+image" alt="Placeholder image">
-            {% endif %}
+<div class="outer {{ block.backgroundColor }}">
+    <div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} image-block">
+        <div class="row py-4 justify-content-center">
+            <div class="col-8">
+                {% if block.image.one() %}
+                    <img class="w-100" src="{{ block.image.one.url() }}" alt="{{ block.image.one() }}">
+                {% else %}
+                    <img class="w-100" src="https://via.placeholder.com/1920x1080.jpg?text=Missing+image"
+                         alt="Placeholder image">
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>

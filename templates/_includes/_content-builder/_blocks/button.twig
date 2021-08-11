@@ -1,20 +1,24 @@
-<div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} {{ block.backgroundColor }} button-block">
-    <div class="row py-5">
-        <div class="col-12 d-flex">
-            {% if block.button.one %}
-                {% for button in block.button.all() %}
-                    {% if button.type == "internalLink" %}
-                        <div class="button d-inline-block mr-3">
-                            <a href="{{ button.buttonLink.one ? button.buttonLink.one.url }}" class="d-inline-block">{{ button.buttonTitle }}</a>
-                        </div>
-                    {% endif %}
-                    {% if button.type == "externalLink" %}
-                        <div class="button d-inline-block mr-3">
-                            <a href="{{ button.buttonLink }}" class="d-inline-block" target="_blank" rel="noopener">{{ button.buttonTitle }}</a>
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
+<div class="outer {{ block.backgroundColor }}">
+    <div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} button-block">
+        <div class="row py-5">
+            <div class="col-12 d-flex">
+                {% if block.button.one %}
+                    {% for button in block.button.all() %}
+                        {% if button.type == "internalLink" %}
+                            <div class="button d-inline-block mr-3">
+                                <a href="{{ button.buttonLink.one ? button.buttonLink.one.url }}"
+                                   class="d-inline-block">{{ button.buttonTitle }}</a>
+                            </div>
+                        {% endif %}
+                        {% if button.type == "externalLink" %}
+                            <div class="button d-inline-block mr-3">
+                                <a href="{{ button.buttonLink }}" class="d-inline-block" target="_blank"
+                                   rel="noopener">{{ button.buttonTitle }}</a>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>

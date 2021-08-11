@@ -1,28 +1,33 @@
-<div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} {{ block.backgroundColor }} accordion-block">
-    <div class="row pt-5">
-        <div class="col-12">
-            <h2>{{ block.header }}</h2>
+<div class="outer {{ block.backgroundColor }}">
+    <div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} accordion-block">
+        <div class="row pt-5">
+            <div class="col-12">
+                <h2>{{ block.header }}</h2>
+            </div>
         </div>
-    </div>
-    <div class="row pt-3 pb-5">
-        <div class="col-8">
-            <div id="accordion" class="accordion">
-                {% for item in block.accordionMatrix.all() %}
-                    <div class="item">
-                        <div id="{{ 'header' ~ loop.index }}" class="mt-2 header">
-                            <h5>
-                                <button class="collapsed" data-toggle="collapse" data-target="#{{ 'collapse' ~ loop.index }}" aria-expanded="false" aria-controls="{{ 'collapse' ~ loop.index }}">
-                                    {{ item.question }}
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="{{ 'collapse' ~ loop.index }}" class="body collapse collapsed" aria-labelledby="{{ 'header' ~ loop.index }}" data-parent="#accordion">
-                            <div class="copy p-4">
-                                {{ item.answer }}
+        <div class="row pt-3 pb-5">
+            <div class="col-8">
+                <div id="accordion" class="accordion">
+                    {% for item in block.accordionMatrix.all() %}
+                        <div class="item">
+                            <div id="{{ 'header' ~ loop.index }}" class="mt-2 header">
+                                <h5>
+                                    <button class="collapsed" data-toggle="collapse"
+                                            data-target="#{{ 'collapse' ~ loop.index }}" aria-expanded="false"
+                                            aria-controls="{{ 'collapse' ~ loop.index }}">
+                                        {{ item.question }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="{{ 'collapse' ~ loop.index }}" class="body collapse collapsed"
+                                 aria-labelledby="{{ 'header' ~ loop.index }}" data-parent="#accordion">
+                                <div class="copy p-4">
+                                    {{ item.answer }}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
