@@ -43,3 +43,4 @@ fieldLayouts:
         sortOrder: 1
 handle: companyInfo
 name: 'Company Info'
+sortOrder: 1

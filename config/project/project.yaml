@@ -1,8 +1,90 @@
-dateModified: 1620737931
+dateModified: 1628681829
 email:
   fromEmail: dev@fortytwo.studio
   fromName: 'Future Forestry'
   transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0aa3f322-8216-4121-a142-bb7e5bdd3c41: 'Related Content' # Related Content
+    0ffba24e-268b-4f2c-a3f2-ad976b64c979: Image # Image
+    1af5640c-d8b3-4503-89a1-8d0581554915: 'Main Header' # Main Header
+    1d1c9f28-39de-4df6-b077-856d16c001ca: Copy # Copy
+    1d1d5665-5674-4388-8d46-9b87e4dc65d3: 'Content Builder' # Content Builder
+    1f6a1dc8-82d8-47a8-ae54-01af20652730: Name # Name
+    2f28cd37-4b8e-4b68-806e-97ecc9f63d04: 'Latest Index' # Latest Index
+    2f64efd3-101a-4ed1-a31e-96657d6dc6e5: Header # Header
+    3cca813e-09a9-4025-8efa-d5ba11d4dd89: Email # Email
+    3d768a6c-7660-4551-8c77-a987ed1dfb44: 'External Link' # External Link
+    3e5005f5-763a-459a-9bb7-74b2de70f748: 'Button Title' # Button Title
+    3f092924-7454-4778-a975-9d6112f3eb20: 'Google Analytics' # Google Analytics
+    3fb11a52-50bf-49c5-a8dd-c2ee482358ee: 'Button Link' # Button Link
+    4af3caf9-e4e3-4acd-90f8-1e8cd585e497: Address # Address
+    4b0ce80c-181f-4c40-bcce-5146dc8c903e: Video # Video
+    4ee575cd-9fd3-4198-a6d1-3d8f2f13ea83: Copy # Copy
+    5cd6ad16-cb88-45ba-b275-1558f8f27c05: Link # Link
+    5d2dca76-1ede-413a-8adf-b4a756ed42ae: 'Site Info' # Site Info
+    6abd3112-8db8-4e93-b4ed-d681318ea294: 'Large Quote' # Large Quote
+    6b6833e3-09b6-4302-8492-fd06e3f794e4: Summary # Summary
+    6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8: Question # Question
+    6c4a2320-184d-4f3b-9482-070fc8b8194a: 'Bottom Spacing' # Bottom Spacing
+    7bbeec1d-6526-44a3-9897-d6d1e5918a05: Settings # Settings
+    7c5c4db7-bc5e-4979-a31b-6b7734989556: SEO # SEO
+    7d034fae-78a0-49b6-a213-aa01fcdf690e: Video # Video
+    7fc480fa-d689-40a4-9f68-2e36e07830d5: 'Company Info' # Company Info
+    8adc1cc2-e466-4df6-8ad4-71e17361821d: Map # Map
+    8b5fa4d7-86cd-4e9b-b8d4-3731f1a60289: 'Main Navigation' # Main Navigation
+    8f3d51d8-227c-42c1-b81e-f3cba4189a99: SEO # SEO
+    9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d: Blocks # Blocks
+    13d35453-527a-4094-b642-42292f193f8c: 'Social Profiles' # Social Profiles
+    18d78006-3985-4ea4-b620-67bae10d9c2d: 'Craft CMS Boilerplate' # Craft CMS Boilerplate
+    32e8ea43-4e6d-46eb-9344-6755923c28de: Homepage # Homepage
+    42ffab40-fc4c-47cc-a21b-f6998da1d15a: Latitude # Latitude
+    49b4d1ac-0f61-42c6-a482-63eefaa8933e: 'Asset Video' # Asset Video
+    70f3e289-0ffa-4d8a-a2a4-e8c6db06ee3c: 'Content Builder Fields' # Content Builder Fields
+    75e32298-2afc-42e4-a7a1-a0df691a9522: Button # Button
+    76ee93ec-459e-4fa9-967f-aa9b48f7b9e1: Contact # Contact
+    181f8d87-6d88-42ed-96e8-26a3a728eef8: Images # Images
+    308d7a68-be55-4f59-b9a4-c108480bd78f: Coordinates # Coordinates
+    336f207f-f4fb-43c3-bbc3-f10b641e940a: 'Background Color' # Background Color
+    369ea60f-6259-4683-adcc-23418cf8285e: Homepage # Homepage
+    386e1cf1-acc9-4336-90e1-fb74daefd6f5: 'Phone Number' # Phone Number
+    431efb4a-9ace-451f-8b70-aeda20b1f83f: Globals # Globals
+    588b4c33-d66a-429a-a796-a6146b14a0f8: Video # Video
+    714a1c4f-39d2-4a93-b0fc-1d7089a16ff2: 'Latest Index' # Latest Index
+    4184d945-e90d-4433-b1f3-727edf65107e: 'Summary Image' # Summary Image
+    8062a4c1-1fc1-482e-9121-c05e1d679599: Accordion # Accordion
+    23255a47-8fcd-4ad9-8129-8bd0e89121e5: 'Footer Navigation' # Footer Navigation
+    24301a2b-def0-4ce7-baf1-9b424815122c: Author # Author
+    80190ffa-9de6-4824-befb-1c21b98c9752: Item # Item
+    4870444e-6820-4ab0-a141-99e310305629: 'Background Image' # Background Image
+    39237593-ff51-4bd3-851a-a9dfac329c0b: 'Page Summary' # Page Summary
+    a596aec7-c8ec-49d7-ab4d-97dcdf5ac990: Icon # Icon
+    ac39eb09-91e2-4240-ba65-e20c3dcf3012: 'Related Entries' # Related Entries
+    ae523ce4-60b9-4674-8ed4-cbfa6ff0c20c: Button # Button
+    b2c6e66f-5fcd-4220-b710-2624b1ef531d: 'Accordion Matrix' # Accordion Matrix
+    b8e69404-8329-47fa-8f41-a98c933804c3: About # About
+    b4718bab-e938-4b97-a8e4-adc9fe5f4ca7: 'Content Builder' # Content Builder
+    ba88d9cd-1570-43ff-9e92-aa456cff2540: Video # Video
+    bb3731df-a01f-4725-9f8b-06d99359fd9f: 'Top Spacing' # Top Spacing
+    bd1a9dd9-c492-4932-ad06-98c72a16cfd8: 'Button Title' # Button Title
+    c4480af9-afa8-430b-b22c-e0eddbe00de3: 'Map Coordinates' # Map Coordinates
+    d9a8f905-7705-41f9-a662-e8966f03085f: Longitude # Longitude
+    d9aafe6e-671c-45da-9958-ccb6470336d6: 'Alt Icon' # Alt Icon
+    d54ca455-7ff5-451f-98e4-350b3abb1847: 'Button Link' # Button Link
+    d563f248-37de-412a-b0ad-eea19da5e0f9: 'Internal Link' # Internal Link
+    d305657a-b071-42af-960e-aa7b81715a02: Latest # Latest
+    d783368e-a494-4457-9e99-5a027ae72a18: 'Page Header' # Page Header
+    dcc7e763-cfad-42ba-a4ed-f0c111f2446b: Media # Media
+    ddd7384c-d723-4aad-b2f6-845216bb1dbf: Latest # Latest
+    df00ec17-8cfe-4dc9-b2f9-095eea3f665c: 'Latest Articles' # Latest Articles
+    ead943da-9146-4b32-9f33-8096b522e085: 'External Video' # External Video
+    eb7f69a9-9a89-4024-ba3f-9154d28ac58c: Common # Common
+    ecaf2e51-4a07-4d82-a78b-8181faba1e87: 'Image Slider' # Image Slider
+    f1abfa1e-3f54-4765-8991-815c87484c9b: Contact # Contact
+    f85e63c0-1f6c-495c-95b7-6b70d338bd07: Answer # Answer
+    f99d20c5-6966-4180-8dc1-595df3b8f876: 'Craft CMS Boilerplate' # Craft CMS Boilerplate
+    f122d996-7ed0-4bc1-ad02-50e74deac2df: Image # Image
+    f6901440-dc45-4323-a125-0a7d3d90f06c: About # About
 plugins:
   aws-s3:
     edition: standard
@@ -16,7 +98,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: G1OSD5DGMQDOF1ZPWRHTAK3J
-    schemaVersion: 3.3.1
+    schemaVersion: 3.3.2
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
@@ -92,7 +174,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 6CVLNUD6DPTQ61KABAO823E5
-    schemaVersion: 2.8.16
+    schemaVersion: 2.9.11
   oembed:
     edition: standard
     enabled: true
@@ -114,7 +196,7 @@ system:
   live: true
   name: 'Craft CMS Boilerplate'
   retryDuration: null
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.7
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
