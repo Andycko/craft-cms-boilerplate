@@ -1,7 +1,7 @@
 const gulp = require('gulp');
-const gutil = require('gulp-util');
+const log = require('fancy-log')
 const autoprefixer = require('gulp-autoprefixer');
-const sass = require('gulp-dart-sass');
+const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
@@ -20,11 +20,11 @@ const wait = require('gulp-wait');
 */
 gulp.task('mainJS', function() {
     return browserify('./src/js/main.js')
-        .transform(babelify, {presets: ["es2015"]})
+        .transform(babelify, {presets: ["@babel/preset-env"]})
         .bundle()
         .pipe(wait(1500)) // time delay so ftp finished stransfering
         .on('error', function(e) {
-            gutil.log(e);
+            log(e);
         })
         .pipe(source('bundle.main.js'))
         .pipe(streamify(uglify()))
