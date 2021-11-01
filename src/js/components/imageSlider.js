@@ -1,5 +1,5 @@
-const $ = require('jquery');
-const Flickity = require('flickity');
+import $ from 'jquery';
+import Flickity from 'flickity';
 
 $(function(){
     if (document.querySelector('.imageSlider-block')) {

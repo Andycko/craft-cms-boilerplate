@@ -45,47 +45,12 @@ nav#main-nav
 
     #mobile-navbar-toggle
       display: none
-      width: 30px
-      height: 23px
-      position: relative
       z-index: 9999
-      span
-        --line-height: 4px
-        position: absolute
-        left: 0
-        width: 100%
-        height: var(--line-height)
-        background-color: white
-        border-radius: 15%
-        &:first-of-type
-          top: 0
-          transition: top .2s ease-in-out .2s, transform .2s ease-in-out
-        &:nth-of-type(2)
-          top: 50%
-          transform: translateY(-50%)
-          transition-delay: .2s
-        &:last-of-type
-          bottom: 0
-          transition: bottom .2s ease-in-out .2s, transform .2s ease-in-out
-      &.active
-        span
-          &:first-of-type
-            top: calc(50% - (var(--line-height) / 2))
-            transform: rotate(45deg)
-            transition: top .2s ease-in-out, transform .2s ease-in-out .2s
-          &:nth-of-type(2)
-            opacity: 0
-            visibility: hidden
-            transition-delay: .2s
-          &:last-of-type
-            bottom: calc(50% - (var(--line-height) / 2))
-            transform: rotate(-45deg)
-            transition: bottom .2s ease-in-out, transform .2s ease-in-out .2s
     @media (max-width: 992px)
       .item
         display: none
       #mobile-navbar-toggle
-        display:  block
+        display:  flex
 
   .mobile-navbar-links
     position: absolute
@@ -93,19 +58,18 @@ nav#main-nav
     width: 100vw
     height: 100vh
     top: 0
-    right: -100%
+    left: 0
+    transform: translateX(100%)
     padding: 8rem 1rem
     background-color: variables.$nav-background
     opacity: 0
     visibility: hidden
-    transform: scaleY(0)
-    transition: right .3s ease-in-out, visibility 0s .3s, opacity 0s .3s, transform 0s .3s
+    transition: transform .3s ease-in-out, visibility 0s .3s, opacity 0s .3s
     &.active
-      right: 0
+      transform: translateX(0)
       opacity: 1
       visibility: visible
-      transform: scaleY(1)
-      transition: right .3s ease-in-out, visibility 0s 0s, opacity 0s 0s, transform 0s 0s
+      transition: transform .3s ease-in-out, visibility 0s 0s, opacity 0s 0s
 
     .item
       font-size: 19px
