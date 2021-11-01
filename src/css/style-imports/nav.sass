@@ -53,19 +53,20 @@ nav#main-nav
         display:  flex
 
   .mobile-navbar-links
+    background-color: variables.$nav-background
     position: absolute
     z-index: 10
-    width: 100vw
+    padding: 8rem 1rem
+    width: 0
     height: 100vh
     top: 0
     left: 0
     transform: translateX(100%)
-    padding: 8rem 1rem
-    background-color: variables.$nav-background
     opacity: 0
     visibility: hidden
-    transition: transform .3s ease-in-out, visibility 0s .3s, opacity 0s .3s
+    transition: transform .3s ease-in-out, visibility 0s .3s, opacity 0s .3s, width 0s .3s
     &.active
+      width: 100vw
       transform: translateX(0)
       opacity: 1
       visibility: visible
