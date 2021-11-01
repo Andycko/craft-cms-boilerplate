@@ -12,9 +12,18 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
+            width: 50
           -
             fieldUid: 3fb11a52-50bf-49c5-a8dd-c2ee482358ee # Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: dfadf56c-6052-4f7d-b164-e55fac2e6474 # Button Color
             instructions: null
             label: null
             required: false
@@ -26,6 +35,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   3fb11a52-50bf-49c5-a8dd-c2ee482358ee: # Button Link
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: buttonLink
@@ -45,6 +55,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   bd1a9dd9-c492-4932-ad06-98c72a16cfd8: # Button Title
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: buttonTitle
@@ -63,6 +74,47 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  dfadf56c-6052-4f7d-b164-e55fac2e6474: # Button Color
+    columnSuffix: nongkxei
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonColor
+    instructions: ''
+    name: 'Button Color'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Black
+            -
+              - value
+              - button-black
+            -
+              - cssColour
+              - black
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - button-white
+            -
+              - cssColour
+              - white
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: supercool\buttonbox\fields\Colours
 handle: externalLink
 name: 'External Link'
 sortOrder: 2

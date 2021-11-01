@@ -2,16 +2,26 @@
 
 .button
   padding: .8rem 0.6rem
-  background-color: cornflowerblue
   border-radius: 5px
-  transition: .2s ease-in-out
+  transition: .3s ease-in-out
   &:hover
-    background-color: #0f70a8
-  a, a:visited
-    color: white
+    text-decoration: none
+  &.button-black
+    background-color: black
+    border: 2px solid black
     &:hover
-      text-decoration: none
-
+      background-color: transparent
+      color: black !important
+    &, &:visited
+      color: white
+  &.button-white
+    background-color: white
+    border: 2px solid white
+    &:hover
+      background-color: transparent
+      color: white !important
+    &, &:visited
+      color: black
 
 .contact-form
   .ff-form-success

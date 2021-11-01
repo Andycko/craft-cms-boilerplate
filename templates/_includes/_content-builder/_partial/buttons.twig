@@ -1,0 +1,15 @@
+{# When including in templates, must include with "buttons" and "classes" #}
+
+{% if buttons.one %}
+    <div class="buttons d-flex flex-wrap">
+        {% for item in buttons.all() %}
+            {% if item.type == "internalLink" %}
+                <a href="{{ item.buttonLink.one ? item.buttonLink.one.url }}"
+                   class="button {{ classes }} {{ item.buttonColor }} d-inline-block {{ not loop.last ? "mr-3" }}">{{ item.buttonTitle }}</a>
+            {% elseif item.type == "externalLink" %}
+                <a href="{{ item.buttonLink }}" class="button {{ classes }} {{ item.buttonColor }} d-inline-block {{ not loop.last ? "mr-3" }}" target="_blank"
+                   rel="noopener">{{ item.buttonTitle }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}
