@@ -1,7 +1,11 @@
-dateModified: 1628681829
+dateModified: 1635761398
 email:
   fromEmail: dev@fortytwo.studio
-  fromName: 'Future Forestry'
+  fromName: 'Craft CMS Boilerplate'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: ''
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
@@ -174,7 +178,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 6CVLNUD6DPTQ61KABAO823E5
-    schemaVersion: 2.9.11
+    schemaVersion: 2.11.6
   oembed:
     edition: standard
     enabled: true
@@ -196,7 +200,7 @@ system:
   live: true
   name: 'Craft CMS Boilerplate'
   retryDuration: null
-  schemaVersion: 3.7.7
+  schemaVersion: 3.7.8
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
