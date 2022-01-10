@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: b4718bab-e938-4b97-a8e4-adc9fe5f4ca7 # Content Builder
 handle: pageHeader
@@ -10,7 +11,7 @@ settings:
   maxTopBlocks: ''
   minBlocks: ''
   propagationMethod: all
-  wasModified: false
+  wasModified: true
 translationKeyFormat: null
 translationMethod: site
 type: benf\neo\Field

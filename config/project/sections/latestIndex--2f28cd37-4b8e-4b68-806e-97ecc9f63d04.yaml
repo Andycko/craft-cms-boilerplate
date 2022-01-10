@@ -1,3 +1,4 @@
+defaultPlacement: end
 enableVersioning: true
 handle: latestIndex
 name: 'Latest Index'
@@ -6,6 +7,6 @@ siteSettings:
   18d78006-3985-4ea4-b620-67bae10d9c2d: # Craft CMS Boilerplate
     enabledByDefault: true
     hasUrls: true
-    template: latest/_index
+    template: latest/index
     uriFormat: latest
 type: single

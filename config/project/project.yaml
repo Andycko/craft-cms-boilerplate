@@ -1,4 +1,4 @@
-dateModified: 1635762309
+dateModified: 1641833406
 email:
   fromEmail: dev@fortytwo.studio
   fromName: 'Craft CMS Boilerplate'
@@ -39,6 +39,7 @@ meta:
     8b5fa4d7-86cd-4e9b-b8d4-3731f1a60289: 'Main Navigation' # Main Navigation
     8f3d51d8-227c-42c1-b81e-f3cba4189a99: SEO # SEO
     9aeeb0f0-125e-4f5f-98a5-2e7b7f3666b7: 'Button Color' # Button Color
+    9b2615ce-8e18-4334-aff3-d8c10a256d95: 'Video Header' # Video Header
     9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d: Blocks # Blocks
     13d35453-527a-4094-b642-42292f193f8c: 'Social Profiles' # Social Profiles
     18d78006-3985-4ea4-b620-67bae10d9c2d: 'Craft CMS Boilerplate' # Craft CMS Boilerplate
@@ -72,6 +73,7 @@ meta:
     ba88d9cd-1570-43ff-9e92-aa456cff2540: Video # Video
     bb3731df-a01f-4725-9f8b-06d99359fd9f: 'Top Spacing' # Top Spacing
     bd1a9dd9-c492-4932-ad06-98c72a16cfd8: 'Button Title' # Button Title
+    c01ae0b2-724f-499b-b0f2-ff2b6fe171a4: 'Footer Disclaimer' # Footer Disclaimer
     c4480af9-afa8-430b-b22c-e0eddbe00de3: 'Map Coordinates' # Map Coordinates
     d9a8f905-7705-41f9-a662-e8966f03085f: Longitude # Longitude
     d9aafe6e-671c-45da-9958-ccb6470336d6: 'Alt Icon' # Alt Icon
@@ -104,7 +106,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: G1OSD5DGMQDOF1ZPWRHTAK3J
-    schemaVersion: 3.3.2
+    schemaVersion: 3.5.1
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
@@ -203,7 +205,7 @@ system:
   name: 'Craft CMS Boilerplate'
   retryDuration: null
   schemaVersion: 3.7.8
-  timeZone: America/Los_Angeles
+  timeZone: Europe/London
 users:
   allowPublicRegistration: false
   defaultGroup: null

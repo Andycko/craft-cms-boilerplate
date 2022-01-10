@@ -10,11 +10,11 @@
     # Force www
 #    RewriteCond %{SERVER_PORT} ^443$
 #    RewriteCond %{HTTP_HOST} ^vsa.org.uk$
-#    RewriteRule (.*) https://www.vsa.org.uk/$1 [R=301,L]
+#    RewriteRule (.*) https://www.websitedomain.com/$1 [R=301,L]
 
     # Redirect www to non www
 #    RewriteCond %{HTTP_HOST} ^www.thetechforce.co.uk [NC]
-#    RewriteRule ^(.*)$ http://thetechforce.co.uk/$1 [L,R=301]
+#    RewriteRule ^(.*)$ http://www.websitedomain.com/$1 [L,R=301]
 
     # Remove trailing slash from URL
 #    RewriteCond %{REQUEST_FILENAME} !-d
