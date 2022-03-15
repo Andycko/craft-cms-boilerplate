@@ -6,5 +6,6 @@ $(function () {
     nav_hamburger.onclick = () => {
         nav_hamburger.classList.toggle('is-active');
         mobile_nav.classList.toggle('active');
+        document.querySelector('html').classList.toggle('no-scroll')
     };
 });
