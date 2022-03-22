@@ -1,11 +1,11 @@
-dateModified: 1641833406
+dateModified: 1647942408
 email:
   fromEmail: dev@fortytwo.studio
-  fromName: 'Craft CMS Boilerplate'
+  fromName: $SITE_URL
   replyToEmail: null
   template: null
   transportSettings:
-    command: ''
+    command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
@@ -42,7 +42,7 @@ meta:
     9b2615ce-8e18-4334-aff3-d8c10a256d95: 'Video Header' # Video Header
     9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d: Blocks # Blocks
     13d35453-527a-4094-b642-42292f193f8c: 'Social Profiles' # Social Profiles
-    18d78006-3985-4ea4-b620-67bae10d9c2d: 'Craft CMS Boilerplate' # Craft CMS Boilerplate
+    18d78006-3985-4ea4-b620-67bae10d9c2d: $SITE_URL # $SITE_URL
     32e8ea43-4e6d-46eb-9344-6755923c28de: Homepage # Homepage
     42ffab40-fc4c-47cc-a21b-f6998da1d15a: Latitude # Latitude
     49b4d1ac-0f61-42c6-a482-63eefaa8933e: 'Asset Video' # Asset Video
@@ -90,7 +90,7 @@ meta:
     ecaf2e51-4a07-4d82-a78b-8181faba1e87: 'Image Slider' # Image Slider
     f1abfa1e-3f54-4765-8991-815c87484c9b: Contact # Contact
     f85e63c0-1f6c-495c-95b7-6b70d338bd07: Answer # Answer
-    f99d20c5-6966-4180-8dc1-595df3b8f876: 'Craft CMS Boilerplate' # Craft CMS Boilerplate
+    f99d20c5-6966-4180-8dc1-595df3b8f876: $SITE_URL # $SITE_URL
     f122d996-7ed0-4bc1-ad02-50e74deac2df: Image # Image
     f6901440-dc45-4323-a125-0a7d3d90f06c: About # About
 plugins:
@@ -202,7 +202,7 @@ plugins:
 system:
   edition: solo
   live: true
-  name: 'Craft CMS Boilerplate'
+  name: $SITE_URL
   retryDuration: null
   schemaVersion: 3.7.8
   timeZone: Europe/London

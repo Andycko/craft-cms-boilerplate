@@ -3,7 +3,7 @@ enabled: true
 handle: default
 hasUrls: true
 language: en-GB
-name: 'Craft CMS Boilerplate'
+name: $SITE_URL
 primary: true
-siteGroup: f99d20c5-6966-4180-8dc1-595df3b8f876 # Craft CMS Boilerplate
+siteGroup: f99d20c5-6966-4180-8dc1-595df3b8f876 # $SITE_URL
 sortOrder: 1
