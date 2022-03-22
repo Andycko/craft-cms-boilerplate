@@ -21,7 +21,7 @@ permissions:
     enabled: '1'
 propagateNodes: false
 siteSettings:
-  18d78006-3985-4ea4-b620-67bae10d9c2d: null # $SITE_URL
+  18d78006-3985-4ea4-b620-67bae10d9c2d: null # $SITE_NAME
 sortOrder: 2
 structure:
   maxLevels: null

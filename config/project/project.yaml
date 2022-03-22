@@ -1,7 +1,7 @@
-dateModified: 1647942408
+dateModified: 1647943280
 email:
   fromEmail: dev@fortytwo.studio
-  fromName: $SITE_URL
+  fromName: $SITE_NAME
   replyToEmail: null
   template: null
   transportSettings:
@@ -42,7 +42,7 @@ meta:
     9b2615ce-8e18-4334-aff3-d8c10a256d95: 'Video Header' # Video Header
     9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d: Blocks # Blocks
     13d35453-527a-4094-b642-42292f193f8c: 'Social Profiles' # Social Profiles
-    18d78006-3985-4ea4-b620-67bae10d9c2d: $SITE_URL # $SITE_URL
+    18d78006-3985-4ea4-b620-67bae10d9c2d: $SITE_NAME # $SITE_NAME
     32e8ea43-4e6d-46eb-9344-6755923c28de: Homepage # Homepage
     42ffab40-fc4c-47cc-a21b-f6998da1d15a: Latitude # Latitude
     49b4d1ac-0f61-42c6-a482-63eefaa8933e: 'Asset Video' # Asset Video
@@ -90,7 +90,7 @@ meta:
     ecaf2e51-4a07-4d82-a78b-8181faba1e87: 'Image Slider' # Image Slider
     f1abfa1e-3f54-4765-8991-815c87484c9b: Contact # Contact
     f85e63c0-1f6c-495c-95b7-6b70d338bd07: Answer # Answer
-    f99d20c5-6966-4180-8dc1-595df3b8f876: $SITE_URL # $SITE_URL
+    f99d20c5-6966-4180-8dc1-595df3b8f876: $SITE_NAME # $SITE_NAME
     f122d996-7ed0-4bc1-ad02-50e74deac2df: Image # Image
     f6901440-dc45-4323-a125-0a7d3d90f06c: About # About
 plugins:
@@ -195,6 +195,47 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.2.0
+    settings:
+      description: ''
+      facebookAppId: ''
+      metaTemplate: ''
+      removeAlternateUrls: ''
+      robots:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
+      sitemapLimit: '1000'
+      sitemapName: sitemap
+      socialImage: null
+      title:
+        -
+          __assoc__:
+            -
+              - key
+              - '1'
+            -
+              - locked
+              - '0'
+            -
+              - template
+              - '{title}'
+        -
+          __assoc__:
+            -
+              - key
+              - '2'
+            -
+              - locked
+              - '1'
+            -
+              - template
+              - ' - {{ siteName }}'
+      titleSuffix: null
+      twitterHandle: ''
   super-table:
     edition: standard
     enabled: true
@@ -202,7 +243,7 @@ plugins:
 system:
   edition: solo
   live: true
-  name: $SITE_URL
+  name: $SITE_NAME
   retryDuration: null
   schemaVersion: 3.7.8
   timeZone: Europe/London

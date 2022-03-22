@@ -4,7 +4,7 @@ handle: latestIndex
 name: 'Latest Index'
 propagationMethod: all
 siteSettings:
-  18d78006-3985-4ea4-b620-67bae10d9c2d: # $SITE_URL
+  18d78006-3985-4ea4-b620-67bae10d9c2d: # $SITE_NAME
     enabledByDefault: true
     hasUrls: true
     template: latest/index
