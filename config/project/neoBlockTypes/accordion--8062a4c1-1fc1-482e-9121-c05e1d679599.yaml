@@ -56,6 +56,7 @@ fieldLayouts:
             width: 100
         name: Settings
         sortOrder: 2
+group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
 handle: accordion
 maxBlocks: 0
 maxChildBlocks: 0

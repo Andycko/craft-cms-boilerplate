@@ -1,4 +1,4 @@
-dateModified: 1647943280
+dateModified: 1648631874
 email:
   fromEmail: dev@fortytwo.studio
   fromName: $SITE_NAME
@@ -106,7 +106,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: G1OSD5DGMQDOF1ZPWRHTAK3J
-    schemaVersion: 3.5.1
+    schemaVersion: 3.6.3
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
@@ -182,7 +182,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 6CVLNUD6DPTQ61KABAO823E5
-    schemaVersion: 2.11.6
+    schemaVersion: 2.13.0
   oembed:
     edition: standard
     enabled: true

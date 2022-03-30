@@ -47,6 +47,7 @@ fieldLayouts:
             width: 100
         name: Settings
         sortOrder: 2
+group: dcc7e763-cfad-42ba-a4ed-f0c111f2446b # Media
 handle: image
 maxBlocks: 0
 maxChildBlocks: 0
