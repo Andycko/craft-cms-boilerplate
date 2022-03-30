@@ -1,12 +1,15 @@
 defaultPlacement: end
 enableVersioning: true
-handle: contact
-name: Contact
+handle: customPages
+name: 'Custom Pages'
 propagationMethod: all
 siteSettings:
   18d78006-3985-4ea4-b620-67bae10d9c2d: # $SITE_NAME
     enabledByDefault: true
     hasUrls: true
-    template: contact/index
+    template: pages/_entry
     uriFormat: '{slug}'
-type: single
+structure:
+  maxLevels: null
+  uid: a431c6e7-1793-473a-8b15-ac94a7c3f468
+type: structure

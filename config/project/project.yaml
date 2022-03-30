@@ -1,4 +1,4 @@
-dateModified: 1648631874
+dateModified: 1648639543
 email:
   fromEmail: dev@fortytwo.studio
   fromName: $SITE_NAME
@@ -74,6 +74,7 @@ meta:
     bb3731df-a01f-4725-9f8b-06d99359fd9f: 'Top Spacing' # Top Spacing
     bd1a9dd9-c492-4932-ad06-98c72a16cfd8: 'Button Title' # Button Title
     c01ae0b2-724f-499b-b0f2-ff2b6fe171a4: 'Footer Disclaimer' # Footer Disclaimer
+    c2e72f3c-fb9f-4c37-a442-ed5cdea1f393: 'Custom Pages' # Custom Pages
     c4480af9-afa8-430b-b22c-e0eddbe00de3: 'Map Coordinates' # Map Coordinates
     d9a8f905-7705-41f9-a662-e8966f03085f: Longitude # Longitude
     d9aafe6e-671c-45da-9958-ccb6470336d6: 'Alt Icon' # Alt Icon
@@ -88,6 +89,7 @@ meta:
     ead943da-9146-4b32-9f33-8096b522e085: 'External Video' # External Video
     eb7f69a9-9a89-4024-ba3f-9154d28ac58c: Common # Common
     ecaf2e51-4a07-4d82-a78b-8181faba1e87: 'Image Slider' # Image Slider
+    ed9d2994-c74c-40fe-9f3f-280fe7a5360a: Default # Default
     f1abfa1e-3f54-4765-8991-815c87484c9b: Contact # Contact
     f85e63c0-1f6c-495c-95b7-6b70d338bd07: Answer # Answer
     f99d20c5-6966-4180-8dc1-595df3b8f876: $SITE_NAME # $SITE_NAME

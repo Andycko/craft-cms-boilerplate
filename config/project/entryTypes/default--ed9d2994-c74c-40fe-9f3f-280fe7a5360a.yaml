@@ -1,0 +1,91 @@
+fieldLayouts:
+  e5b8089c-112f-4c73-b996-388723b0222c:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: d783368e-a494-4457-9e99-5a027ae72a18 # Page Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 4184d945-e90d-4433-b1f3-727edf65107e # Summary Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 39237593-ff51-4bd3-851a-a9dfac329c0b # Page Summary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Summary
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 7c5c4db7-bc5e-4979-a31b-6b7734989556 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 3
+handle: default
+hasTitleField: true
+name: Default
+section: c2e72f3c-fb9f-4c37-a442-ed5cdea1f393 # Custom Pages
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
