@@ -42,10 +42,25 @@
 
 .video-block
   .video-wrapper
-      iframe, video
-        pointer-events: none !important
-        width: 80%
-        height: 35rem
+    width: 100%
+    padding-top: 56.25%
+    position: relative
+    video, iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+
+// FUTURE when aspect-ration support is better
+//.video-block
+//  .video-wrapper
+//    width: 100%
+//    video, iframe
+//      width: 100%
+//      height: auto
+//      aspect-ratio: 16/9
+
 
 .accordion-block
   .accordion
