@@ -11,16 +11,7 @@
             <div class="col-8 navbar-links d-flex justify-content-end align-items-center">
                 <!-- Desktop navigation links -->
                 {% for item in mainNav %}
-                    <div class="item {{ item.active ? 'active' }} px-3">
-                        <a href="{{ item.url }}" class="link">{{ item.title }}</a>
-                        {% if item.children | length %}
-                            <div class="sub-menu d-flex flex-column">
-                                {% for child in item.children.all() %}
-                                    <a class="link" href="{{ child.url }}">{{ child.title }}</a>
-                                {% endfor %}
-                            </div>
-                        {% endif %}
-                    </div>
+                    {% include '_includes/_global/_partial/navItem.twig' with { item: item } %}
                 {% endfor %}
                 <!-- Mobile navigation hamburger -->
                 <button class="hamburger hamburger--squeeze" type="button" id="mobile-navbar-toggle">
@@ -30,19 +21,12 @@
                 </button>
             </div>
             <!-- Mobile navigation links -->
-            <div class="col-12 mobile-navbar-links text-center d-flex flex-column align-items-center" id="mobile-navbar-links">
-                {% for item in mainNav %}
-                    <div class="item {{ item.active ? 'active' }} p-2">
-                        <a href="{{ item.url }}" class="link">{{ item.title }}</a>
-                        {% if item.children | length %}
-                            <div class="sub-menu d-flex flex-column">
-                                {% for child in item.children.all() %}
-                                    <a class="link" href="{{ child.url }}">{{ child.title }}</a>
-                                {% endfor %}
-                            </div>
-                        {% endif %}
-                    </div>
-                {% endfor %}
+            <div class="col-12 mobile-navbar-links d-flex flex-column align-items-center" id="mobile-navbar-links">
+                <div class="wrapper">
+                    {% for item in mainNav %}
+                        {% include '_includes/_global/_partial/navItem.twig' with { item: item } %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

@@ -1,0 +1,10 @@
+<div class="item {{ item.active ? 'active' }} px-3">
+    <a href="{{ item.url }}" class="link">{{ item.title }}</a>
+    {% if item.children | length %}
+    <div class="sub-menu d-flex flex-column">
+        {% for child in item.children.all() %}
+            {% include '_includes/_global/_partial/navItem.twig' with { item: child } %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>

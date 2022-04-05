@@ -14,15 +14,13 @@ nav#main-nav
     .item
       position: relative
       &:hover
-        .sub-menu
+        > .sub-menu
           visibility: visible
           opacity: 1
           transform: translateY(0)
-          transition-delay: 0
+          transition-delay: 0s
       &.active
         text-decoration: underline
-      &:last-of-type
-        margin-right: -1rem
       .link
         color: white
         padding: .5rem
@@ -36,12 +34,19 @@ nav#main-nav
         position: absolute
         left: 0
         top: calc(100% + .5rem)
-        min-width: 100%
+        width: 10rem
         transform: translateY(-10%)
         transition: .2s ease-in-out .1s
         background-color: rgb(208, 208, 208)
         .link
           color: black
+        .sub-menu
+          left: 100%
+          top: 0
+        &.left
+          .sub-menu
+            right: 100%
+            left: unset
 
     #mobile-navbar-toggle
       display: none
