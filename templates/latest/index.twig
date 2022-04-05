@@ -7,29 +7,88 @@
         {% include '_includes/_page-headers/_' ~ header.type.handle %}
     {% endif %}
 
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            {% for item in craft.entries.section('latest').all() %}#}
+{#                <div class="col-12 col-md-6 col-lg-4 mb-4 latest-article">#}
+{#                    <a href="{{ item.url }}" class="d-flex flex-column">#}
+{#                        {% if item.summaryImage.one %}#}
+{#                            <div class="img mb-4">#}
+{#                                <img src="{{ item.summaryImage.one.url }}" alt="{{ item.title }}" class="w-100">#}
+{#                            </div>#}
+{#                        {% else %}#}
+{#                            <div class="img mb-4">#}
+{#                                <img src="https://via.placeholder.com/375x220?text=Missing+Summary+Image" alt="{{ item.title }}" class="w-100">#}
+{#                            </div>#}
+{#                        {% endif %}#}
+{#                        <h4 class="title pt-2 mb-3"><span>{{ item.title|length > 45 ? item.title|slice(0, 45) ~ '...' : item.title }}</span></h4>#}
+{#                        {% if item.pageSummary %}#}
+{#                            <div class="copy mb-3">{{ item.pageSummary|length > 170 ? item.pageSummary|slice(0, 170) ~ '...' : item.pageSummary }}</div>#}
+{#                        {% endif %}#}
+{#                        <h6>{{ item.postDate | date("M d, Y") | upper }}</h6>#}
+{#                    </a>#}
+{#                </div>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#    </div>#}
+
     <div class="container">
-        <div class="row">
-            {% for item in craft.entries.section('latest').all() %}
-                <div class="col-12 col-md-6 col-lg-4 mb-4 latest-article">
-                    <a href="{{ item.url }}" class="d-flex flex-column">
+        <div class="row pb-5">
+            {% set section = craft.entries.section('latest') %}
+            {% set query = section.limit(6) %}
+            {% paginate query as pageInfo, pageEntries %}
+            {% for item in pageEntries %}
+                <div class="col-12 col-md-6 col-lg-4 mb-4 latest-article d-flex flex-grow-1 flex-column">
+                    <a href="{{ item.url }}" class="d-flex flex-grow-1 flex-column">
                         {% if item.summaryImage.one %}
                             <div class="img mb-4">
-                                <img src="{{ item.summaryImage.one.url }}" alt="{{ item.title }}" class="w-100">
+                                <img src="{{ item.summaryImage.one.url({width: 375, height: 220}) }}" alt="{{ item.title }}" class="w-100">
                             </div>
                         {% else %}
                             <div class="img mb-4">
                                 <img src="https://via.placeholder.com/375x220?text=Missing+Summary+Image" alt="{{ item.title }}" class="w-100">
                             </div>
                         {% endif %}
-                        <h4 class="title pt-2 mb-3"><span>{{ item.title|length > 45 ? item.title|slice(0, 45) ~ '...' : item.title }}</span></h4>
+                        <h3 class="title pt-2 mb-3">
+                            <span>{{ item.title|length > 45 ? item.title|slice(0, 45) ~ '...' : item.title }}</span>
+                        </h3>
                         {% if item.pageSummary %}
                             <div class="copy mb-3">{{ item.pageSummary|length > 170 ? item.pageSummary|slice(0, 170) ~ '...' : item.pageSummary }}</div>
                         {% endif %}
-                        <h6>{{ item.postDate | date("M d, Y") | upper }}</h6>
+                        <div>{{ item.postDate | date("M d, Y") | upper }}</div>
                     </a>
                 </div>
             {% endfor %}
         </div>
+        {% if pageInfo.totalPages > 1 %}
+            <div class="row justify-content-center pagination-links pb-5">
+                {% if craft.app.request.absoluteUrl == pageInfo.firstUrl %}
+                    <span class="px-2 text-grey">First page</span>
+                {% else %}
+                    <a href="{{ pageInfo.firstUrl }}" class="px-2">First Page</a>
+                {% endif %}
+
+                {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}" class="px-2">Previous Page</a>{% endif %}
+
+                {% for page, url in pageInfo.getPrevUrls(5) %}
+                    <a href="{{ url }}" class="px-2">{{ page }}</a>
+                {% endfor %}
+
+                <span class="current text-grey px-2">{{ pageInfo.currentPage }}</span>
+
+                {% for page, url in pageInfo.getNextUrls(5) %}
+                    <a href="{{ url }}" class="px-2">{{ page }}</a>
+                {% endfor %}
+
+                {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}" class="px-2">Next Page</a>{% endif %}
+
+                {% if craft.app.request.absoluteUrl == pageInfo.lastUrl %}
+                    <span class="px-2 text-grey">Last page</span>
+                {% else %}
+                    <a href="{{ pageInfo.lastUrl }}" class="px-2 text-navy">Last Page</a>
+                {% endif %}
+            </div>
+        {% endif %}
     </div>
 
 {% endblock %}
