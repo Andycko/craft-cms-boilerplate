@@ -1,6 +1,6 @@
-dateModified: 1649152464
+dateModified: 1649170343
 email:
-  fromEmail: dev@fortytwo.studio
+  fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
   replyToEmail: null
   template: null
