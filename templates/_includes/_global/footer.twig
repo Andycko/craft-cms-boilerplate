@@ -36,5 +36,23 @@
                 {% endfor %}
             </div>
         </div>
+        {% set subFooterNav = craft.navigation.nodes().handle('subFooterNavigation').level(1).all() %}
+        <div class="row pb-3 sub-footer">
+            <div class="col-12">
+                <div class="border-top border-white pt-4 d-lg-flex justify-content-lg-between">
+                    <div class="mb-5 mb-lg-0">Copyright © {{ now | date('Y') }}. All rights reserved.</div>
+                    <div class="d-lg-flex justify-content-lg-between links mb-5 mb-lg-0">
+                        {% for item in subFooterNav %}
+                            <a href="{{ item.url }}" class="link d-block mb-3 mb-lg-0 px-4">{{ item.title }}</a>
+                        {% endfor %}
+                    </div>
+                    <div>
+                        <a href="https://fortytwo.studio" target="_blank" rel="noopener">
+                            <img src="/img/fortytwo-studio-logo.svg" alt="Designed & Built by FortyTwo Studio" class="fortytwo-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>

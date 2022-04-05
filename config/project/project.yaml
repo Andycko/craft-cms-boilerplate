@@ -1,4 +1,4 @@
-dateModified: 1649151680
+dateModified: 1649152464
 email:
   fromEmail: dev@fortytwo.studio
   fromName: $SITE_NAME
@@ -84,6 +84,7 @@ meta:
     d783368e-a494-4457-9e99-5a027ae72a18: 'Page Header' # Page Header
     dcc7e763-cfad-42ba-a4ed-f0c111f2446b: Media # Media
     ddd7384c-d723-4aad-b2f6-845216bb1dbf: Latest # Latest
+    dea301bb-972e-43c2-81fe-f145398244c7: 'Sub Footer Navigation' # Sub Footer Navigation
     df00ec17-8cfe-4dc9-b2f9-095eea3f665c: 'Latest Articles' # Latest Articles
     dfadf56c-6052-4f7d-b164-e55fac2e6474: 'Button Color' # Button Color
     ead943da-9146-4b32-9f33-8096b522e085: 'External Video' # External Video

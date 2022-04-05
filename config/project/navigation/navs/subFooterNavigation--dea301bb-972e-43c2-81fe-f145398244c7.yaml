@@ -1,0 +1,28 @@
+handle: subFooterNavigation
+instructions: ''
+maxNodes: ''
+name: 'Sub Footer Navigation'
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  custom:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+propagateNodes: false
+siteSettings:
+  18d78006-3985-4ea4-b620-67bae10d9c2d: null # $SITE_NAME
+sortOrder: 4
+structure:
+  maxLevels: null
+  uid: 62cd5a6c-5da4-4f29-b052-44e7277c25c5
