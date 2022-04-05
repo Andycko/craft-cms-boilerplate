@@ -1,4 +1,4 @@
-dateModified: 1648639543
+dateModified: 1649151680
 email:
   fromEmail: dev@fortytwo.studio
   fromName: $SITE_NAME
@@ -104,6 +104,42 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  cookie-consent-banner:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+    settings:
+      allow: 'Allow cookies'
+      async_js: ''
+      auto_inject: '1'
+      decline: Decline
+      defer_js: ''
+      disable_in_live_preview: ''
+      dismiss: 'Got it!'
+      dismiss_on_scroll: '0'
+      dismiss_on_timeout: '0'
+      excluded_categories: null
+      excluded_entry_types: null
+      expiry_days: '365'
+      honour_do_not_track_header: ''
+      layout: block
+      learn: 'Learn More'
+      learn_more_link: 'http://cookiesandyou.com/'
+      message: 'This website uses cookies to ensure you get the best experience on our website.'
+      palette: default
+      palette_banner: '000000'
+      palette_banner_text: ffffff
+      palette_button: ffffff
+      palette_button_text: '000000'
+      palette_left_button_bg: ffffff
+      palette_left_button_text: '000000'
+      palette_link: ffffff
+      position: bottom
+      preload_css: ''
+      revokable: ''
+      secure_only: ''
+      target: _blank
+      type: info
   freeform:
     edition: lite
     enabled: true
