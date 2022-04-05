@@ -6,16 +6,20 @@
             </div>
         </div>
         <div class="row pt-3 pb-5">
-            <div class="col-8">
+            <div class="col-12">
                 <div id="accordion" class="accordion">
                     {% for item in block.accordionMatrix.all() %}
                         <div class="item">
                             <div id="{{ 'header' ~ loop.index }}" class="mt-2 header">
                                 <h5>
-                                    <button class="collapsed" data-toggle="collapse"
+                                    <button class="position-relative collapsed" data-toggle="collapse"
                                             data-target="#{{ 'collapse' ~ loop.index }}" aria-expanded="false"
                                             aria-controls="{{ 'collapse' ~ loop.index }}">
                                         {{ item.question }}
+                                        <span class="plus">
+                                            <span></span>
+                                            <span></span>
+                                        </span>
                                     </button>
                                 </h5>
                             </div>

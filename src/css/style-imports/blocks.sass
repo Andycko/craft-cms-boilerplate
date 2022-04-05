@@ -73,6 +73,29 @@
           border: none
           border-bottom: 2px solid cornflowerblue
           padding: 0.5rem 1rem
+          .plus
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            height: 20px
+            span
+              background-color: black
+              opacity: .8
+              position: absolute
+              top: 50%
+              right: 10px
+              transform: translateY(-50%)
+              height: 100%
+              width: 1px
+              transition: .3s ease
+              &:last-of-type
+                transform: translateY(-50%) rotate(-90deg)
+          &[aria-expanded="true"]
+            .plus
+              span:first-of-type
+                transform: translateY(-50%) rotate(90deg)
+
 
 .largeQuote-block
   .quote
