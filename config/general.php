@@ -39,6 +39,11 @@ return [
 
         // Set the custom template for errors (will not show in dev mode)
         'errorTemplatePrefix' => '/_errors/',
+
+        // Setup @webroot alias
+        'aliases' => [
+            '@web' => App::env('PRIMARY_SITE_URL')
+        ],
     ],
     
     'dev' => [
