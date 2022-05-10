@@ -61,24 +61,24 @@ nav#main-nav
     background-color: variables.$nav-background
     position: absolute
     z-index: 10
-    padding: 8rem 1rem
+    padding: 8rem 0 2rem
     width: 0
     height: 100vh
     top: 0
     left: 0
-    transform: translateX(100%)
     opacity: 0
     visibility: hidden
-    transition: transform .3s ease-in-out, visibility 0s .3s, opacity 0s .3s, width 0s .3s
+    transition: opacity 0.25s ease 0s, width 0s 0.25s, visibility 0s 0.25s
+
     &.active
       width: 100vw
-      transform: translateX(0)
       opacity: 1
       visibility: visible
-      transition: transform .3s ease-in-out, visibility 0s 0s, opacity 0s 0s
+      transition: opacity 0.25s ease
 
     .item
-      font-size: 19px
+      padding: .6rem .5rem 0 0
+      font-size: 1.2rem
       position: relative
       &.active
         .link
@@ -87,13 +87,28 @@ nav#main-nav
           text-decoration: none
       .link
         color: white
-        padding: .5rem
         &:visited
           color: white
         &:hover
           text-decoration: underline !important
       .sub-menu
-        .link
-          color: black
-          font-size: 16px
-          padding: .5rem 0 0 0
+        max-height: 0
+        overflow: hidden
+        transition: max-height 0.25s ease-in-out 0s
+        &.active
+          transition: max-height 0.25s ease-in-out 0s
+          max-height: 100vh
+        .item
+          .link, .link:visited
+            font-size: 1rem
+            color: #414141FF
+          .dropdown-toggle::after
+            color: #414141FF
+      .dropdown-toggle
+        background: none
+        border: none
+        color: white
+        &::after
+          transition: .25s ease-in-out
+        &.active::after
+          transform: scaleY(-1)

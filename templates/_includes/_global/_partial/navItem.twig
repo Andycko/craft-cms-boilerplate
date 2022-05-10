@@ -1,6 +1,7 @@
-<div class="item {{ item.active ? 'active' }} px-3">
+<div class="item {{ item.active ? 'active' }} {{ item.children | length ? 'parent' }} px-3">
     <a href="{{ item.url }}" class="link">{{ item.title }}</a>
     {% if item.children | length %}
+    <button class="dropdown-toggle d-inline-block d-lg-none"></button>
     <div class="sub-menu d-flex flex-column">
         {% for child in item.children.all() %}
             {% include '_includes/_global/_partial/navItem.twig' with { item: child } %}

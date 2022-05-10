@@ -50,4 +50,14 @@ $(function () {
             findTopParentWithSelector(el, '.sub-menu').classList.add('left')
     })
 
+    const mobile_dropdowns = document.querySelectorAll('.mobile-navbar-links .item.parent')
+    mobile_dropdowns.forEach((el) => {
+        const btn = el.querySelector('button')
+        const submenu = el.querySelector('.sub-menu')
+        btn.onclick = () => {
+            submenu.classList.toggle('active')
+            btn.classList.toggle('active')
+        }
+    })
+
 });
