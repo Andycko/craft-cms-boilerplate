@@ -17,6 +17,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   7d034fae-78a0-49b6-a213-aa01fcdf690e: # Video
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: video

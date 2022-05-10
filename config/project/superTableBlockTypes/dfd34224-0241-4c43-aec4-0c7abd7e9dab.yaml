@@ -44,6 +44,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   1f6a1dc8-82d8-47a8-ae54-01af20652730: # Name
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: socialName
@@ -63,6 +64,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   5cd6ad16-cb88-45ba-b275-1558f8f27c05: # Link
+    columnSuffix: null
     contentColumnType: string(255)
     fieldGroup: null
     handle: socialLink
@@ -78,6 +80,7 @@ fields:
     translationMethod: none
     type: craft\fields\Url
   a596aec7-c8ec-49d7-ab4d-97dcdf5ac990: # Icon
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: socialIcon
@@ -110,6 +113,7 @@ fields:
     translationMethod: site
     type: craft\fields\Assets
   d9aafe6e-671c-45da-9958-ccb6470336d6: # Alt Icon
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: altSocialIcon

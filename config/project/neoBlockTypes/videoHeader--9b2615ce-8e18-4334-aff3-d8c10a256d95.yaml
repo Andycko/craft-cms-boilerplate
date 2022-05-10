@@ -25,6 +25,7 @@ fieldLayouts:
             width: 100
         name: 'Main Content'
         sortOrder: 1
+group: null
 handle: videoHeader
 maxBlocks: 0
 maxChildBlocks: 0

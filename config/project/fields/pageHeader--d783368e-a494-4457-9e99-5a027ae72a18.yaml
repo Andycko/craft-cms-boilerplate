@@ -10,6 +10,7 @@ settings:
   maxLevels: ''
   maxTopBlocks: ''
   minBlocks: ''
+  propagationKeyFormat: null
   propagationMethod: all
   wasModified: true
 translationKeyFormat: null

@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 70f3e289-0ffa-4d8a-a2a4-e8c6db06ee3c # Content Builder Fields
 handle: mapCoordinates
@@ -8,6 +9,7 @@ settings:
   contentTable: '{{%matrixcontent_mapcoordinates}}'
   maxBlocks: '1'
   minBlocks: ''
+  propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
 translationMethod: site

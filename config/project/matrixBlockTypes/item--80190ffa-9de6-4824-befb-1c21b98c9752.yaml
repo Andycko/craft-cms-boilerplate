@@ -26,6 +26,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8: # Question
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: question
@@ -45,6 +46,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   f85e63c0-1f6c-495c-95b7-6b70d338bd07: # Answer
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: answer
@@ -54,7 +56,6 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''

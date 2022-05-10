@@ -26,6 +26,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   42ffab40-fc4c-47cc-a21b-f6998da1d15a: # Latitude
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: latitude
@@ -45,6 +46,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   d9a8f905-7705-41f9-a662-e8966f03085f: # Longitude
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: longitude

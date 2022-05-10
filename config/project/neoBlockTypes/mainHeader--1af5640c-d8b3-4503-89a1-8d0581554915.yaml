@@ -65,6 +65,7 @@ fieldLayouts:
             width: 100
         name: Settings
         sortOrder: 2
+group: null
 handle: mainHeader
 maxBlocks: 0
 maxChildBlocks: 0
