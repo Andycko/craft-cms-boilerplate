@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.7.32)
 # Database: boilerplate
-# Generation Time: 2022-05-10 12:23:05 +0000
+# Generation Time: 2022-05-10 12:31:53 +0000
 # ************************************************************
 
 
@@ -3772,7 +3772,7 @@ LOCK TABLES `info` WRITE;
 
 INSERT INTO `info` (`id`, `version`, `schemaVersion`, `maintenance`, `configVersion`, `fieldVersion`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'3.7.37','3.7.33',0,'xmqvdzrknjks','2@ffecvznjnk','2021-03-30 09:20:10','2022-05-10 10:53:54','f9d6f73c-c7ae-43dc-83bd-61db41fe87d5');
+	(1,'3.7.41','3.7.33',0,'xmqvdzrknjks','3@indkcadeqg','2021-03-30 09:20:10','2022-05-10 12:31:03','f9d6f73c-c7ae-43dc-83bd-61db41fe87d5');
 
 /*!40000 ALTER TABLE `info` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -5271,16 +5271,16 @@ LOCK TABLES `plugins` WRITE;
 
 INSERT INTO `plugins` (`id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `licensedEdition`, `installDate`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'neo','2.13.3','2.13.0','mismatched','standard','2021-03-30 09:23:22','2021-03-30 09:23:22','2022-05-10 10:35:21','cad07713-6957-45e4-9438-f0caf451e14b'),
-	(3,'buttonbox','2.0.4','1.0.0','unknown',NULL,'2021-03-30 09:26:37','2021-03-30 09:26:37','2022-05-10 10:35:21','44f05977-bb62-4bb0-a498-01a403fd74f4'),
-	(4,'redactor','2.10.5','2.3.0','unknown',NULL,'2021-03-30 09:26:57','2021-03-30 09:26:57','2022-05-10 10:35:21','d49b778c-8031-4dde-a1d0-828c0616cb95'),
-	(5,'super-table','2.7.1','2.2.1','unknown',NULL,'2021-03-30 09:27:19','2021-03-30 09:27:19','2022-05-10 10:35:21','26b97ad7-53cb-45d3-93e1-376de19fba6c'),
-	(6,'seo','3.7.4','3.2.0','unknown',NULL,'2021-03-30 09:27:41','2021-03-30 09:27:41','2022-05-10 10:35:21','bfa9f957-774d-4bf0-ac79-0ee6a4d4553f'),
-	(7,'aws-s3','1.3.0','1.2','unknown',NULL,'2021-03-30 09:28:07','2021-03-30 09:28:07','2022-05-10 10:35:21','39a8ef93-ba4d-4bda-810e-c8a74e0c879c'),
-	(8,'navigation','1.4.24','1.0.21','mismatched','standard','2021-03-30 11:13:20','2021-03-30 11:13:20','2022-05-10 10:35:21','6b71802d-1bf0-4c44-889b-800d18212a6d'),
-	(9,'freeform','3.13.7','3.6.3','mismatched','lite','2021-03-30 13:30:11','2021-03-30 13:30:11','2022-05-10 10:35:21','05f7bcfb-f377-4924-b867-599434fa1be0'),
-	(10,'oembed','1.3.15','1.0.1','unknown',NULL,'2021-04-07 08:21:16','2021-04-07 08:21:16','2022-05-10 10:35:21','3cb8ef30-337a-463a-baa6-e7bf1e042caa'),
-	(11,'cookie-consent-banner','1.2.9','1.0.1','unknown',NULL,'2022-04-05 09:40:21','2022-04-05 09:40:21','2022-05-10 10:35:21','4a6f50af-dacd-474a-b9c0-6af8f8c774fa');
+	(1,'neo','2.13.9','2.13.0','mismatched','standard','2021-03-30 09:23:22','2021-03-30 09:23:22','2022-05-10 12:31:40','cad07713-6957-45e4-9438-f0caf451e14b'),
+	(3,'buttonbox','2.0.4','1.0.0','unknown',NULL,'2021-03-30 09:26:37','2021-03-30 09:26:37','2022-05-10 12:31:40','44f05977-bb62-4bb0-a498-01a403fd74f4'),
+	(4,'redactor','2.10.8','2.3.0','unknown',NULL,'2021-03-30 09:26:57','2021-03-30 09:26:57','2022-05-10 12:31:40','d49b778c-8031-4dde-a1d0-828c0616cb95'),
+	(5,'super-table','2.7.1','2.2.1','unknown',NULL,'2021-03-30 09:27:19','2021-03-30 09:27:19','2022-05-10 12:31:40','26b97ad7-53cb-45d3-93e1-376de19fba6c'),
+	(6,'seo','3.7.4','3.2.0','unknown',NULL,'2021-03-30 09:27:41','2021-03-30 09:27:41','2022-05-10 12:31:40','bfa9f957-774d-4bf0-ac79-0ee6a4d4553f'),
+	(7,'aws-s3','1.3.0','1.2','unknown',NULL,'2021-03-30 09:28:07','2021-03-30 09:28:07','2022-05-10 12:31:40','39a8ef93-ba4d-4bda-810e-c8a74e0c879c'),
+	(8,'navigation','1.4.26','1.0.21','mismatched','standard','2021-03-30 11:13:20','2021-03-30 11:13:20','2022-05-10 12:31:40','6b71802d-1bf0-4c44-889b-800d18212a6d'),
+	(9,'freeform','3.13.9','3.6.3','mismatched','lite','2021-03-30 13:30:11','2021-03-30 13:30:11','2022-05-10 12:31:40','05f7bcfb-f377-4924-b867-599434fa1be0'),
+	(10,'oembed','1.3.15','1.0.1','unknown',NULL,'2021-04-07 08:21:16','2021-04-07 08:21:16','2022-05-10 12:31:40','3cb8ef30-337a-463a-baa6-e7bf1e042caa'),
+	(11,'cookie-consent-banner','1.2.9','1.0.1','unknown',NULL,'2022-04-05 09:40:21','2022-04-05 09:40:21','2022-05-10 12:31:40','4a6f50af-dacd-474a-b9c0-6af8f8c774fa');
 
 /*!40000 ALTER TABLE `plugins` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -9113,7 +9113,7 @@ VALUES
 	(5,1,'HSnQLlSzrGcD4R3iJ8wcxiwEtKPrQofZOoTsuHBNP2pyVPQnTD0SJqFBvTcW6LjbQlriZa9HNFJxnvq7gNkKuGLRqNsWoL9VBAlA','2022-04-05 09:36:25','2022-04-05 09:37:34','b129a42d-9ba8-43cf-8eea-965593ca0fcb'),
 	(7,1,'uatzPmi7tvEU9D3cq68w4Jlim0HpeeulUdK79TUBYQI3mOrPVAonUeIIQRAdhDALboYznws2agNCRSO7j1Uwdss1y3o5Q5nwJtAu','2022-04-05 13:58:48','2022-04-05 15:04:06','42aa103a-b112-4cf4-9531-da3f50b5a256'),
 	(8,1,'8mmwXCNwFIg5FADfWcgf-iY1S0tPM9_IIlAAUnJl_zyxo_8qQtpXsL4oLMktjx5XxXeyucQ-lVhIqdm-chJdbere0nN19_gHyfuI','2022-05-10 10:34:21','2022-05-10 10:35:07','a9517684-9639-494f-905f-bad368ca52ec'),
-	(10,1,'A4v3B6S2oaUs61k37jCK4ZWDpTHV4x_uQWTpIwJ03eWtx_pAvWA2szK8A5c2sJoKSoS42ZS9dcWNwMUHS1dn1kOI7gzo9rQkIOue','2022-05-10 12:20:36','2022-05-10 12:22:53','0f9b2db9-4d4c-4e4f-83c2-25a8de81a52f');
+	(10,1,'A4v3B6S2oaUs61k37jCK4ZWDpTHV4x_uQWTpIwJ03eWtx_pAvWA2szK8A5c2sJoKSoS42ZS9dcWNwMUHS1dn1kOI7gzo9rQkIOue','2022-05-10 12:20:36','2022-05-10 12:31:18','0f9b2db9-4d4c-4e4f-83c2-25a8de81a52f');
 
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
