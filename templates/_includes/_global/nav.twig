@@ -1,6 +1,6 @@
 {% set mainNav = craft.navigation.nodes().handle('mainNavigation').level(1).all() %}
 
-<nav id="main-nav">
+<nav id="main-nav" class="{{ entry.transparentNav ? "transparent" }}">
     <div class="container">
         <div class="row py-3">
             <div class="col-4 navbar-logo d-flex align-items-center">
