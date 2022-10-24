@@ -47,11 +47,11 @@ fieldLayouts:
             width: 100
         name: Settings
         sortOrder: 2
-group: dcc7e763-cfad-42ba-a4ed-f0c111f2446b # Media
+group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
 handle: button
 maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: Button
-sortOrder: 4
+sortOrder: 8
 topLevel: true

@@ -47,7 +47,7 @@ settings:
       __assoc__:
         -
           - label
-          - Large
+          - Larger
         -
           - showLabel
           - '1'

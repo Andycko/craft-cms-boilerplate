@@ -56,11 +56,11 @@ fieldLayouts:
             width: 100
         name: Settings
         sortOrder: 2
-group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
+group: dcc7e763-cfad-42ba-a4ed-f0c111f2446b # Media
 handle: imageSlider
 maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: 'Image Slider'
-sortOrder: 6
+sortOrder: 3
 topLevel: true
