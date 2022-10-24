@@ -62,4 +62,4 @@ settings:
           - ''
 translationKeyFormat: null
 translationMethod: none
-type: supercool\buttonbox\fields\Buttons
+type: verbb\buttonbox\fields\Buttons

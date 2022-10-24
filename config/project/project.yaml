@@ -1,4 +1,4 @@
-dateModified: 1652796731
+dateModified: 1666607918
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -106,7 +106,7 @@ plugins:
   buttonbox:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 2.0.0
   cookie-consent-banner:
     edition: standard
     enabled: true
@@ -147,7 +147,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: G1OSD5DGMQDOF1ZPWRHTAK3J
-    schemaVersion: 3.6.3
+    schemaVersion: 3.6.4
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
