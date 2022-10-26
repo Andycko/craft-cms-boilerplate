@@ -37,4 +37,4 @@ settings:
           - ''
 translationKeyFormat: null
 translationMethod: none
-type: supercool\buttonbox\fields\Colours
+type: verbb\buttonbox\fields\Colours

@@ -47,7 +47,7 @@ settings:
       __assoc__:
         -
           - label
-          - Large
+          - Larger
         -
           - showLabel
           - '1'
@@ -62,4 +62,4 @@ settings:
           - ''
 translationKeyFormat: null
 translationMethod: none
-type: supercool\buttonbox\fields\Buttons
+type: verbb\buttonbox\fields\Buttons

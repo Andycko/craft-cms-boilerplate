@@ -62,5 +62,5 @@ maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: 'Large Quote'
-sortOrder: 12
+sortOrder: 10
 topLevel: true

@@ -62,5 +62,5 @@ maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: 'Related Content'
-sortOrder: 11
+sortOrder: 12
 topLevel: true

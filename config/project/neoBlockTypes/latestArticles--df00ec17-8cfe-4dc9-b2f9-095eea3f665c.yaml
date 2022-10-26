@@ -57,5 +57,5 @@ maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: 'Latest Articles'
-sortOrder: 10
+sortOrder: 11
 topLevel: true
