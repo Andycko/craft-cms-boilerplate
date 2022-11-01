@@ -1,4 +1,4 @@
-dateModified: 1666609892
+dateModified: 1667316143
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -29,7 +29,7 @@ meta:
     5d2dca76-1ede-413a-8adf-b4a756ed42ae: 'Site Info' # Site Info
     6abd3112-8db8-4e93-b4ed-d681318ea294: 'Large Quote' # Large Quote
     6b6833e3-09b6-4302-8492-fd06e3f794e4: Summary # Summary
-    6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8: Question # Question
+    6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8: Header # Header
     6c4a2320-184d-4f3b-9482-070fc8b8194a: 'Bottom Spacing' # Bottom Spacing
     7bbeec1d-6526-44a3-9897-d6d1e5918a05: Settings # Settings
     7c5c4db7-bc5e-4979-a31b-6b7734989556: SEO # SEO
@@ -94,7 +94,7 @@ meta:
     ecaf2e51-4a07-4d82-a78b-8181faba1e87: 'Image Slider' # Image Slider
     ed9d2994-c74c-40fe-9f3f-280fe7a5360a: Default # Default
     f1abfa1e-3f54-4765-8991-815c87484c9b: Contact # Contact
-    f85e63c0-1f6c-495c-95b7-6b70d338bd07: Answer # Answer
+    f85e63c0-1f6c-495c-95b7-6b70d338bd07: Copy # Copy
     f99d20c5-6966-4180-8dc1-595df3b8f876: $SITE_NAME # $SITE_NAME
     f122d996-7ed0-4bc1-ad02-50e74deac2df: Image # Image
     f6901440-dc45-4323-a125-0a7d3d90f06c: About # About
@@ -146,7 +146,6 @@ plugins:
   freeform:
     edition: lite
     enabled: true
-    licenseKey: G1OSD5DGMQDOF1ZPWRHTAK3J
     schemaVersion: 3.6.4
     settings:
       ajaxByDefault: true
@@ -217,12 +216,10 @@ plugins:
   navigation:
     edition: standard
     enabled: true
-    licenseKey: R3VO5MHTQ00EOEKHK3EANI9N
     schemaVersion: 1.0.21
   neo:
     edition: standard
     enabled: true
-    licenseKey: 6CVLNUD6DPTQ61KABAO823E5
     schemaVersion: 2.13.0
   oembed:
     edition: standard
