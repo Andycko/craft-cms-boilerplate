@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8 # Question
+            fieldUid: 6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8 # Header
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f85e63c0-1f6c-495c-95b7-6b70d338bd07 # Answer
+            fieldUid: f85e63c0-1f6c-495c-95b7-6b70d338bd07 # Copy
             instructions: null
             label: null
             required: false
@@ -25,13 +25,13 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8: # Question
+  6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8: # Header
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
-    handle: question
+    handle: header
     instructions: ''
-    name: Question
+    name: Header
     searchable: false
     settings:
       byteLimit: null
@@ -45,13 +45,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  f85e63c0-1f6c-495c-95b7-6b70d338bd07: # Answer
+  f85e63c0-1f6c-495c-95b7-6b70d338bd07: # Copy
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
-    handle: answer
+    handle: copy
     instructions: ''
-    name: Answer
+    name: Copy
     searchable: false
     settings:
       availableTransforms: '*'

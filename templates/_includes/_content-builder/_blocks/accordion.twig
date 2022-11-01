@@ -15,7 +15,7 @@
                                     <button class="position-relative collapsed" data-toggle="collapse"
                                             data-target="#{{ 'collapse' ~ loop.index }}" aria-expanded="false"
                                             aria-controls="{{ 'collapse' ~ loop.index }}">
-                                        {{ item.question }}
+                                        {{ item.header }}
                                         <span class="plus">
                                             <span></span>
                                             <span></span>
@@ -26,7 +26,7 @@
                             <div id="{{ 'collapse' ~ loop.index }}" class="body collapse collapsed"
                                  aria-labelledby="{{ 'header' ~ loop.index }}" data-parent="#accordion">
                                 <div class="copy p-4">
-                                    {{ item.answer }}
+                                    {{ item.copy }}
                                 </div>
                             </div>
                         </div>
