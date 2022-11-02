@@ -48,10 +48,7 @@ gulp.task('styles', function() {
         .pipe(sassGlob())
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(cleanCSS())
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
+        .pipe(autoprefixer({}))
         .pipe(gulp.dest('./public/css'));
 });
 
