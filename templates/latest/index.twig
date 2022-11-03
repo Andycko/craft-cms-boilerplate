@@ -38,7 +38,7 @@
         {% if pageInfo.totalPages > 1 %}
             <div class="row justify-content-center pagination-links pb-5">
                 {% if craft.app.request.absoluteUrl == pageInfo.firstUrl %}
-                    <span class="px-2 text-grey">First page</span>
+                    <span class="px-2">First page</span>
                 {% else %}
                     <a href="{{ pageInfo.firstUrl }}" class="px-2">First Page</a>
                 {% endif %}
@@ -49,7 +49,7 @@
                     <a href="{{ url }}" class="px-2">{{ page }}</a>
                 {% endfor %}
 
-                <span class="current text-grey px-2">{{ pageInfo.currentPage }}</span>
+                <span class="current px-2">{{ pageInfo.currentPage }}</span>
 
                 {% for page, url in pageInfo.getNextUrls(5) %}
                     <a href="{{ url }}" class="px-2">{{ page }}</a>
@@ -58,9 +58,9 @@
                 {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}" class="px-2">Next Page</a>{% endif %}
 
                 {% if craft.app.request.absoluteUrl == pageInfo.lastUrl %}
-                    <span class="px-2 text-grey">Last page</span>
+                    <span class="px-2">Last page</span>
                 {% else %}
-                    <a href="{{ pageInfo.lastUrl }}" class="px-2 text-navy">Last Page</a>
+                    <a href="{{ pageInfo.lastUrl }}" class="px-2">Last Page</a>
                 {% endif %}
             </div>
         {% endif %}

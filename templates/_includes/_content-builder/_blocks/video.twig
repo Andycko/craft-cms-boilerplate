@@ -13,16 +13,16 @@
                         {% if vid.video.media.type == 'video' %}
                             {{ vid.video.render({
                                 params: {
-                                    autoplay: 1,
-                                    controls: 0,
-                                    loop: 1,
-                                    mute: 1,
+                                    autoplay: 0,
+                                    controls: 1,
+                                    loop: 0,
+                                    mute: 0,
                                 }
                             }) }}
                         {% endif %}
                     {% else %}
                         {% if vid.video.one %}
-                            <video src="{{ vid.video.url }}" alt="{{ vid.video }}"></video>
+                            <video src="{{ vid.video.url }}" alt="{{ vid.video }}" controls playsinline></video>
                         {% else %}
                             <video autoplay loop>
                                 <source src="./img/video_placeholder.mp4">

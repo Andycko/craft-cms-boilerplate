@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8d7e4ca7-1762-4215-b1e0-3022ed0176b3 # Transparent Nav
+            fieldUid: d783368e-a494-4457-9e99-5a027ae72a18 # Page Header
             instructions: null
             label: null
             required: false
@@ -36,7 +36,11 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d783368e-a494-4457-9e99-5a027ae72a18 # Page Header
+            style: warning
+            tip: 'Any content blocks you add here will appear below the articles'
+            type: craft\fieldlayoutelements\Tip
+          -
+            fieldUid: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
             instructions: null
             label: null
             required: false
