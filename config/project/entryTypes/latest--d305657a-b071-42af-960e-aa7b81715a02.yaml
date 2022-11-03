@@ -27,24 +27,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8d7e4ca7-1762-4215-b1e0-3022ed0176b3 # Transparent Nav
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 2f64efd3-101a-4ed1-a31e-96657d6dc6e5 # Header
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Copy
             instructions: null
             label: null

@@ -6,8 +6,8 @@
     # RewriteRule ^(.*)$ https://www.websitedomain.com/$1 [L,R=301,NC]
 
     # Redirect www to non www
-#    RewriteCond %{HTTP_HOST} ^www.websitedomain.com [NC]
-#    RewriteRule ^(.*)$ https://websitedomain.com/$1 [L,R=301]
+    # RewriteCond %{HTTP_HOST} ^www.websitedomain.com [NC]
+    # RewriteRule ^(.*)$ https://websitedomain.com/$1 [L,R=301]
 
     # Send would-be 404 requests to Craft
     RewriteCond %{REQUEST_FILENAME} !-f
@@ -16,9 +16,9 @@
     RewriteRule (.+) index.php?p=$1 [QSA,L]
 
     # Remove trailing slash from URL
-#    RewriteCond %{REQUEST_FILENAME} !-d
-#    RewriteCond %{REQUEST_URI} (.+)/$
-#    RewriteRule ^ %1 [R=301,L]
+    # RewriteCond %{REQUEST_FILENAME} !-d
+    # RewriteCond %{REQUEST_URI} (.+)/$
+    # RewriteRule ^ %1 [R=301,L]
 </IfModule>
 
 <IfModule mod_headers.c>
@@ -217,4 +217,3 @@ FileETag None
     ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 
 </IfModule>
-

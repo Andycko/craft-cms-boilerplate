@@ -7,12 +7,6 @@
         {% include '_includes/_page-headers/_' ~ header.type.handle %}
     {% endif %}
 
-    {% if entry.contentBuilder %}
-        {% for block in entry.contentBuilder.all() %}
-            {% include '_includes/_content-builder/_blocks/' ~ block.type.handle %}
-        {% endfor %}
-    {% endif %}
-
     <div class="container contact-form">
         <div class="row">
             <div class="col-8">
@@ -22,5 +16,11 @@
             </div>
         </div>
     </div>
+
+    {% if entry.contentBuilder %}
+        {% for block in entry.contentBuilder.all() %}
+            {% include '_includes/_content-builder/_blocks/' ~ block.type.handle %}
+        {% endfor %}
+    {% endif %}
 
 {% endblock %}

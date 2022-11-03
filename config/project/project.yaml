@@ -1,4 +1,4 @@
-dateModified: 1667316143
+dateModified: 1667484997
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -146,6 +146,7 @@ plugins:
   freeform:
     edition: lite
     enabled: true
+    licenseKey: K6IIQSJNRK5VJ92Y9GNE6CTK
     schemaVersion: 3.6.4
     settings:
       ajaxByDefault: true
@@ -216,10 +217,12 @@ plugins:
   navigation:
     edition: standard
     enabled: true
+    licenseKey: Z9SM7RIIEEH0EBHEWCC835VA
     schemaVersion: 1.0.21
   neo:
     edition: standard
     enabled: true
+    licenseKey: GLCZR55H2CE18QT7Y5WC2G3L
     schemaVersion: 2.13.0
   oembed:
     edition: standard

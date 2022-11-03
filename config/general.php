@@ -43,7 +43,7 @@ return [
         // Setup @webroot alias
         'aliases' => [
             '@web' => App::env('PRIMARY_SITE_URL')
-        ],
+        ]
     ],
     
     'dev' => [

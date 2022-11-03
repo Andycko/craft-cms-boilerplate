@@ -27,15 +27,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8d7e4ca7-1762-4215-b1e0-3022ed0176b3 # Transparent Nav
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: d783368e-a494-4457-9e99-5a027ae72a18 # Page Header
             instructions: null
             label: null
@@ -58,7 +49,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 4184d945-e90d-4433-b1f3-727edf65107e # Summary Image
+            fieldUid: 39237593-ff51-4bd3-851a-a9dfac329c0b # Page Summary
             instructions: null
             label: null
             required: false
@@ -67,7 +58,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 39237593-ff51-4bd3-851a-a9dfac329c0b # Page Summary
+            fieldUid: 4184d945-e90d-4433-b1f3-727edf65107e # Summary Image
             instructions: null
             label: null
             required: false
