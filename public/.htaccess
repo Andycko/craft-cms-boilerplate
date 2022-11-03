@@ -1,20 +1,19 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # Force www
+    # RewriteCond %{HTTP_HOST} ^websitedomain.com [NC]
+    # RewriteRule ^(.*)$ https://www.websitedomain.com/$1 [L,R=301,NC]
+
+    # Redirect www to non www
+#    RewriteCond %{HTTP_HOST} ^www.websitedomain.com [NC]
+#    RewriteRule ^(.*)$ https://websitedomain.com/$1 [L,R=301]
+
     # Send would-be 404 requests to Craft
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
     RewriteRule (.+) index.php?p=$1 [QSA,L]
-
-    # Force www
-#    RewriteCond %{SERVER_PORT} ^443$
-#    RewriteCond %{HTTP_HOST} ^vsa.org.uk$
-#    RewriteRule (.*) https://www.websitedomain.com/$1 [R=301,L]
-
-    # Redirect www to non www
-#    RewriteCond %{HTTP_HOST} ^www.thetechforce.co.uk [NC]
-#    RewriteRule ^(.*)$ http://www.websitedomain.com/$1 [L,R=301]
 
     # Remove trailing slash from URL
 #    RewriteCond %{REQUEST_FILENAME} !-d
