@@ -40,6 +40,14 @@
     "scripts": {
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-install-cmd": [
+            "./craft setup/security-key",
+            "./craft setup/app-id",
+            "./craft setup/db",
+            "./craft db/restore ./storage/setup-boilerplate/default_db.sql",
+            "npm install --silent",
+            "php ./storage/setup-boilerplate/after_setup.php"
         ]
     }
 }
