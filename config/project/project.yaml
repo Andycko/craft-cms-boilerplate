@@ -1,12 +1,18 @@
-dateModified: 1667484997
+dateModified: 1668097537
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
   replyToEmail: null
   template: null
   transportSettings:
-    command: '/usr/sbin/sendmail -bs'
-  transportType: craft\mail\transportadapters\Sendmail
+    encryptionMethod: tls
+    host: smtp.eu.mailgun.org
+    password: $MG_PASSWORD
+    port: '587'
+    timeout: '10'
+    useAuthentication: '1'
+    username: $MG_USER
+  transportType: craft\mail\transportadapters\Smtp
 meta:
   __names__:
     0aa3f322-8216-4121-a142-bb7e5bdd3c41: 'Related Content' # Related Content
