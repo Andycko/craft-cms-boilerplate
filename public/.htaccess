@@ -21,6 +21,14 @@
     # RewriteRule ^ %1 [R=301,L]
 </IfModule>
 
+# Extra Security Headers (xss protecion/clickjacking prevention/content sniffing/strict transport security(https))
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+	Header always append X-Frame-Options SAMEORIGIN
+	Header set X-Content-Type-Options nosniff
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
 <IfModule mod_headers.c>
   <FilesMatch ".(css|js)$">
     Header set Cache-Control "max-age=7200, public"
