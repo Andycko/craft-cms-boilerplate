@@ -15,7 +15,7 @@
     <script src="/js/bundle.main.js"></script>
     {% include '_includes/_global/tracking-scripts' %}
 </head>
-{% spaceless %}
+{% apply spaceless %}
     <body id="body">
 
     {% include "_includes/_global/nav.twig" %}
@@ -29,5 +29,5 @@
     <!--<svg></svg>-->
 
     </body>
-{% endspaceless %}
+{% endapply %}
 </html>

@@ -15,11 +15,11 @@ permissions:
   craft\elements\Tag:
     enabled: ''
     permissions: '*'
-  custom:
+  verbb\navigation\nodetypes\CustomType:
     enabled: '1'
   verbb\navigation\nodetypes\PassiveType:
     enabled: '1'
-propagateNodes: false
+propagationMethod: none
 siteSettings:
   18d78006-3985-4ea4-b620-67bae10d9c2d: null # $SITE_NAME
 sortOrder: 3
