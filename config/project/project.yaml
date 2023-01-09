@@ -1,4 +1,4 @@
-dateModified: 1668097537
+dateModified: 1673262271
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -108,11 +108,11 @@ plugins:
   aws-s3:
     edition: standard
     enabled: true
-    schemaVersion: '1.2'
+    schemaVersion: '2.0'
   buttonbox:
     edition: standard
     enabled: true
-    schemaVersion: 2.0.0
+    schemaVersion: 3.0.0
   cookie-consent-banner:
     edition: standard
     enabled: true
@@ -153,10 +153,12 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: K6IIQSJNRK5VJ92Y9GNE6CTK
-    schemaVersion: 3.6.4
+    schemaVersion: 4.2.2
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
+      allowFileTemplateEdit: true
+      autoScroll: true
       autoScrollToErrors: true
       badgeType: all
       blockedEmails: null
@@ -164,6 +166,7 @@ plugins:
       blockedIpAddresses: null
       blockedKeywords: null
       blockedKeywordsError: 'Invalid Entry Data'
+      bypassSpamCheckOnLoggedInUsers: false
       clientDigestFrequency: 1
       clientDigestRecipients: null
       customErrorMessage: null
@@ -174,15 +177,19 @@ plugins:
       digestOnlyOnProduction: false
       digestRecipients: null
       displayFeed: true
+      emailTemplateDefault: files
       emailTemplateDirectory: null
-      emailTemplateStorage: db
+      emailTemplateStorageType: files_database
+      exportHandlesAsNames: false
+      exportLabels: false
       fieldDisplayOrder: name
       fillWithGet: false
       footerScripts: false
+      formFieldShowOnlyAllowedForms: false
       formSubmitDisable: true
       formSubmitExpiration: null
       formTemplateDirectory: null
-      formattingTemplate: flexbox.html
+      formattingTemplate: flexbox.twig
       freeformHoneypot: true
       freeformHoneypotEnhancement: false
       hideBannerDemo: true
@@ -196,18 +203,27 @@ plugins:
       recaptchaEnabled: ''
       recaptchaErrorMessage: 'Please verify that you are not a robot.'
       recaptchaKey: 6Ld4jYAaAAAAABhDk0P5QXtr8pop2g6DvJ5iOg6E
+      recaptchaLazyLoad: false
       recaptchaMinScore: '0.5'
       recaptchaSecret: 6Ld4jYAaAAAAAE5wnMBwPoYrZEyYvFLM30ll7yLJ
       recaptchaSize: normal
       recaptchaTheme: light
       recaptchaType: v2_checkbox
+      rememberPageSubmitOrder: true
       removeNewlines: false
       renderFormHtmlInCpViews: true
       salesforce_client_id: null
       salesforce_client_secret: null
       salesforce_password: null
       salesforce_username: null
+      saveFormSessionLimit: 10
+      saveFormTtl: 30
       scriptInsertLocation: footer
+      scriptInsertType: pointers
+      sessionContext: payload
+      sessionContextCount: 100
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: 180
       sessionEntryMaxCount: 50
       sessionEntryTTL: 10800
       showErrorsForBlockedEmails: false
@@ -217,6 +233,7 @@ plugins:
       spamProtectionBehaviour: simulate_success
       submissionThrottlingCount: null
       submissionThrottlingTimeFrame: null
+      successTemplateDirectory: null
       twigInHtml: true
       twigInHtmlIsolatedMode: true
       updateSearchIndexes: true
@@ -224,12 +241,12 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: Z9SM7RIIEEH0EBHEWCC835VA
-    schemaVersion: 1.0.21
+    schemaVersion: 2.0.7
   neo:
     edition: standard
     enabled: true
     licenseKey: GLCZR55H2CE18QT7Y5WC2G3L
-    schemaVersion: 2.13.0
+    schemaVersion: 3.5.2
   oembed:
     edition: standard
     enabled: true
@@ -286,16 +303,17 @@ plugins:
   super-table:
     edition: standard
     enabled: true
-    schemaVersion: 2.2.1
+    schemaVersion: 3.0.0
 system:
   edition: solo
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.9
   timeZone: Europe/London
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null

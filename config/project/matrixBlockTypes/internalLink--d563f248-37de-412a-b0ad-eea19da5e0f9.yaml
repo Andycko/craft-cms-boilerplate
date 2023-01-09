@@ -94,7 +94,7 @@ fields:
               - ''
     translationKeyFormat: null
     translationMethod: none
-    type: supercool\buttonbox\fields\Colours
+    type: verbb\buttonbox\fields\Colours
   d54ca455-7ff5-451f-98e4-350b3abb1847: # Button Link
     columnSuffix: null
     contentColumnType: string

@@ -114,7 +114,7 @@ fields:
               - ''
     translationKeyFormat: null
     translationMethod: none
-    type: supercool\buttonbox\fields\Colours
+    type: verbb\buttonbox\fields\Colours
 handle: externalLink
 name: 'External Link'
 sortOrder: 2
