@@ -38,4 +38,4 @@ JQuery is installed as a node module and is imported an initialized in ```./publ
 
 ### Dependencies
 - [Composer 2](https://getcomposer.org/)
-- [PHP >= 7.3](https://www.php.net/)
+- [PHP >= 8.0](https://www.php.net/)
