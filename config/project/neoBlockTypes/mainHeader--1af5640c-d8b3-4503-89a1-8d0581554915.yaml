@@ -1,75 +1,207 @@
 childBlocks: null
+conditions: null
+description: ''
+enabled: true
 field: d783368e-a494-4457-9e99-5a027ae72a18 # Page Header
 fieldLayouts:
   6b4ac8f3-0289-4f15-a21e-a56d7c9cab3a:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2f64efd3-101a-4ed1-a31e-96657d6dc6e5 # Header
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b3e7a8c0-71f0-449f-89c1-f291835339c3
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
+            fieldUid: d0dfc594-439a-40f9-8d15-a5ba6a0a5a1b # Header Colour
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c007b596-a5b6-40eb-b466-08fb57cd6d6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: abfad523-cf88-401f-beb4-9014990658a4
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 4870444e-6820-4ab0-a141-99e310305629 # Background Image
+            elementCondition: null
+            fieldUid: e5b76ff1-163b-49c0-bd4d-718bc1b5db55 # Text Colour
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8b432f32-807d-4ec5-9726-805a07202a4c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 2b51df7a-6092-49b2-bf34-83658d36af85
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 4870444e-6820-4ab0-a141-99e310305629 # Background Image
+            instructions: null
+            label: 'Background Image (Optional)'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f3f990fd-f6e4-40fd-b238-124adfa2eda8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            style: tip
+            tip: 'If you add a background image more styling options will become available to you (on Save)'
+            type: craft\fieldlayoutelements\Tip
+            uid: d013cd58-9511-497e-add0-1ed5542d8ee2
+            userCondition: null
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\RelationalFieldConditionRule
+                  elementId: null
+                  fieldUid: 4870444e-6820-4ab0-a141-99e310305629 # Background Image
+                  operator: notempty
+                  uid: bcd0bf4f-bcb3-46bb-a732-7c2eadcc7f4a
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: f4ab9061-e9c0-4e8c-9e1f-70b599725985 # Show Overlay
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a152fda-4ace-4911-b9ce-78996d1f4e1b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\RelationalFieldConditionRule
+                  elementId: null
+                  fieldUid: 4870444e-6820-4ab0-a141-99e310305629 # Background Image
+                  operator: notempty
+                  uid: 3c731f78-dd3b-4c73-a57b-6518cb1c8bf9
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: 7bbfb4fd-f907-4f9c-8c1a-f2a2c7e60aa2 # Overlay Colour
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fafee32b-6244-428d-8ae1-fe83b36ec29a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\RelationalFieldConditionRule
+                  elementId: null
+                  fieldUid: 4870444e-6820-4ab0-a141-99e310305629 # Background Image
+                  operator: notempty
+                  uid: 0c602cdf-b49a-4660-bcf4-1e6071e9a716
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: e0603daf-7cb8-485e-9c55-2011a86f0489 # Overlay Opacity
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fb24bf72-3fb9-4b40-9e8f-6c951afa3c8d
+            userCondition: null
             warning: null
             width: 100
         name: 'Main Content'
-        sortOrder: 1
+        uid: 694204ae-0375-4258-8bc5-2be0cd06aec3
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Color
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: da1d02b5-7e6a-4fe4-9fd3-6ce55e8922c9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6c4a2320-184d-4f3b-9482-070fc8b8194a # Bottom Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c3deb20c-6604-4a6a-a9b3-19e29aebc1c7
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 92b70028-f47c-4eb0-bccb-af95ed0d6332
+            userCondition: null
             warning: null
             width: 100
         name: Settings
-        sortOrder: 2
+        uid: dc789881-5371-4bdc-b638-7aadf5c9a557
+        userCondition: null
 group: null
+groupChildBlockTypes: true
 handle: mainHeader
+ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
 name: 'Main Header'
 sortOrder: 1
 topLevel: true

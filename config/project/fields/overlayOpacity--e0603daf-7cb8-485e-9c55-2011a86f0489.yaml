@@ -1,0 +1,20 @@
+columnSuffix: sszkpdrw
+contentColumnType: 'decimal(2,1)'
+fieldGroup: 7bbeec1d-6526-44a3-9897-d6d1e5918a05 # Settings
+handle: overlayOpacity
+instructions: null
+name: 'Overlay Opacity'
+searchable: false
+settings:
+  decimals: 1
+  defaultValue: 0.6
+  max: 1
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number
