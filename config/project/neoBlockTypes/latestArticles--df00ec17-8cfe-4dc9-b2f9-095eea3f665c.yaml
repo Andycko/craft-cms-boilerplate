@@ -1,61 +1,88 @@
 childBlocks: null
+conditions: null
+description: ''
+enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
   71065219-4f6b-48ed-9e42-a84041623934:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2f64efd3-101a-4ed1-a31e-96657d6dc6e5 # Header
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 51376715-4b86-432c-a913-f54471f7d4b0
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             style: tip
             tip: 'The 3 latest articles are going to be automatically loaded.'
             type: craft\fieldlayoutelements\Tip
+            uid: 56f9a22a-fe41-412c-983d-fea5a23a986b
+            userCondition: null
         name: 'Main Content'
-        sortOrder: 1
+        uid: 4eb8f05c-5b3a-4c8f-a1df-74f32601e502
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Color
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a06399f0-2a31-409c-a407-c56faf9cf146
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6c4a2320-184d-4f3b-9482-070fc8b8194a # Bottom Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 624f9276-b05b-4121-ab31-408d86852232
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: dd26202e-1b2e-44ea-9d64-f4a1080f478f
+            userCondition: null
             warning: null
             width: 100
         name: Settings
-        sortOrder: 2
+        uid: 4d279acc-f231-45a7-b8fb-7d17c6f325b7
+        userCondition: null
 group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
+groupChildBlockTypes: true
 handle: latestArticles
+ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
 name: 'Latest Articles'
-sortOrder: 11
+sortOrder: 12
 topLevel: true

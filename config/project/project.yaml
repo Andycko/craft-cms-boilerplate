@@ -1,4 +1,4 @@
-dateModified: 1673278022
+dateModified: 1673282698
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -45,6 +45,7 @@ meta:
     6b6833e3-09b6-4302-8492-fd06e3f794e4: Summary # Summary
     6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8: Header # Header
     6c4a2320-184d-4f3b-9482-070fc8b8194a: 'Bottom Spacing' # Bottom Spacing
+    6d7eb6cb-ab6f-462f-b9ee-719061830781: 'Font Weight' # Font Weight
     7bbeec1d-6526-44a3-9897-d6d1e5918a05: Settings # Settings
     7bbfb4fd-f907-4f9c-8c1a-f2a2c7e60aa2: 'Overlay Colour' # Overlay Colour
     7c5c4db7-bc5e-4979-a31b-6b7734989556: SEO # SEO
@@ -75,6 +76,7 @@ meta:
     588b4c33-d66a-429a-a796-a6146b14a0f8: Video # Video
     714a1c4f-39d2-4a93-b0fc-1d7089a16ff2: 'Latest Index' # Latest Index
     732acb4b-dcae-4506-b8b8-3e1b6bf9454f: Uploads # Uploads
+    876acaa4-cad8-4ddb-b96f-1a25037ad2ed: 'Header Type Size' # Header Type Size
     4184d945-e90d-4433-b1f3-727edf65107e: 'Summary Image' # Summary Image
     8062a4c1-1fc1-482e-9121-c05e1d679599: Accordion # Accordion
     23255a47-8fcd-4ad9-8129-8bd0e89121e5: 'Footer Navigation' # Footer Navigation
@@ -84,6 +86,7 @@ meta:
     39237593-ff51-4bd3-851a-a9dfac329c0b: 'Page Summary' # Page Summary
     a596aec7-c8ec-49d7-ab4d-97dcdf5ac990: Icon # Icon
     ac39eb09-91e2-4240-ba65-e20c3dcf3012: 'Related Entries' # Related Entries
+    ada0f70b-1449-4c51-a201-050201a240a8: Header # Header
     ae523ce4-60b9-4674-8ed4-cbfa6ff0c20c: Button # Button
     b2c6e66f-5fcd-4220-b710-2624b1ef531d: 'Accordion Matrix' # Accordion Matrix
     b8e69404-8329-47fa-8f41-a98c933804c3: About # About

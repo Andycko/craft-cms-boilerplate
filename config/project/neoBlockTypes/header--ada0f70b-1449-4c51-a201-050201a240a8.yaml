@@ -4,78 +4,65 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  fc66525b-bb11-463d-b99c-a432fd9a511a:
+  23c4dcb1-93ba-444b-bd77-2baaeff349bd:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            style: tip
-            tip: 'Please enter the coordinates of the place you want to centre on the map.'
-            type: craft\fieldlayoutelements\Tip
-            uid: 8975aea2-c3cf-4087-892a-adc40f44005b
-            userCondition: null
-          -
-            elementCondition: null
-            fieldUid: c4480af9-afa8-430b-b22c-e0eddbe00de3 # Map Coordinates
+            fieldUid: 2f64efd3-101a-4ed1-a31e-96657d6dc6e5 # Header
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b446fada-44d3-4d62-b689-eda4c8b60671
+            uid: a8fa38e0-d7d3-4e6b-8200-2d05fcaf189c
             userCondition: null
             warning: null
             width: 100
-        name: 'Main Content'
-        uid: d90f7fed-6f91-4f8b-8824-072c9533a2fb
+          -
+            elementCondition: null
+            fieldUid: d0dfc594-439a-40f9-8d15-a5ba6a0a5a1b # Header Colour
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 103aec7b-2bb0-4f2b-97c9-57b38b88cb12
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 876acaa4-cad8-4ddb-b96f-1a25037ad2ed # Header Type Size
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e82a43c1-2b5d-4107-b1fb-3f90a486107c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6d7eb6cb-ab6f-462f-b9ee-719061830781 # Font Weight
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c4c9d6e-4ccc-4f0d-8111-4fd9f063f3e4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 655727c3-da54-481f-bdf5-2b7e5d13900a
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Color
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9c351553-dba9-42dc-86e7-d3b3bbd6c84c
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6c4a2320-184d-4f3b-9482-070fc8b8194a # Bottom Spacing
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f355e86d-d649-4bda-bfe4-837c3f6726a9
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9748215c-afe7-43ed-954d-38c62e56fd3a
-            userCondition: null
-            warning: null
-            width: 100
-        name: Settings
-        uid: 8ae27b05-498f-4ee9-aef4-e23882d7e069
-        userCondition: null
-group: dcc7e763-cfad-42ba-a4ed-f0c111f2446b # Media
+group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
 groupChildBlockTypes: true
-handle: map
+handle: header
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
@@ -83,6 +70,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Map
-sortOrder: 4
+name: Header
+sortOrder: 10
 topLevel: true
