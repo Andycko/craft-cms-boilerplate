@@ -14,10 +14,10 @@
                     {% set lat = 0 %}
                     {% set long = 0 %}
                     {% for coords in block.mapCoordinates.all() %}
-                    {% if block.mapCoordinates.all() | length == 1 %}
-                    {% set lat = coords.latitude %}
-                    {% set long = coords.longitude %}
-                    {% endif %}
+                        {% if block.mapCoordinates.all() | length == 1 %}
+                            {% set lat = coords.latitude %}
+                            {% set long = coords.longitude %}
+                        {% endif %}
                     {% endfor %}
 
                     function init() {
@@ -29,11 +29,11 @@
                             "fullscreenControl": true,
                             "keyboardShortcuts": true,
                             "mapTypeControl": true,
-                            "mapTypeControlOptions": {"text": "Default (depends on viewport size etc.)", "style": 0},
+                            "mapTypeControlOptions": {  "text": "Default (depends on viewport size etc.)",  "style": 0 },
                             "mapTypeId": "roadmap",
                             "rotateControl": true,
                             "scaleControl": true,
-                            "scrollwheel": true,
+                            "scrollwheel": false,
                             "streetViewControl": true,
                             "styles": false,
                             "zoom": 10,
@@ -42,21 +42,20 @@
                         var mapElement = document.getElementById('ez-map');
                         var map = new google.maps.Map(mapElement, mapOptions);
                         var heatmap = new google.maps.visualization.HeatmapLayer({data: []});
-                        heatmap.setOptions({"dissipating": false, "opacity": 0.6, "radius": 2});
+                        heatmap.setOptions({"dissipating":false,"opacity":0.6,"radius":2});
                         heatmap.setMap(map);
-                        google.maps.event.addDomListener(window, "resize", function () {
+                        window.addEventListener("resize", function() {
                             var center = map.getCenter();
                             google.maps.event.trigger(map, "resize");
                             map.setCenter(center);
                         });
                     }
-
-                    google.maps.event.addDomListener(window, 'load', init);
+                    window.addEventListener('load', init);
                 </script>
                 <style>
                     #ez-map {
-                        min-height: 150px;
-                        min-width: 150px;
+                        min-height:150px;
+                        min-width:150px;
                         height: 420px;
                         width: 100%;
                     }
