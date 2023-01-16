@@ -1,0 +1,51 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
+fieldLayouts:
+  0c34edf0-cdf3-48a3-8dbb-170ebfb43437:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: dd77ad9a-983f-42c9-9b08-6d476485a963 # Spacer Options
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e7e579a8-5507-4a85-8f91-b53661f7d8c0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c76db0a3-8f9c-476c-9df5-3d435dafcf77
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Main Content'
+        uid: 61767049-af12-4fe5-ac97-184841023968
+        userCondition: null
+group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
+groupChildBlockTypes: true
+handle: spacer
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Spacer
+sortOrder: 14
+topLevel: true

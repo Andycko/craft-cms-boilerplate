@@ -1,4 +1,4 @@
-dateModified: 1673282698
+dateModified: 1673886353
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -31,6 +31,7 @@ meta:
     1f6a1dc8-82d8-47a8-ae54-01af20652730: Name # Name
     2f28cd37-4b8e-4b68-806e-97ecc9f63d04: 'Latest Index' # Latest Index
     2f64efd3-101a-4ed1-a31e-96657d6dc6e5: Header # Header
+    2fde90f2-c40d-4a04-a52c-94fbf040f6f1: Spacer # Spacer
     3cca813e-09a9-4025-8efa-d5ba11d4dd89: Email # Email
     3d768a6c-7660-4551-8c77-a987ed1dfb44: 'External Link' # External Link
     3e5005f5-763a-459a-9bb7-74b2de70f748: 'Button Title' # Button Title
@@ -105,6 +106,7 @@ meta:
     d305657a-b071-42af-960e-aa7b81715a02: Latest # Latest
     d783368e-a494-4457-9e99-5a027ae72a18: 'Page Header' # Page Header
     dcc7e763-cfad-42ba-a4ed-f0c111f2446b: Media # Media
+    dd77ad9a-983f-42c9-9b08-6d476485a963: 'Spacer Options' # Spacer Options
     ddd7384c-d723-4aad-b2f6-845216bb1dbf: Latest # Latest
     dea301bb-972e-43c2-81fe-f145398244c7: 'Sub Footer Navigation' # Sub Footer Navigation
     df00ec17-8cfe-4dc9-b2f9-095eea3f665c: 'Latest Articles' # Latest Articles

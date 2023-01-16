@@ -29,6 +29,24 @@ html.no-scroll
 .text-black
   color: black
 
+.spacer
+  &--small
+    height: 40px
+    @media (min-width: 768px)
+      height: 75px
+  &--medium
+    height: 75px
+    @media (min-width: 768px)
+      height: 150px
+  &--large
+    height: 150px
+    @media (min-width: 768px)
+      height: 300px
+  &--extra-large
+    height: 300px
+    @media (min-width: 768px)
+      height: 600px
+
 // forms success message
 form
   .ff-form-success
