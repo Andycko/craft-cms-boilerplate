@@ -4,12 +4,22 @@
     {% set bg = ''%}
 {% endif %}
 
-<header class="outer {{ header.backgroundColor }}" style="{{ bg }}">
+<header class="pageHeader outer {{ header.backgroundColor }}" style="{{ bg }}">
+
+    {% if header.showOverlay %}
+        <div class="overlay" style="{% if header.overlayColour is not empty %}background-color:{{ header.overlayColour }};{% endif %}{% if header.overlayOpacity is not empty%}opacity:{{ header.overlayOpacity }};{% endif %}">
+        </div>
+    {% endif %}
+
     <div class="container {{ header.topSpacing }} {{ header.bottomSpacing }} mainHeader {{ entry.transparentNav ? "transparentNav" }}" >
         <div class="row py-5">
             <div class="col-12">
-                <h1>{{ header.header }}</h1>
-                <div class="copy">{{ header.copy }}</div>
+                <h1 {% if header.headerColour is not empty %}style="color: {{ header.headerColour }};{% endif %}">
+                    {{ header.header }}
+                </h1>
+                <div class="copy" {% if header.textColour is not empty %}style="color: {{ header.textColour }};{% endif %}">
+                    {{ header.copy }}
+                </div>
             </div>
         </div>
     </div>

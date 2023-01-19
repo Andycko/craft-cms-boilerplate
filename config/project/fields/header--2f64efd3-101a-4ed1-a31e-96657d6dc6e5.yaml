@@ -2,16 +2,16 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 70f3e289-0ffa-4d8a-a2a4-e8c6db06ee3c # Content Builder Fields
 handle: header
-instructions: ''
+instructions: 'Tip: Use the return key to force a new line'
 name: Header
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
+  initialRows: 1
+  multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

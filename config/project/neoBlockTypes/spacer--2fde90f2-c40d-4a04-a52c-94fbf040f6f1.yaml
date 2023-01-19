@@ -2,43 +2,43 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: d783368e-a494-4457-9e99-5a027ae72a18 # Page Header
+field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  e1f9e612-d23b-4cc4-8d06-403a136247b6:
+  0c34edf0-cdf3-48a3-8dbb-170ebfb43437:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: 2f64efd3-101a-4ed1-a31e-96657d6dc6e5 # Header
+            fieldUid: dd77ad9a-983f-42c9-9b08-6d476485a963 # Spacer Options
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4425c0c7-a3fa-46ea-9799-8d55e876f695
+            uid: e7e579a8-5507-4a85-8f91-b53661f7d8c0
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 4b0ce80c-181f-4c40-bcce-5146dc8c903e # Video
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Color
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 37b31eb6-1afe-43d1-b568-22aea1eb3f33
+            uid: c76db0a3-8f9c-476c-9df5-3d435dafcf77
             userCondition: null
             warning: null
             width: 100
         name: 'Main Content'
-        uid: 6217ec13-3227-4a1e-a646-ea0e4ee2fba3
+        uid: 61767049-af12-4fe5-ac97-184841023968
         userCondition: null
-group: null
+group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
 groupChildBlockTypes: true
-handle: videoHeader
+handle: spacer
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
@@ -46,6 +46,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Video Header'
-sortOrder: 2
+name: Spacer
+sortOrder: 14
 topLevel: true

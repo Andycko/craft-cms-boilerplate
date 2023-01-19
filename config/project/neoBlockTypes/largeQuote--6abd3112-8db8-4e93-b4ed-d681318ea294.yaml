@@ -1,66 +1,93 @@
 childBlocks: null
+conditions: null
+description: ''
+enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
   acd3f82d-ea92-47c8-bb73-21b19ea31ede:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b20cf5d7-fb82-4c26-8139-f603b5edffdb
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 24301a2b-def0-4ce7-baf1-9b424815122c # Author
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e748015f-561a-4191-9e20-1f18aa99c74f
+            userCondition: null
             warning: null
             width: 100
         name: 'Main Content'
-        sortOrder: 1
+        uid: 7497ced1-559c-4ca6-aede-ddfae13ecbb5
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Color
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9a5c56f8-63f0-4c60-bebc-d1adc65b5311
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6c4a2320-184d-4f3b-9482-070fc8b8194a # Bottom Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7b8f0051-2e3a-4de2-b451-631dc4213426
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 35216e7f-c3b8-4d6b-bdeb-6b3df1086da5
+            userCondition: null
             warning: null
             width: 100
         name: Settings
-        sortOrder: 2
+        uid: c8d121da-cef5-4968-97b9-7e811c4a2d0d
+        userCondition: null
 group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
+groupChildBlockTypes: true
 handle: largeQuote
+ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
 name: 'Large Quote'
-sortOrder: 10
+sortOrder: 11
 topLevel: true

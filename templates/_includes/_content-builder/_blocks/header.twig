@@ -1,0 +1,11 @@
+<div class="outer">
+    <div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} header-block">
+        <div class="row py-5">
+            <div class="col-12">
+                <h2 class="{{ block.headerTypeSize }} {{ block.fontWeight }}" {% if block.headerColour is not empty %}style="color: {{ block.headerColour }}"{% endif %}>
+                    {{ block.header | nl2br }}
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>

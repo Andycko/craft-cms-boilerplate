@@ -1,4 +1,4 @@
-dateModified: 1673262271
+dateModified: 1673886353
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -13,6 +13,14 @@ email:
     useAuthentication: '1'
     username: $MG_USER
   transportType: craft\mail\transportadapters\Smtp
+fs:
+  local:
+    hasUrls: true
+    name: 'Local Uploads'
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: /uploads/
 meta:
   __names__:
     0aa3f322-8216-4121-a142-bb7e5bdd3c41: 'Related Content' # Related Content
@@ -23,6 +31,7 @@ meta:
     1f6a1dc8-82d8-47a8-ae54-01af20652730: Name # Name
     2f28cd37-4b8e-4b68-806e-97ecc9f63d04: 'Latest Index' # Latest Index
     2f64efd3-101a-4ed1-a31e-96657d6dc6e5: Header # Header
+    2fde90f2-c40d-4a04-a52c-94fbf040f6f1: Spacer # Spacer
     3cca813e-09a9-4025-8efa-d5ba11d4dd89: Email # Email
     3d768a6c-7660-4551-8c77-a987ed1dfb44: 'External Link' # External Link
     3e5005f5-763a-459a-9bb7-74b2de70f748: 'Button Title' # Button Title
@@ -37,7 +46,9 @@ meta:
     6b6833e3-09b6-4302-8492-fd06e3f794e4: Summary # Summary
     6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8: Header # Header
     6c4a2320-184d-4f3b-9482-070fc8b8194a: 'Bottom Spacing' # Bottom Spacing
+    6d7eb6cb-ab6f-462f-b9ee-719061830781: 'Font Weight' # Font Weight
     7bbeec1d-6526-44a3-9897-d6d1e5918a05: Settings # Settings
+    7bbfb4fd-f907-4f9c-8c1a-f2a2c7e60aa2: 'Overlay Colour' # Overlay Colour
     7c5c4db7-bc5e-4979-a31b-6b7734989556: SEO # SEO
     7d034fae-78a0-49b6-a213-aa01fcdf690e: Video # Video
     7fc480fa-d689-40a4-9f68-2e36e07830d5: 'Company Info' # Company Info
@@ -65,6 +76,8 @@ meta:
     431efb4a-9ace-451f-8b70-aeda20b1f83f: Globals # Globals
     588b4c33-d66a-429a-a796-a6146b14a0f8: Video # Video
     714a1c4f-39d2-4a93-b0fc-1d7089a16ff2: 'Latest Index' # Latest Index
+    732acb4b-dcae-4506-b8b8-3e1b6bf9454f: Uploads # Uploads
+    876acaa4-cad8-4ddb-b96f-1a25037ad2ed: 'Header Type Size' # Header Type Size
     4184d945-e90d-4433-b1f3-727edf65107e: 'Summary Image' # Summary Image
     8062a4c1-1fc1-482e-9121-c05e1d679599: Accordion # Accordion
     23255a47-8fcd-4ad9-8129-8bd0e89121e5: 'Footer Navigation' # Footer Navigation
@@ -74,6 +87,7 @@ meta:
     39237593-ff51-4bd3-851a-a9dfac329c0b: 'Page Summary' # Page Summary
     a596aec7-c8ec-49d7-ab4d-97dcdf5ac990: Icon # Icon
     ac39eb09-91e2-4240-ba65-e20c3dcf3012: 'Related Entries' # Related Entries
+    ada0f70b-1449-4c51-a201-050201a240a8: Header # Header
     ae523ce4-60b9-4674-8ed4-cbfa6ff0c20c: Button # Button
     b2c6e66f-5fcd-4220-b710-2624b1ef531d: 'Accordion Matrix' # Accordion Matrix
     b8e69404-8329-47fa-8f41-a98c933804c3: About # About
@@ -84,6 +98,7 @@ meta:
     c01ae0b2-724f-499b-b0f2-ff2b6fe171a4: 'Footer Disclaimer' # Footer Disclaimer
     c2e72f3c-fb9f-4c37-a442-ed5cdea1f393: 'Custom Pages' # Custom Pages
     c4480af9-afa8-430b-b22c-e0eddbe00de3: 'Map Coordinates' # Map Coordinates
+    d0dfc594-439a-40f9-8d15-a5ba6a0a5a1b: 'Header Colour' # Header Colour
     d9a8f905-7705-41f9-a662-e8966f03085f: Longitude # Longitude
     d9aafe6e-671c-45da-9958-ccb6470336d6: 'Alt Icon' # Alt Icon
     d54ca455-7ff5-451f-98e4-350b3abb1847: 'Button Link' # Button Link
@@ -91,15 +106,19 @@ meta:
     d305657a-b071-42af-960e-aa7b81715a02: Latest # Latest
     d783368e-a494-4457-9e99-5a027ae72a18: 'Page Header' # Page Header
     dcc7e763-cfad-42ba-a4ed-f0c111f2446b: Media # Media
+    dd77ad9a-983f-42c9-9b08-6d476485a963: 'Spacer Options' # Spacer Options
     ddd7384c-d723-4aad-b2f6-845216bb1dbf: Latest # Latest
     dea301bb-972e-43c2-81fe-f145398244c7: 'Sub Footer Navigation' # Sub Footer Navigation
     df00ec17-8cfe-4dc9-b2f9-095eea3f665c: 'Latest Articles' # Latest Articles
     dfadf56c-6052-4f7d-b164-e55fac2e6474: 'Button Color' # Button Color
+    e0603daf-7cb8-485e-9c55-2011a86f0489: 'Overlay Opacity' # Overlay Opacity
+    e5b76ff1-163b-49c0-bd4d-718bc1b5db55: 'Text Colour' # Text Colour
     ead943da-9146-4b32-9f33-8096b522e085: 'External Video' # External Video
     eb7f69a9-9a89-4024-ba3f-9154d28ac58c: Common # Common
     ecaf2e51-4a07-4d82-a78b-8181faba1e87: 'Image Slider' # Image Slider
     ed9d2994-c74c-40fe-9f3f-280fe7a5360a: Default # Default
     f1abfa1e-3f54-4765-8991-815c87484c9b: Contact # Contact
+    f4ab9061-e9c0-4e8c-9e1f-70b599725985: 'Show Overlay' # Show Overlay
     f85e63c0-1f6c-495c-95b7-6b70d338bd07: Copy # Copy
     f99d20c5-6966-4180-8dc1-595df3b8f876: $SITE_NAME # $SITE_NAME
     f122d996-7ed0-4bc1-ad02-50e74deac2df: Image # Image

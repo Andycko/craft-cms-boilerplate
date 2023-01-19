@@ -2,17 +2,18 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: b4718bab-e938-4b97-a8e4-adc9fe5f4ca7 # Content Builder
 handle: contentBuilder
-instructions: ''
+instructions: null
 name: 'Content Builder'
 searchable: false
 settings:
-  maxBlocks: ''
-  maxLevels: ''
-  maxTopBlocks: ''
-  minBlocks: ''
+  maxBlocks: null
+  maxLevels: null
+  maxTopBlocks: null
+  minBlocks: null
+  minLevels: null
+  minTopBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
-  wasModified: false
 translationKeyFormat: null
 translationMethod: site
 type: benf\neo\Field
