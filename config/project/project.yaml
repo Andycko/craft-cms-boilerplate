@@ -1,4 +1,4 @@
-dateModified: 1673886353
+dateModified: 1676307333
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -265,7 +265,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: GLCZR55H2CE18QT7Y5WC2G3L
-    schemaVersion: 3.5.2
+    schemaVersion: 3.6.2
   oembed:
     edition: standard
     enabled: true
