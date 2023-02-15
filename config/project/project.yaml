@@ -1,4 +1,4 @@
-dateModified: 1676307333
+dateModified: 1676473594
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -13,14 +13,6 @@ email:
     useAuthentication: '1'
     username: $MG_USER
   transportType: craft\mail\transportadapters\Smtp
-fs:
-  local:
-    hasUrls: true
-    name: 'Local Uploads'
-    settings:
-      path: '@webroot/uploads'
-    type: craft\fs\Local
-    url: /uploads/
 meta:
   __names__:
     0aa3f322-8216-4121-a142-bb7e5bdd3c41: 'Related Content' # Related Content
@@ -76,7 +68,6 @@ meta:
     431efb4a-9ace-451f-8b70-aeda20b1f83f: Globals # Globals
     588b4c33-d66a-429a-a796-a6146b14a0f8: Video # Video
     714a1c4f-39d2-4a93-b0fc-1d7089a16ff2: 'Latest Index' # Latest Index
-    732acb4b-dcae-4506-b8b8-3e1b6bf9454f: Uploads # Uploads
     876acaa4-cad8-4ddb-b96f-1a25037ad2ed: 'Header Type Size' # Header Type Size
     4184d945-e90d-4433-b1f3-727edf65107e: 'Summary Image' # Summary Image
     8062a4c1-1fc1-482e-9121-c05e1d679599: Accordion # Accordion
@@ -114,7 +105,6 @@ meta:
     e0603daf-7cb8-485e-9c55-2011a86f0489: 'Overlay Opacity' # Overlay Opacity
     e5b76ff1-163b-49c0-bd4d-718bc1b5db55: 'Text Colour' # Text Colour
     ead943da-9146-4b32-9f33-8096b522e085: 'External Video' # External Video
-    eb7f69a9-9a89-4024-ba3f-9154d28ac58c: Common # Common
     ecaf2e51-4a07-4d82-a78b-8181faba1e87: 'Image Slider' # Image Slider
     ed9d2994-c74c-40fe-9f3f-280fe7a5360a: Default # Default
     f1abfa1e-3f54-4765-8991-815c87484c9b: Contact # Contact
@@ -264,7 +254,7 @@ plugins:
   neo:
     edition: standard
     enabled: true
-    licenseKey: GLCZR55H2CE18QT7Y5WC2G3L
+    licenseKey: CTRZ6BX4L193B9XV08Z5C8GI
     schemaVersion: 3.6.2
   oembed:
     edition: standard

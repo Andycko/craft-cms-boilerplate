@@ -5,10 +5,10 @@
     "require": {
         "adigital/cookie-consent-banner": "2.0.0",
         "craftcms/aws-s3": "2.0.1",
-        "craftcms/cms": "4.3.8.2",
+        "craftcms/cms": "4.3.9",
         "craftcms/redactor": "3.0.3",
         "ether/seo": "v4.0.3",
-        "solspace/craft-freeform": "4.0.14",
+        "solspace/craft-freeform": "4.0.15",
         "spicyweb/craft-neo": "3.6.4",
         "verbb/buttonbox": "4.1.0",
         "verbb/navigation": "2.0.16",

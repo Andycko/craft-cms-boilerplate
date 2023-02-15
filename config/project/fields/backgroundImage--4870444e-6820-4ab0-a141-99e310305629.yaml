@@ -11,7 +11,7 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:732acb4b-dcae-4506-b8b8-3e1b6bf9454f' # Uploads
+  defaultUploadLocationSource: 'volume:732acb4b-dcae-4506-b8b8-3e1b6bf9454f'
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maxRelations: 1
@@ -20,7 +20,7 @@ settings:
   restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:732acb4b-dcae-4506-b8b8-3e1b6bf9454f' # Uploads
+  restrictedLocationSource: 'volume:732acb4b-dcae-4506-b8b8-3e1b6bf9454f'
   restrictedLocationSubpath: null
   selectionCondition:
     __assoc__:
