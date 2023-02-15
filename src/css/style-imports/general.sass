@@ -31,21 +31,33 @@ html.no-scroll
 
 .spacer
   &--small
-    height: 40px
-    @media (min-width: 768px)
-      height: 75px
+    --setHeight: 75px
+    height: var(--setHeight)
+    @media screen and (max-width: 991px)
+      height: calc(var(--setHeight) / 2)
+    @media screen and (max-width: 576px)
+      height: calc(var(--setHeight) / 4)
   &--medium
-    height: 75px
-    @media (min-width: 768px)
-      height: 150px
+    --setHeight: 150px
+    height: var(--setHeight)
+    @media screen and (max-width: 991px)
+      height: calc(var(--setHeight) / 2)
+    @media screen and (max-width: 576px)
+      height: calc(var(--setHeight) / 4)
   &--large
-    height: 150px
-    @media (min-width: 768px)
-      height: 300px
+    --setHeight: 300px
+    height: var(--setHeight)
+    @media screen and (max-width: 991px)
+      height: calc(var(--setHeight) / 2)
+    @media screen and (max-width: 576px)
+      height: calc(var(--setHeight) / 4)
   &--extra-large
-    height: 300px
-    @media (min-width: 768px)
-      height: 600px
+    --setHeight: 600px
+    height: var(--setHeight)
+    @media screen and (max-width: 991px)
+      height: calc(var(--setHeight) / 2)
+    @media screen and (max-width: 576px)
+      height: calc(var(--setHeight) / 4)
 
 // forms success message
 form

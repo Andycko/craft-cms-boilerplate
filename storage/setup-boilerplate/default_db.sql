@@ -2922,7 +2922,7 @@ CREATE TABLE `widgets` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-15 15:07:20
+-- Dump completed on 2023-02-15 15:22:44
 -- MySQL dump 10.13  Distrib 5.7.34, for osx10.12 (x86_64)
 --
 -- Host: localhost    Database: craft_boilerplate
@@ -4225,4 +4225,4 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-15 15:07:20
+-- Dump completed on 2023-02-15 15:22:44
