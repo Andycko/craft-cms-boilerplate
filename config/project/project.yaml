@@ -1,4 +1,4 @@
-dateModified: 1676473594
+dateModified: 1681985193
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -162,7 +162,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: K6IIQSJNRK5VJ92Y9GNE6CTK
-    schemaVersion: 4.2.2
+    schemaVersion: 4.2.3
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
@@ -318,7 +318,7 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 4.0.0.9
+  schemaVersion: 4.4.0.4
   timeZone: Europe/London
 users:
   allowPublicRegistration: false
