@@ -5,26 +5,26 @@
                 <h2>{{ block.header }}</h2>
             </div>
         </div>
-        <div class="row pt-3 pb-5">
+        <div class="row pt-3 pb-5 h-100">
             <div class="col-12 slider-wrap" id="image-slider">
                 {% if block.images.all() | length %}
                     {% for item in block.images.all() %}
-                        <div class="slide">
+                        <div class="slide col-12 px-0">
                             <img src="{{ item.url }}" alt="{{ item }}" class="w-100">
                         </div>
                     {% endfor %}
                 {% else %}
-                    <div class="slide">
+                    <div class="slide col-12 px-0">
                         <div class="slide-inner">
                             <img src="https://via.placeholder.com/1920x1080.jpg?text=Missing+image" alt="Slide 1">
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide col-12 px-0">
                         <div class="slide-inner">
                             <img src="https://via.placeholder.com/1920x1080.jpg?text=Missing+image" alt="Slide 2">
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide col-12 px-0">
                         <div class="slide-inner">
                             <img src="https://via.placeholder.com/1920x1080.jpg?text=Missing+image" alt="Slide 3">
                         </div>

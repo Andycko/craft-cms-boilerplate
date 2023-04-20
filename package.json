@@ -50,6 +50,7 @@
     "avalanche-css": "^1.3.0",
     "bootstrap": "^4.6.0",
     "flickity": "^2.2.2",
+    "flickity-imagesloaded": "^2.0.0",
     "jquery": "^3.6.0",
     "jquery-bridget": "^2.0.1",
     "normalize-css": "^2.3.1",
