@@ -41,7 +41,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Color
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
             instructions: null
             label: null
             required: false
