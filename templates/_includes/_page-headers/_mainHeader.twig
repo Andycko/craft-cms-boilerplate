@@ -4,7 +4,7 @@
     {% set bg = ''%}
 {% endif %}
 
-<header class="pageHeader outer {{ header.backgroundColor }}" style="{{ bg }}">
+<header class="pageHeader outer {{ header.backgroundColour }}" style="{{ bg }}">
 
     {% if header.showOverlay %}
         <div class="overlay" style="{% if header.overlayColour is not empty %}background-color:{{ header.overlayColour }};{% endif %}{% if header.overlayOpacity is not empty%}opacity:{{ header.overlayOpacity }};{% endif %}">

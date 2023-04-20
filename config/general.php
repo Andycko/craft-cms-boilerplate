@@ -26,7 +26,7 @@ return [
         'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
 
         // The secure key Craft will use for hashing and encrypting data
-        'securityKey' => App::env('SECURITY_KEY'),
+        'securityKey' => App::env('CRAFT_SECURITY_KEY'),
 
         // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
         'devMode' => $isDev or $isStaging,

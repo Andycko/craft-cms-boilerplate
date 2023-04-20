@@ -1,4 +1,4 @@
-dateModified: 1676473594
+dateModified: 1681985275
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -62,7 +62,7 @@ meta:
     181f8d87-6d88-42ed-96e8-26a3a728eef8: Images # Images
     308d7a68-be55-4f59-b9a4-c108480bd78f: Coordinates # Coordinates
     317d7eec-729b-4cbc-8476-5db0fd7528fc: 'Public Schema' # Public Schema
-    336f207f-f4fb-43c3-bbc3-f10b641e940a: 'Background Color' # Background Color
+    336f207f-f4fb-43c3-bbc3-f10b641e940a: 'Background Colour' # Background Colour
     369ea60f-6259-4683-adcc-23418cf8285e: Homepage # Homepage
     386e1cf1-acc9-4336-90e1-fb74daefd6f5: 'Phone Number' # Phone Number
     431efb4a-9ace-451f-8b70-aeda20b1f83f: Globals # Globals
@@ -162,7 +162,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: K6IIQSJNRK5VJ92Y9GNE6CTK
-    schemaVersion: 4.2.2
+    schemaVersion: 4.2.3
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
@@ -318,7 +318,7 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 4.0.0.9
+  schemaVersion: 4.4.0.4
   timeZone: Europe/London
 users:
   allowPublicRegistration: false
