@@ -1,4 +1,4 @@
-dateModified: 1685090368
+dateModified: 1685090604
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -127,6 +127,113 @@ plugins:
     enabled: true
     licenseKey: E4NO3IM10K8XVT3LY8T3V9SM
     schemaVersion: 1.0.0
+    settings:
+      accessToken: $ChatGPT_API
+      enabledFields:
+        __assoc__:
+          -
+            - 24
+            - ''
+          -
+            - 1
+            - ''
+          -
+            - 38
+            - ''
+          -
+            - 9
+            - ''
+          -
+            - 20
+            - ''
+          -
+            - 11
+            - ''
+          -
+            - 29
+            - ''
+          -
+            - 17
+            - ''
+          -
+            - 15
+            - '1'
+          -
+            - 2
+            - ''
+          -
+            - 49
+            - ''
+          -
+            - 21
+            - ''
+          -
+            - 19
+            - ''
+          -
+            - 45
+            - ''
+          -
+            - 48
+            - ''
+          -
+            - 16
+            - ''
+          -
+            - 22
+            - ''
+          -
+            - 34
+            - ''
+          -
+            - 47
+            - ''
+          -
+            - 46
+            - ''
+          -
+            - 18
+            - ''
+          -
+            - 13
+            - ''
+          -
+            - 3
+            - ''
+          -
+            - 37
+            - ''
+          -
+            - 12
+            - ''
+          -
+            - 44
+            - ''
+          -
+            - 4
+            - ''
+          -
+            - 50
+            - ''
+          -
+            - 14
+            - ''
+          -
+            - 43
+            - ''
+          -
+            - 10
+            - ''
+          -
+            - 41
+            - ''
+          -
+            - 23
+            - ''
+      maxTokens: 256
+      pluginName: 'Chat GPT Integration'
+      showTranslationPrompts: true
+      usePageLang: true
   cookie-consent-banner:
     edition: standard
     enabled: true
