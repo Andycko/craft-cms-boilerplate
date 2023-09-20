@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  23c4dcb1-93ba-444b-bd77-2baaeff349bd:
+  2e604404-8eca-49eb-ba47-d3ada9adb85c:
     tabs:
       -
         elementCondition: null
@@ -63,6 +63,7 @@ fieldLayouts:
 group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
 groupChildBlockTypes: true
 handle: header
+icon: null
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
@@ -71,5 +72,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Header
-sortOrder: 10
+sortOrder: 5
 topLevel: true

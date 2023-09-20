@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  0c34edf0-cdf3-48a3-8dbb-170ebfb43437:
+  96d61305-e514-439b-b0a0-4fdf32dbb868:
     tabs:
       -
         elementCondition: null
@@ -39,6 +39,7 @@ fieldLayouts:
 group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
 groupChildBlockTypes: true
 handle: spacer
+icon: null
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
@@ -47,5 +48,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Spacer
-sortOrder: 14
+sortOrder: 9
 topLevel: true

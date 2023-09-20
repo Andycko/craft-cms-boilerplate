@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: d783368e-a494-4457-9e99-5a027ae72a18 # Page Header
 fieldLayouts:
-  e1f9e612-d23b-4cc4-8d06-403a136247b6:
+  9e3ac4af-23cf-49ba-9f8c-2723c13fac68:
     tabs:
       -
         elementCondition: null
@@ -39,6 +39,7 @@ fieldLayouts:
 group: null
 groupChildBlockTypes: true
 handle: videoHeader
+icon: null
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

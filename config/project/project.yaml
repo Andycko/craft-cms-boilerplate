@@ -1,4 +1,4 @@
-dateModified: 1685091952
+dateModified: 1695216943
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -125,115 +125,7 @@ plugins:
   chatgpt-integration:
     edition: standard
     enabled: true
-    licenseKey: E4NO3IM10K8XVT3LY8T3V9SM
     schemaVersion: 1.0.0
-    settings:
-      accessToken: $ChatGPT_API
-      enabledFields:
-        __assoc__:
-          -
-            - 24
-            - ''
-          -
-            - 1
-            - ''
-          -
-            - 38
-            - ''
-          -
-            - 9
-            - ''
-          -
-            - 20
-            - ''
-          -
-            - 11
-            - ''
-          -
-            - 29
-            - ''
-          -
-            - 17
-            - ''
-          -
-            - 15
-            - '1'
-          -
-            - 2
-            - ''
-          -
-            - 49
-            - ''
-          -
-            - 21
-            - ''
-          -
-            - 19
-            - '1'
-          -
-            - 45
-            - ''
-          -
-            - 48
-            - ''
-          -
-            - 16
-            - ''
-          -
-            - 22
-            - ''
-          -
-            - 34
-            - ''
-          -
-            - 47
-            - ''
-          -
-            - 46
-            - ''
-          -
-            - 18
-            - ''
-          -
-            - 13
-            - ''
-          -
-            - 3
-            - ''
-          -
-            - 37
-            - ''
-          -
-            - 12
-            - ''
-          -
-            - 44
-            - ''
-          -
-            - 4
-            - ''
-          -
-            - 50
-            - ''
-          -
-            - 14
-            - ''
-          -
-            - 43
-            - ''
-          -
-            - 10
-            - ''
-          -
-            - 41
-            - ''
-          -
-            - 23
-            - ''
-      maxTokens: 256
-      pluginName: 'Chat GPT Integration'
-      showTranslationPrompts: true
-      usePageLang: true
   cookie-consent-banner:
     edition: standard
     enabled: true
@@ -273,8 +165,7 @@ plugins:
   freeform:
     edition: lite
     enabled: true
-    licenseKey: K6IIQSJNRK5VJ92Y9GNE6CTK
-    schemaVersion: 4.2.5
+    schemaVersion: 4.2.7
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
@@ -361,12 +252,10 @@ plugins:
   navigation:
     edition: standard
     enabled: true
-    licenseKey: Z9SM7RIIEEH0EBHEWCC835VA
     schemaVersion: 2.0.7
   neo:
     edition: standard
     enabled: true
-    licenseKey: CTRZ6BX4L193B9XV08Z5C8GI
     schemaVersion: 3.6.2
   oembed:
     edition: standard
@@ -430,7 +319,7 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 4.4.0.4
+  schemaVersion: 4.5.3.0
   timeZone: Europe/London
 users:
   allowPublicRegistration: false

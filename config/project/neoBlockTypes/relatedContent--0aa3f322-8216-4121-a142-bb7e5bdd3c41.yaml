@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  b8cf9aa1-1d60-4b2b-9390-8eb2da8c6dbe:
+  5225adcf-ded0-4f23-8445-6b8f7622318c:
     tabs:
       -
         elementCondition: null
@@ -41,13 +41,13 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
+            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ffe528d5-fd90-48f5-b97a-5b6e83980fa6
+            uid: 59fa2e64-a27a-4992-aba1-15e967c666b1
             userCondition: null
             warning: null
             width: 100
@@ -65,13 +65,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 59fa2e64-a27a-4992-aba1-15e967c666b1
+            uid: ffe528d5-fd90-48f5-b97a-5b6e83980fa6
             userCondition: null
             warning: null
             width: 100
@@ -81,6 +81,7 @@ fieldLayouts:
 group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
 groupChildBlockTypes: true
 handle: relatedContent
+icon: null
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
@@ -89,5 +90,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Related Content'
-sortOrder: 13
+sortOrder: 8
 topLevel: true

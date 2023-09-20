@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  acd3f82d-ea92-47c8-bb73-21b19ea31ede:
+  ddcc981e-1e02-477e-b9d3-cbf1d9ae7026:
     tabs:
       -
         elementCondition: null
@@ -41,13 +41,13 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
+            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9a5c56f8-63f0-4c60-bebc-d1adc65b5311
+            uid: 35216e7f-c3b8-4d6b-bdeb-6b3df1086da5
             userCondition: null
             warning: null
             width: 100
@@ -65,13 +65,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 35216e7f-c3b8-4d6b-bdeb-6b3df1086da5
+            uid: 9a5c56f8-63f0-4c60-bebc-d1adc65b5311
             userCondition: null
             warning: null
             width: 100
@@ -81,6 +81,7 @@ fieldLayouts:
 group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
 groupChildBlockTypes: true
 handle: largeQuote
+icon: null
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
@@ -89,5 +90,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Large Quote'
-sortOrder: 11
+sortOrder: 6
 topLevel: true
