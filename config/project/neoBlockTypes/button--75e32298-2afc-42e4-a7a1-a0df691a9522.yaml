@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  99e9a34b-f717-4b29-8c2b-75b95fd83d8f:
+  c705231b-b246-4128-a5ba-89771e0420d2:
     tabs:
       -
         elementCondition: null
@@ -29,13 +29,13 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
+            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 94e6ba7c-f9c8-42f3-85fe-4db177ffb63f
+            uid: 2efa7318-54c7-48d5-9a8b-96f42b48648d
             userCondition: null
             warning: null
             width: 100
@@ -53,13 +53,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2efa7318-54c7-48d5-9a8b-96f42b48648d
+            uid: 94e6ba7c-f9c8-42f3-85fe-4db177ffb63f
             userCondition: null
             warning: null
             width: 100
@@ -69,6 +69,7 @@ fieldLayouts:
 group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
 groupChildBlockTypes: true
 handle: button
+icon: null
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
@@ -77,5 +78,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Button
-sortOrder: 8
+sortOrder: 3
 topLevel: true

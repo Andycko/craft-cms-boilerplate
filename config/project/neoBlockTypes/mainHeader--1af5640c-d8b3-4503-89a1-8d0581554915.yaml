@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: d783368e-a494-4457-9e99-5a027ae72a18 # Page Header
 fieldLayouts:
-  6b4ac8f3-0289-4f15-a21e-a56d7c9cab3a:
+  51a0ccd7-12fc-4eb0-ae28-c7429490fa71:
     tabs:
       -
         elementCondition: null
@@ -75,6 +75,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dismissible: false
             elementCondition: null
             style: tip
             tip: 'If you add a background image more styling options will become available to you (on Save)'
@@ -155,13 +156,13 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
+            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: da1d02b5-7e6a-4fe4-9fd3-6ce55e8922c9
+            uid: 92b70028-f47c-4eb0-bccb-af95ed0d6332
             userCondition: null
             warning: null
             width: 100
@@ -179,13 +180,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 92b70028-f47c-4eb0-bccb-af95ed0d6332
+            uid: da1d02b5-7e6a-4fe4-9fd3-6ce55e8922c9
             userCondition: null
             warning: null
             width: 100
@@ -195,6 +196,7 @@ fieldLayouts:
 group: null
 groupChildBlockTypes: true
 handle: mainHeader
+icon: null
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

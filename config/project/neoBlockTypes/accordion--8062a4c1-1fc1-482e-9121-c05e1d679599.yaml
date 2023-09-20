@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  03e13715-9e15-411e-9502-fb9b8a38cb3b:
+  0a61ce64-f224-4c7d-ae7d-9c588d3e90ec:
     tabs:
       -
         elementCondition: null
@@ -81,6 +81,7 @@ fieldLayouts:
 group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
 groupChildBlockTypes: true
 handle: accordion
+icon: null
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
@@ -89,5 +90,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Accordion
-sortOrder: 7
+sortOrder: 2
 topLevel: true

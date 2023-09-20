@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  de116c4b-6fdd-4504-a503-62e66fb88f12:
+  8d8c01a5-df44-49ba-8d0e-71d08c61fc55:
     tabs:
       -
         elementCondition: null
@@ -41,13 +41,13 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
+            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: dc8b49a6-bbbd-4a63-aa98-9a5238267257
+            uid: cef4f976-7ad9-4bda-829c-8f7b45ebc48f
             userCondition: null
             warning: null
             width: 100
@@ -65,13 +65,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: cef4f976-7ad9-4bda-829c-8f7b45ebc48f
+            uid: dc8b49a6-bbbd-4a63-aa98-9a5238267257
             userCondition: null
             warning: null
             width: 100
@@ -81,6 +81,7 @@ fieldLayouts:
 group: dcc7e763-cfad-42ba-a4ed-f0c111f2446b # Media
 groupChildBlockTypes: true
 handle: imageSlider
+icon: null
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
@@ -89,5 +90,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Image Slider'
-sortOrder: 3
+sortOrder: 12
 topLevel: true
