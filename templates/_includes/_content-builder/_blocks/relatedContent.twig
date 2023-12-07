@@ -13,12 +13,7 @@
                     <a href="{{ item.url }}" class="d-flex flex-column">
                         {% if item.summaryImage.one %}
                             <div class="img mb-4">
-                                <img src="{{ item.summaryImage.one.url }}" alt="{{ item.title }}" class="w-100">
-                            </div>
-                        {% else %}
-                            <div class="img mb-4">
-                                <img src="https://via.placeholder.com/375x220?text=Missing+Summary+Image"
-                                     alt="{{ item.title }}" class="w-100">
+                                <img src="{{ item.summaryImage.one.url({ width: 800, height: 600, format: 'webp' }) }}" alt="{{ item.title }}" class="w-100">
                             </div>
                         {% endif %}
                         <h4 class="title pt-2 mb-3">
