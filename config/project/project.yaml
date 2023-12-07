@@ -1,4 +1,4 @@
-dateModified: 1695216943
+dateModified: 1701946801
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -25,10 +25,7 @@ meta:
     2f64efd3-101a-4ed1-a31e-96657d6dc6e5: Header # Header
     2fde90f2-c40d-4a04-a52c-94fbf040f6f1: Spacer # Spacer
     3cca813e-09a9-4025-8efa-d5ba11d4dd89: Email # Email
-    3d768a6c-7660-4551-8c77-a987ed1dfb44: 'External Link' # External Link
-    3e5005f5-763a-459a-9bb7-74b2de70f748: 'Button Title' # Button Title
     3f092924-7454-4778-a975-9d6112f3eb20: 'Google Analytics' # Google Analytics
-    3fb11a52-50bf-49c5-a8dd-c2ee482358ee: 'Button Link' # Button Link
     4af3caf9-e4e3-4acd-90f8-1e8cd585e497: Address # Address
     4b0ce80c-181f-4c40-bcce-5146dc8c903e: Video # Video
     4ee575cd-9fd3-4198-a6d1-3d8f2f13ea83: Copy # Copy
@@ -48,9 +45,9 @@ meta:
     8b5fa4d7-86cd-4e9b-b8d4-3731f1a60289: 'Main Navigation' # Main Navigation
     8d7e4ca7-1762-4215-b1e0-3022ed0176b3: 'Transparent Nav' # Transparent Nav
     8f3d51d8-227c-42c1-b81e-f3cba4189a99: SEO # SEO
-    9aeeb0f0-125e-4f5f-98a5-2e7b7f3666b7: 'Button Color' # Button Color
     9b2615ce-8e18-4334-aff3-d8c10a256d95: 'Video Header' # Video Header
     9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d: Blocks # Blocks
+    9fa8596c-cc11-4009-8d86-3214b5170cac: Button # Button
     13d35453-527a-4094-b642-42292f193f8c: 'Social Profiles' # Social Profiles
     18d78006-3985-4ea4-b620-67bae10d9c2d: $SITE_NAME # $SITE_NAME
     32e8ea43-4e6d-46eb-9344-6755923c28de: Homepage # Homepage
@@ -85,15 +82,13 @@ meta:
     b4718bab-e938-4b97-a8e4-adc9fe5f4ca7: 'Content Builder' # Content Builder
     ba88d9cd-1570-43ff-9e92-aa456cff2540: Video # Video
     bb3731df-a01f-4725-9f8b-06d99359fd9f: 'Top Spacing' # Top Spacing
-    bd1a9dd9-c492-4932-ad06-98c72a16cfd8: 'Button Title' # Button Title
     c01ae0b2-724f-499b-b0f2-ff2b6fe171a4: 'Footer Disclaimer' # Footer Disclaimer
     c2e72f3c-fb9f-4c37-a442-ed5cdea1f393: 'Custom Pages' # Custom Pages
     c4480af9-afa8-430b-b22c-e0eddbe00de3: 'Map Coordinates' # Map Coordinates
+    ceb187cb-42b6-4867-baa4-870b46390018: 'Header + Copy' # Header + Copy
     d0dfc594-439a-40f9-8d15-a5ba6a0a5a1b: 'Header Colour' # Header Colour
     d9a8f905-7705-41f9-a662-e8966f03085f: Longitude # Longitude
     d9aafe6e-671c-45da-9958-ccb6470336d6: 'Alt Icon' # Alt Icon
-    d54ca455-7ff5-451f-98e4-350b3abb1847: 'Button Link' # Button Link
-    d563f248-37de-412a-b0ad-eea19da5e0f9: 'Internal Link' # Internal Link
     d305657a-b071-42af-960e-aa7b81715a02: Latest # Latest
     d783368e-a494-4457-9e99-5a027ae72a18: 'Page Header' # Page Header
     dcc7e763-cfad-42ba-a4ed-f0c111f2446b: Media # Media
@@ -101,18 +96,20 @@ meta:
     ddd7384c-d723-4aad-b2f6-845216bb1dbf: Latest # Latest
     dea301bb-972e-43c2-81fe-f145398244c7: 'Sub Footer Navigation' # Sub Footer Navigation
     df00ec17-8cfe-4dc9-b2f9-095eea3f665c: 'Latest Articles' # Latest Articles
-    dfadf56c-6052-4f7d-b164-e55fac2e6474: 'Button Color' # Button Color
     e0603daf-7cb8-485e-9c55-2011a86f0489: 'Overlay Opacity' # Overlay Opacity
     e5b76ff1-163b-49c0-bd4d-718bc1b5db55: 'Text Colour' # Text Colour
+    e946413a-eda6-4421-a193-be4432b008be: CTAs # CTAs
     ead943da-9146-4b32-9f33-8096b522e085: 'External Video' # External Video
     ecaf2e51-4a07-4d82-a78b-8181faba1e87: 'Image Slider' # Image Slider
     ed9d2994-c74c-40fe-9f3f-280fe7a5360a: Default # Default
+    f015d92d-b254-4665-af27-dfbe1ab2ab62: 'Button Colour' # Button Colour
     f1abfa1e-3f54-4765-8991-815c87484c9b: Contact # Contact
     f4ab9061-e9c0-4e8c-9e1f-70b599725985: 'Show Overlay' # Show Overlay
     f85e63c0-1f6c-495c-95b7-6b70d338bd07: Copy # Copy
     f99d20c5-6966-4180-8dc1-595df3b8f876: $SITE_NAME # $SITE_NAME
     f122d996-7ed0-4bc1-ad02-50e74deac2df: Image # Image
     f6901440-dc45-4323-a125-0a7d3d90f06c: About # About
+    fea296bc-90b6-49bf-8aac-b065d489368b: Button # Button
 plugins:
   aws-s3:
     edition: standard
@@ -165,6 +162,7 @@ plugins:
   freeform:
     edition: lite
     enabled: true
+    licenseKey: 45LJE1C1SPXLFJO87KF1XUKW
     schemaVersion: 4.2.7
     settings:
       ajaxByDefault: true
@@ -252,10 +250,12 @@ plugins:
   navigation:
     edition: standard
     enabled: true
+    licenseKey: 7LVFR2AP25MOQ999X51S4JL6
     schemaVersion: 2.0.7
   neo:
     edition: standard
     enabled: true
+    licenseKey: ZPICGH68FLND71JVXT3VKDR9
     schemaVersion: 3.6.2
   oembed:
     edition: standard
@@ -314,6 +314,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
 system:
   edition: solo
   live: true

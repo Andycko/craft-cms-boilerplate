@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  2e604404-8eca-49eb-ba47-d3ada9adb85c:
+  89380004-e8c0-4f63-a7d6-ab4ab2875683:
     tabs:
       -
         elementCondition: null
@@ -60,7 +60,7 @@ fieldLayouts:
         name: Content
         uid: 655727c3-da54-481f-bdf5-2b7e5d13900a
         userCondition: null
-group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
+group: ceb187cb-42b6-4867-baa4-870b46390018 # Header + Copy
 groupChildBlockTypes: true
 handle: header
 icon: null
@@ -72,5 +72,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Header
-sortOrder: 5
+sortOrder: 3
 topLevel: true

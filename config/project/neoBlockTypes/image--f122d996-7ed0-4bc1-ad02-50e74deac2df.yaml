@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  a8c659d1-9a97-426e-be31-680a5678c209:
+  37e023cb-c31a-4e1a-b46d-a4164379789e:
     tabs:
       -
         elementCondition: null
@@ -29,6 +29,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b575582-b60b-473a-945d-9d638e57eac6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
@@ -51,18 +63,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2b575582-b60b-473a-945d-9d638e57eac6
-            userCondition: null
-            warning: null
-            width: 100
         name: Settings
         uid: 54c9e198-6d41-4ee5-9c1a-fbc03f4dbe2b
         userCondition: null
@@ -78,5 +78,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Image
-sortOrder: 11
+sortOrder: 13
 topLevel: true

@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  87ba24bf-2cca-42c3-9098-547ae02e7ff5:
+  5073f0be-088f-4062-9dd7-49fbfee199ba:
     tabs:
       -
         elementCondition: null
@@ -29,6 +29,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa2c575f-4cb0-4c12-aa2b-57a05348ec75
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
@@ -51,22 +63,10 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: fa2c575f-4cb0-4c12-aa2b-57a05348ec75
-            userCondition: null
-            warning: null
-            width: 100
         name: Settings
         uid: c0294107-b807-417a-a1da-88628b8efd41
         userCondition: null
-group: 9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d # Blocks
+group: ceb187cb-42b6-4867-baa4-870b46390018 # Header + Copy
 groupChildBlockTypes: true
 handle: copy
 icon: null
@@ -78,5 +78,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Copy
-sortOrder: 4
+sortOrder: 2
 topLevel: true

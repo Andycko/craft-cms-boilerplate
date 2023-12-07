@@ -1,0 +1,143 @@
+field: ae523ce4-60b9-4674-8ed4-cbfa6ff0c20c # Button
+fieldLayouts:
+  a7879e4c-3900-49a8-9364-10058e05ea37:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9fa8596c-cc11-4009-8d86-3214b5170cac # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 680e6cfc-92f7-4827-98d4-8fde536f4b1e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f015d92d-b254-4665-af27-dfbe1ab2ab62 # Button Colour
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e327b112-7875-4b2b-9377-b40b2570eb9a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ea9ccc87-686f-444e-a09d-45a66c8a464a
+        userCondition: null
+fields:
+  9fa8596c-cc11-4009-8d86-3214b5170cac: # Button
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: button
+    instructions: 'Choose a link for your button'
+    name: Button
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: true
+      autoNoReferrer: true
+      customTextMaxLength: 0
+      customTextRequired: true
+      defaultLinkName: entry
+      defaultText: ''
+      enableAllLinkTypes: true
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+  f015d92d-b254-4665-af27-dfbe1ab2ab62: # Button Colour
+    columnSuffix: hyrdujjg
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonColour
+    instructions: null
+    name: 'Button Colour'
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Black
+            -
+              - value
+              - button-black
+            -
+              - cssColour
+              - '000'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - button-white
+            -
+              - cssColour
+              - fff
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\buttonbox\fields\Colours
+handle: button
+name: Button
+sortOrder: 1

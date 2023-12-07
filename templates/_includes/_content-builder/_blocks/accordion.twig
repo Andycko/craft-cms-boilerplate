@@ -1,10 +1,12 @@
 <div class="outer {{ block.backgroundColour }}">
     <div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} accordion-block">
-        <div class="row pt-5">
-            <div class="col-12">
-                <h2>{{ block.header }}</h2>
+        {% if block.header %}
+            <div class="row pt-5">
+                <div class="col-12">
+                    <h2>{{ block.header }}</h2>
+                </div>
             </div>
-        </div>
+        {% endif %}
         <div class="row pt-3 pb-5">
             <div class="col-12">
                 <div id="accordion" class="accordion">
@@ -15,7 +17,9 @@
                                     <button class="position-relative collapsed" data-toggle="collapse"
                                             data-target="#{{ 'collapse' ~ loop.index }}" aria-expanded="false"
                                             aria-controls="{{ 'collapse' ~ loop.index }}">
-                                        {{ item.header }}
+                                        {% if item.header %}
+                                            {{ item.header }}
+                                        {% endif %}
                                         <span class="plus">
                                             <span></span>
                                             <span></span>
@@ -25,9 +29,11 @@
                             </div>
                             <div id="{{ 'collapse' ~ loop.index }}" class="body collapse collapsed"
                                  aria-labelledby="{{ 'header' ~ loop.index }}" data-parent="#accordion">
-                                <div class="copy p-4">
-                                    {{ item.copy }}
-                                </div>
+                                {% if item.copy %}
+                                    <div class="copy p-4">
+                                        {{ item.copy }}
+                                    </div>
+                                {% endif %}
                             </div>
                         </div>
                     {% endfor %}

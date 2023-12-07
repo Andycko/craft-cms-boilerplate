@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
 fieldLayouts:
-  03c18548-0607-4a8e-a998-5d9e52dc4106:
+  fcc2c58f-18a5-4148-95a2-8b9e41769dc8:
     tabs:
       -
         elementCondition: null
@@ -37,6 +37,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9c351553-dba9-42dc-86e7-d3b3bbd6c84c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: bb3731df-a01f-4725-9f8b-06d99359fd9f # Top Spacing
             instructions: null
             label: null
@@ -59,18 +71,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 336f207f-f4fb-43c3-bbc3-f10b641e940a # Background Colour
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9c351553-dba9-42dc-86e7-d3b3bbd6c84c
-            userCondition: null
-            warning: null
-            width: 100
         name: Settings
         uid: 8ae27b05-498f-4ee9-aef4-e23882d7e069
         userCondition: null
@@ -86,5 +86,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Map
-sortOrder: 13
+sortOrder: 15
 topLevel: true

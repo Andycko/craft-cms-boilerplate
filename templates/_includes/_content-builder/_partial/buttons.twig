@@ -1,15 +1,14 @@
 {# When including in templates, must include with "buttons" and "classes" #}
+{# If check to determine if button is from CMS field or manually included #}
 
-{% if buttons.one %}
-    <div class="buttons d-flex flex-wrap">
-        {% for item in buttons.all() %}
-            {% if item.type == "internalLink" %}
-                <a href="{{ item.buttonLink.one ? item.buttonLink.one.url }}"
-                   class="button {{ classes }} {{ item.buttonColor }} d-inline-block {{ not loop.last ? "mr-3" }}">{{ item.buttonTitle }}</a>
-            {% elseif item.type == "externalLink" %}
-                <a href="{{ item.buttonLink }}" class="button {{ classes }} {{ item.buttonColor }} d-inline-block {{ not loop.last ? "mr-3" }}" target="_blank"
-                   rel="noopener">{{ item.buttonTitle }}</a>
-            {% endif %}
-        {% endfor %}
-    </div>
+{% if buttons is defined and buttons.one %}
+    {% for button in buttons.all() %}
+        <a{{ button.button.getLinkAttributes() }} class="button {{ classes }} {{ button.buttonColour }} {{ not loop.last ? "me-5" }}">
+            <span>{{ button.button.getCustomText }}</span>
+        </a>
+    {% endfor %}
+{#{% else %}#}
+{#    <a href="{{ link }}" class="button {{ classes }}">#}
+{#        <span>{{ text }}</span>#}
+{#    </a>#}
 {% endif %}

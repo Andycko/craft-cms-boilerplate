@@ -3,10 +3,7 @@
         <div class="row py-5 justify-content-center">
             <div class="col-12">
                 {% if block.image.one() %}
-                    <img class="w-100" src="{{ block.image.one.url() }}" alt="{{ block.image.one() }}">
-                {% else %}
-                    <img class="w-100" src="https://via.placeholder.com/1920x1080.jpg?text=Missing+image"
-                         alt="Placeholder image">
+                    <img class="w-100" src="{{ block.image.one.url({ width: 1800, format: 'webp' }) }}" alt="{{ block.image.one.title }}">
                 {% endif %}
             </div>
         </div>
