@@ -13,26 +13,7 @@
             {% set query = section.limit(6) %}
             {% paginate query as pageInfo, pageEntries %}
             {% for item in pageEntries %}
-                <div class="col-12 col-md-6 col-lg-4 mb-4 latest-article d-flex flex-grow-1 flex-column">
-                    <a href="{{ item.url }}" class="d-flex flex-grow-1 flex-column">
-                        {% if item.summaryImage.one %}
-                            <div class="img mb-4">
-                                <img src="{{ item.summaryImage.one.url({width: 375, height: 220}) }}" alt="{{ item.title }}" class="w-100">
-                            </div>
-                        {% else %}
-                            <div class="img mb-4">
-                                <img src="https://via.placeholder.com/375x220?text=Missing+Summary+Image" alt="{{ item.title }}" class="w-100">
-                            </div>
-                        {% endif %}
-                        <h3 class="title pt-2 mb-3">
-                            <span>{{ item.title|length > 45 ? item.title|slice(0, 45) ~ '...' : item.title }}</span>
-                        </h3>
-                        {% if item.pageSummary %}
-                            <div class="copy mb-3">{{ item.pageSummary|length > 170 ? item.pageSummary|slice(0, 170) ~ '...' : item.pageSummary }}</div>
-                        {% endif %}
-                        <div>{{ item.postDate | date("M d, Y") | upper }}</div>
-                    </a>
-                </div>
+                {% include '/_includes/_content-builder/_partial/article.twig' %}
             {% endfor %}
         </div>
         {% if pageInfo.totalPages > 1 %}
