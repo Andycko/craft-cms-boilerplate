@@ -5,17 +5,17 @@
     "require": {
         "adigital/cookie-consent-banner": "2.0.0",
         "craftcms/aws-s3": "2.0.3",
-        "craftcms/cms": "4.5.11.1",
+        "craftcms/cms": "4.7.2",
         "craftcms/redactor": "3.0.4",
         "ether/seo": "4.2.1",
         "sebastianlenz/linkfield": "2.1.5",
-        "solspace/craft-freeform": "4.1.13",
-        "spicyweb/craft-neo": "3.9.10",
+        "solspace/craft-freeform": "5.0.9",
+        "spicyweb/craft-neo": "4.0.3",
         "verbb/buttonbox": "4.2.0",
-        "verbb/navigation": "2.0.22",
+        "verbb/navigation": "2.0.25",
         "verbb/super-table": "3.0.12",
         "vlucas/phpdotenv": "^3.4.0",
-        "wrav/oembed": "3.0.4"
+        "wrav/oembed": "3.0.7"
     },
     "require-dev": {
         "yiisoft/yii2-shell": "^2.0.5"
