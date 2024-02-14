@@ -60,5 +60,9 @@
   "browserslist": [
     "defaults and supports es6-module",
     "maintained node versions"
-  ]
+  ],
+  "overrides": {
+    "chokidar": "3.5.3",
+    "glob-parent": "6.0.2"
+  }
 }

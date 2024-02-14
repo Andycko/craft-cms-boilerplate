@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4109685a1e800b7989f184f9684cd3b",
+    "content-hash": "d58b829b5f4fe667f7fd09dcc98cae84",
     "packages": [
         {
             "name": "adigital/cookie-consent-banner",
@@ -384,11 +384,11 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.6.6",
+            "version": "2.7.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/683557bd2466072777309d039534bb1332d0dda5",
-                "reference": "683557bd2466072777309d039534bb1332d0dda5",
+                "url": "https://api.github.com/repos/composer/composer/zipball/aaf6ed5ccd27c23f79a545e351b4d7842a99d0bc",
+                "reference": "aaf6ed5ccd27c23f79a545e351b4d7842a99d0bc",
                 "shasum": ""
             },
             "require": {
@@ -406,7 +406,7 @@
                 "seld/jsonlint": "^1.4",
                 "seld/phar-utils": "^1.2",
                 "seld/signal-handler": "^2.0",
-                "symfony/console": "^5.4.11 || ^6.0.11",
+                "symfony/console": "^5.4.11 || ^6.0.11 || ^7",
                 "symfony/filesystem": "^5.4 || ^6.0 || ^7",
                 "symfony/finder": "^5.4 || ^6.0 || ^7",
                 "symfony/polyfill-php73": "^1.24",
@@ -425,7 +425,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.6-dev"
+                    "dev-main": "2.7-dev"
                 },
                 "phpstan": {
                     "includes": [
@@ -460,7 +460,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2023-12-08T17:32:26+00:00"
+            "time": "2024-02-09T14:26:28+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -738,16 +738,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.7.2",
+            "version": "4.7.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/cf03b115fc3f08df4af8d32ce90530de95a3294f",
-                "reference": "cf03b115fc3f08df4af8d32ce90530de95a3294f",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/dd064320f3acce49ee601059c882da7b0a3acb41",
+                "reference": "dd064320f3acce49ee601059c882da7b0a3acb41",
                 "shasum": ""
             },
             "require": {
                 "commerceguys/addressing": "^1.2",
-                "composer/composer": "^2.2.19",
+                "composer/composer": "^2.7.0",
                 "craftcms/plugin-installer": "~1.6.0",
                 "craftcms/server-check": "~2.1.2",
                 "creocoder/yii2-nested-sets": "~0.9.0",
@@ -830,7 +830,7 @@
                 "docs": "https://craftcms.com/docs/4.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-02-07T22:39:35+00:00"
+            "time": "2024-02-08T16:40:44+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -3866,11 +3866,11 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "5.0.9",
+            "version": "5.0.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/bd56c4630a6484d67550a41968966de9d7983f6b",
-                "reference": "bd56c4630a6484d67550a41968966de9d7983f6b",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/da50b425877c714e9d7112d85fccd9ca78539991",
+                "reference": "da50b425877c714e9d7112d85fccd9ca78539991",
                 "shasum": ""
             },
             "require": {
@@ -3929,7 +3929,7 @@
                 }
             ],
             "description": "The most reliable form builder that's ready for wherever your project takes you.",
-            "time": "2024-02-07T21:29:21+00:00"
+            "time": "2024-02-08T20:15:34+00:00"
         },
         {
             "name": "solspace/craft3-commons",
@@ -3957,11 +3957,11 @@
         },
         {
             "name": "spicyweb/craft-neo",
-            "version": "4.0.3",
+            "version": "4.0.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/de1604870423481d31e8119668112c0c958b247f",
-                "reference": "de1604870423481d31e8119668112c0c958b247f",
+                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/396643930c737e5c39610c15110e1e39c210912c",
+                "reference": "396643930c737e5c39610c15110e1e39c210912c",
                 "shasum": ""
             },
             "require": {
@@ -3975,7 +3975,7 @@
                 "schemaVersion": "4.0.0",
                 "class": "benf\\neo\\Plugin",
                 "changelogUrl": "https://github.com/spicywebau/craft-neo/blob/4.x/CHANGELOG.md",
-                "downloadUrl": "https://github.com/spicywebau/craft-neo/archive/refs/tags/4.0.3.zip"
+                "downloadUrl": "https://github.com/spicywebau/craft-neo/archive/refs/tags/4.0.5.zip"
             },
             "autoload": {
                 "psr-4": {
@@ -4003,10 +4003,10 @@
             "support": {
                 "issues": "https://github.com/spicywebau/craft-neo/issues",
                 "source": "https://github.com/spicywebau/craft-neo",
-                "docs": "https://github.com/spicywebau/craft-neo/blob/4.0.3/README.md",
+                "docs": "https://github.com/spicywebau/craft-neo/blob/4.0.5/README.md",
                 "rss": "https://github.com/spicywebau/craft-neo/commits/4.x.atom"
             },
-            "time": "2024-01-29T08:58:19+00:00"
+            "time": "2024-02-13T23:51:39+00:00"
         },
         {
             "name": "stripe/stripe-php",
