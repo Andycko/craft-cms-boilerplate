@@ -2,6 +2,7 @@ fieldLayouts:
   7dbf399e-3c1f-423e-a751-ddc09e73f155:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,58 +27,92 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 64ee2b07-5bc1-46b5-8cf0-19b2639a47f5
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6693a871-da5a-4da2-956a-bac59e8453d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 73bc541a-22cb-4ec3-a948-a66733e45d32 # News Categories
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 98fd4646-2fc8-4bcc-8650-cdfc44b7b139
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: fc6d2f01-950a-4673-93e8-95d3af051c57
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 39237593-ff51-4bd3-851a-a9dfac329c0b # Page Summary
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f18a522c-1be4-4d0c-944d-16196e387f13
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 4184d945-e90d-4433-b1f3-727edf65107e # Summary Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 361d5c5b-8334-4ea4-979e-5eb1053a03d0
+            userCondition: null
             warning: null
             width: 100
         name: Summary
-        sortOrder: 2
+        uid: ee62e1cc-cb90-41ab-ac52-9ffe1e744ef2
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 7c5c4db7-bc5e-4979-a31b-6b7734989556 # SEO
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: dd2e98f0-9c30-4f89-8f01-35f9088f2782
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 3
+        uid: 355b70a4-ef87-41ce-a27c-dfef47ea057d
+        userCondition: null
 handle: latest
 hasTitleField: true
 name: Latest
 section: ddd7384c-d723-4aad-b2f6-845216bb1dbf # Latest
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

@@ -14,8 +14,8 @@
                         <div class="item">
                             <div id="{{ 'header' ~ loop.index }}" class="mt-2 header">
                                 <h5>
-                                    <button class="position-relative collapsed" data-toggle="collapse"
-                                            data-target="#{{ 'collapse' ~ loop.index }}" aria-expanded="false"
+                                    <button class="position-relative collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#{{ 'collapse' ~ loop.index }}" aria-expanded="false"
                                             aria-controls="{{ 'collapse' ~ loop.index }}">
                                         {% if item.header %}
                                             {{ item.header }}
@@ -28,7 +28,7 @@
                                 </h5>
                             </div>
                             <div id="{{ 'collapse' ~ loop.index }}" class="body collapse collapsed"
-                                 aria-labelledby="{{ 'header' ~ loop.index }}" data-parent="#accordion">
+                                 aria-labelledby="{{ 'header' ~ loop.index }}" data-bs-parent="#accordion">
                                 {% if item.copy %}
                                     <div class="copy p-4">
                                         {{ item.copy }}
