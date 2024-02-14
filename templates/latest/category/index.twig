@@ -1,5 +1,22 @@
 {% extends "_layout" %}
 
+{# sets up the categorySlug based on the last segment of the URL #}
+{% set categorySlug = craft.app.request.segments | last %}
+
+{# set page title and description for news filtered pages #}
+{% if entry is not defined %}
+    {% set entry = craft.entries.section("latestIndex").one %}
+    {% set title = "Latest - " ~ craft.app.request.segments|last|title %}
+    {% set filter = craft.app.request.segments|last|title %}
+    {% set pageDescription = "Latest - Filtered by " ~ craft.app.request.segments|last|title %}
+    {% set seo = craft.seo.custom(
+        {
+            title:  title
+        },
+        pageDescription
+    ) %}
+{% endif %}
+
 {% block content %}
 
     {% if entry.pageHeader.count() %}
@@ -10,17 +27,19 @@
     <div class="container">
 
         <div class="news-categories d-flex flex-wrap align-items-center mb-5">
-            <span class="text-uppercase mb-2 me-4">Filters:</span>
-            <span class="text-uppercase fw-bold mb-2">All</span>
+            <span class="text-uppercase font-weight-bold underline mb-2 me-4">Filters:</span>
+            <a href="/latest" class=" text-uppercase mb-2">All</a>
             <span class="text-aqua px-3 mb-2">|</span>
             {% for cat in craft.categories().group('newsCategories').all() %}
-                <a href="{{ cat.url }}" class="text-uppercase mb-2">{{ cat.title }}</a>
+                <a href="{{ cat.url }}" class="text-uppercase mb-2 {% if categorySlug == cat.slug %}fw-bold{% endif %}">{{ cat.title }}</a>
                 {% if not loop.last %}<span class="px-3 mb-2">|</span>{% endif %}
             {% endfor %}
         </div>
 
         <div class="row pb-5">
-            {% set section = craft.entries.section('latest') %}
+            {# Now that we have set the category slug above we can get the realted category object #}
+            {% set category = craft.categories.slug(categorySlug).one() %}
+            {% set section = craft.entries.section('latest').relatedTo(category) %}
             {% set query = section.limit(6) %}
             {% paginate query as pageInfo, pageEntries %}
             {% for item in pageEntries %}
