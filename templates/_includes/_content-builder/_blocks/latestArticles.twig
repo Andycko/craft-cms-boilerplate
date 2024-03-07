@@ -7,7 +7,7 @@
                 </div>
             </div>
         {% endif %}
-        <div class="row {{ block.header | length ?  "pt-4 pb-5" : "py-5" }}">
+        <div class="row {{ block.header | length ? "pt-4 pb-5" : "py-5" }}">
             {% for item in craft.entries.section('latest').limit(3).all() %}
                 {% include '/_includes/_content-builder/_partial/article.twig' %}
             {% endfor %}
