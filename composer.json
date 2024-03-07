@@ -3,19 +3,19 @@
     "description": "This is a boilerplate for Craft CMS",
     "license": "MIT",
     "require": {
-        "adigital/cookie-consent-banner": "2.0.0",
+        "adigital/cookie-consent-banner": "2.0.1",
         "craftcms/aws-s3": "2.0.3",
-        "craftcms/cms": "4.7.2.1",
+        "craftcms/cms": "4.8.1",
         "craftcms/redactor": "3.0.4",
-        "ether/seo": "4.2.1",
+        "ether/seo": "4.2.2",
         "sebastianlenz/linkfield": "2.1.5",
-        "solspace/craft-freeform": "5.0.10",
-        "spicyweb/craft-neo": "4.0.5",
+        "solspace/craft-freeform": "5.1.2",
+        "spicyweb/craft-neo": "4.0.6",
         "verbb/buttonbox": "4.2.0",
-        "verbb/navigation": "2.0.25",
+        "verbb/navigation": "2.0.26",
         "verbb/super-table": "3.0.12",
         "vlucas/phpdotenv": "^3.4.0",
-        "wrav/oembed": "3.0.7"
+        "wrav/oembed": "3.0.8"
     },
     "require-dev": {
         "yiisoft/yii2-shell": "^2.0.5"

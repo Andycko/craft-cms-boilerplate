@@ -1,7 +1,7 @@
 <div class="outer {{ block.backgroundColour }}">
     <div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} copy-block">
         <div class="row py-5">
-            {% if block.copy %}
+            {% if block.copy | length %}
                 <div class="col-12">{{ block.copy }}</div>
             {% endif %}
         </div>

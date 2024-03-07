@@ -2,10 +2,10 @@
     <div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} largeQuote-block">
         <div class="row py-5 justify-content-center">
             <div class="col-7 quote d-flex flex-column">
-                {% if block.copy %}
+                {% if block.copy | length %}
                     <div class="copy">{{ block.copy }}</div>
                 {% endif %}
-                {% if block.author %}
+                {% if block.author | length %}
                     <h5 class="author ps-3">- {{ block.author }}</h5>
                 {% endif %}
             </div>

@@ -2,14 +2,14 @@
     <div class="container {{ block.topSpacing }} {{ block.bottomSpacing }} copy-block">
         <div class="row py-5">
             <div class="col-12 col-lg-6">
-                {% if block.header %}
+                {% if block.header | length %}
                     <h3 class="">
                         {{ block.header | nl2br }}
                     </h3>
                 {% endif %}
             </div>
             <div class="col-12">
-                {% if block.copy %}
+                {% if block.copy | length %}
                     <div class="copy">
                         {{ block.copy }}
                     </div>

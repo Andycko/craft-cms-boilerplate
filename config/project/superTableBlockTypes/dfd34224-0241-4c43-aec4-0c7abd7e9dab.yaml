@@ -1,63 +1,78 @@
+changedFieldIndicator: 967712601
 field: 13d35453-527a-4094-b642-42292f193f8c # Social Profiles
 fieldLayouts:
   f73678d2-2b29-48d7-99ef-179a914dc502:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 1f6a1dc8-82d8-47a8-ae54-01af20652730 # Name
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 04c536c3-f73d-4ca7-85ca-50e0d8acedaa
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 5cd6ad16-cb88-45ba-b275-1558f8f27c05 # Link
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ba83ae0b-ea3d-40c4-89f3-6d3e8534008b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a596aec7-c8ec-49d7-ab4d-97dcdf5ac990 # Icon
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 364eb41b-af94-40cb-bd43-6998de612fdf
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d9aafe6e-671c-45da-9958-ccb6470336d6 # Alt Icon
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a87003cb-13e7-4241-93ae-af03a9b88cf7
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 22f55445-1a39-4046-b6c1-a9f2c4fe6690
+        userCondition: null
 fields:
   1f6a1dc8-82d8-47a8-ae54-01af20652730: # Name
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: socialName
-    instructions: ''
+    instructions: null
     name: Name
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -68,12 +83,11 @@ fields:
     contentColumnType: string(255)
     fieldGroup: null
     handle: socialLink
-    instructions: ''
+    instructions: null
     name: Link
     searchable: false
     settings:
-      maxLength: '255'
-      placeholder: null
+      maxLength: 255
       types:
         - url
     translationKeyFormat: null
@@ -84,29 +98,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: socialIcon
-    instructions: ''
+    instructions: null
     name: Icon
     searchable: false
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
-      allowedKinds: null
-      defaultUploadLocationSource: ''
-      defaultUploadLocationSubpath: ''
-      limit: ''
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: null
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: ''
-      selectionLabel: ''
-      showSiteMenu: false
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: null
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: ''
-      singleUploadLocationSubpath: ''
-      source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
@@ -117,29 +136,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: altSocialIcon
-    instructions: ''
+    instructions: null
     name: 'Alt Icon'
     searchable: false
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
-      allowedKinds: null
-      defaultUploadLocationSource: ''
-      defaultUploadLocationSubpath: ''
-      limit: ''
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: null
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: ''
-      selectionLabel: ''
-      showSiteMenu: false
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: null
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: ''
-      singleUploadLocationSubpath: ''
-      source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null

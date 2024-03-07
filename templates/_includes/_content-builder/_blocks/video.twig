@@ -25,7 +25,7 @@
                             {% endif %}
                         {% else %}
                             {% if vid.video.one %}
-                                <video src="{{ vid.video.url }}" alt="{{ vid.video }}" controls playsinline></video>
+                                <video src="{{ vid.video.one.url }}" alt="{{ vid.video.one.title }}" controls playsinline></video>
                             {% else %}
                                 <video autoplay loop>
                                     <source src="./img/video_placeholder.mp4">
