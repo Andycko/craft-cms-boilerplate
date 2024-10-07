@@ -1,4 +1,4 @@
-dateModified: 1709828932
+dateModified: 1728313577
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -165,7 +165,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: 45LJE1C1SPXLFJO87KF1XUKW
-    schemaVersion: 5.0.21
+    schemaVersion: 5.2.5
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
