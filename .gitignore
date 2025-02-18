@@ -1,5 +1,7 @@
 /.idea
 .DS_Store
+.vscode
+.vscode/*
 
 /public/cache
 /scripts/.env.sh_backup
@@ -27,6 +29,7 @@ craft/.htaccess
 # BUILD FILES
 /bower_components/*
 node_modules
+node_modules/*
 /build/*
 /yarn-error.log
 /npm-debug.log
