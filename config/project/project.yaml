@@ -1,4 +1,4 @@
-dateModified: 1728313577
+dateModified: 1739876899
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -29,9 +29,11 @@ meta:
     4af3caf9-e4e3-4acd-90f8-1e8cd585e497: Address # Address
     4b0ce80c-181f-4c40-bcce-5146dc8c903e: Video # Video
     4ee575cd-9fd3-4198-a6d1-3d8f2f13ea83: Copy # Copy
+    4eee8941-c961-4c14-96de-47037bca5192: Simple # Simple
     5cd6ad16-cb88-45ba-b275-1558f8f27c05: Link # Link
     5d2dca76-1ede-413a-8adf-b4a756ed42ae: 'Site Info' # Site Info
     6abd3112-8db8-4e93-b4ed-d681318ea294: 'Large Quote' # Large Quote
+    6ac042db-b73d-43c5-b994-c51077efd7dc: Default # Default
     6b6833e3-09b6-4302-8492-fd06e3f794e4: Summary # Summary
     6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8: Header # Header
     6c4a2320-184d-4f3b-9482-070fc8b8194a: 'Bottom Spacing' # Bottom Spacing
@@ -125,6 +127,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   cookie-consent-banner:
     edition: standard
     enabled: true
@@ -165,7 +171,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: 45LJE1C1SPXLFJO87KF1XUKW
-    schemaVersion: 5.2.5
+    schemaVersion: 5.4.2
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
@@ -263,10 +269,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.1
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
   seo:
     edition: standard
     enabled: true
