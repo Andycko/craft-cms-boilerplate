@@ -1,16 +1,35 @@
+{#
+    Section: Page - Default
+    ========================================
+    The inclusion logic for the section's entry types
+#}
+
+{# Set the component's default properties #}
+{% set hero = entry.heroes.eagerly().one() | default(null) %}
+{% set content = entry.pageContent.eagerly().all() | default(null) %}
+
+{# Inherit the blocks and their content from the site layout. #}
+
 {% extends "_layout" %}
 
 {% block content %}
 
-    {% if entry.pageHeader.count() %}
-        {% set header = entry.pageHeader.one %}
-        {% include '_includes/_page-headers/_' ~ header.type.handle %}
-    {% endif %}
+    {# Entry Hero #}
+    {% include "/_includes/_heroes/_" ~ (hero.type.handle | default(null)) ignore missing with {
+        hero: hero
+    } only %}
 
-    {% if entry.contentBuilder %}
-        {% for block in entry.contentBuilder.all() %}
-            {% include '_includes/_content-builder/_blocks/' ~ block.type.handle %}
-        {% endfor %}
-    {% endif %}
+    {# Content #}
+    {% for index, block in content %}
+        
+        {# <pre>
+            {{ dump(block.type.handle) }}
+        </pre> #}
+
+        {% include '/_includes/_content-builder/_' ~ (block.type.handle | kebab) ignore missing with {
+            index: index,
+            block: block,
+        } only %}
+    {% endfor %}
 
 {% endblock %}

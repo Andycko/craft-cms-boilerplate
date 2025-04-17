@@ -1,0 +1,33 @@
+columnSuffix: null
+handle: backgroundColour
+instructions: 'Pick a background colour (white by default). Click for more colour presets. '
+name: 'Background Colour'
+searchable: false
+settings:
+  allowCustomColors: true
+  palette:
+    -
+      __assoc__:
+        -
+          - color
+          - '#ffffff'
+        -
+          - label
+          - White
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - color
+          - '#000000'
+        -
+          - label
+          - Black
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

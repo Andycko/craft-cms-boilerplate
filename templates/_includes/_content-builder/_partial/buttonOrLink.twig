@@ -1,0 +1,7 @@
+{% for item in block.buttonOrLink.all() %}
+    {% if item.type == "buttons" %}
+        <div>{% include '/_includes/_content-builder/_partial/button.twig' with {'button': item, 'classes': item.buttonColour ~ ' mb-3' } %}</div>
+    {% elseif item.type == "links" %}
+        <div>{% include '/_includes/_content-builder/_partial/link.twig' with {'link': item, 'classes': 'mb-3', 'colour': block.textColour ?? colour } %}</div> 
+    {% endif %}
+{% endfor %}

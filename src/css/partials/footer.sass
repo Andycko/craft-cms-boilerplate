@@ -1,0 +1,33 @@
+@use './variables'
+
+footer
+  border-top: 1px solid variables.$white
+  color: variables.$white
+  font-size: 1.1rem
+  background-color: variables.$black
+  .fortytwo-logo
+    width: 80px
+    object-fit: cover
+    &:hover
+      opacity: 0.6
+  a
+    color: variables.$white
+    text-decoration: none
+    font-size: 1.1rem
+    &:hover
+      text-decoration: underline
+  .sub-footer
+    font-size: 1rem
+  .social-icon
+    width: 20px
+    &:hover
+      opacity: 0.6
+  .link
+    border-bottom: none
+    &:hover
+      text-decoration: underline
+  .fortytwo-logo-container
+    @media screen and (min-width: 991px)
+      position: absolute
+      bottom: 10px
+      right: 0       

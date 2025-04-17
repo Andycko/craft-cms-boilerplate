@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="referrer" content="origin-when-cross-origin" />
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="origin-when-cross-origin" />
 
-    {% hook "seo" %}
-    {% include '_includes/_global/icons' %}
+        {% hook "seo" %}
+        {% include '_includes/_global/icons' %}
 
-    <link rel="home" href="{{ siteUrl }}" />
-    <link rel="stylesheet" href="/css/style.css">
+        <link rel="home" href="{{ siteUrl }}" />
 
-    <script src="/js/bundle.main.js"></script>
-    {% include '_includes/_global/tracking-scripts' %}
-</head>
-{% apply spaceless %}
-    <body id="body">
+        {#
+            Partial: Vite
+            ========================================
+            Scripts imported by the Vite plugin.
+        #}
 
-    {% include "_includes/_global/nav.twig" %}
+        {% set scriptAttributes = {} %}
+        {% set styleAttributes = {} %}
 
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
+        {{ craft.vite.script('/src/js/main.js', false, scriptAttributes, styleAttributes) }}
 
-    {% include "_includes/_global/footer.twig" %}
-    <!--<svg></svg>-->
+        {% include '_includes/_global/tracking-scripts' %}
+    </head>
+    {% apply spaceless %}
+        <body id="body">
 
-    </body>
-{% endapply %}
+            {% include "_includes/_global/nav.twig" %}
+
+            <main>
+                {% block content %}
+                {% endblock %}
+            </main>
+
+            {% include "_includes/_global/footer.twig" %}
+            <!--<svg></svg>-->
+        </body>
+    {% endapply %}
 </html>

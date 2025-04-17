@@ -7,6 +7,8 @@
         "craftcms/ckeditor": "4.6.0",
         "craftcms/cms": "^5.0.0",
         "ether/seo": "5.0.0",
+        "johnhenry/matrix-block-anchor": "^2.0.1",
+        "nystudio107/craft-vite": "^5.0.1",
         "sebastianlenz/linkfield": "3.0.0-beta",
         "solspace/craft-freeform": "5.10.9",
         "verbb/buttonbox": "5.0.0",

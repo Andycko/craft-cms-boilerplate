@@ -1,6 +1,8 @@
-// Import custom js
-import './components/nav';
-import './components/imageSlider';
+/* Imports */
+import "@/css/style.css";
 
-// Import bootstrap js
-import '../../node_modules/bootstrap/dist/js/bootstrap';
+// Import our custom CSS (pulls in bootstrap from /src/scss/styles.scss)
+import '../scss/styles.scss'
+
+// Import custom js
+import './components/nav.js'; 

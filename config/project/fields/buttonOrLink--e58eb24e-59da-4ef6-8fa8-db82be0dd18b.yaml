@@ -1,0 +1,31 @@
+columnSuffix: null
+handle: buttonOrLink
+instructions: null
+name: 'Button Or Link'
+searchable: false
+settings:
+  createButtonLabel: 'Add a button or link'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - fea296bc-90b6-49bf-8aac-b065d489368b # Buttons
+    -
+      __assoc__:
+        -
+          - uid
+          - 916fdb7d-eff9-4e53-8aa3-21a7482bbfac # Links
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

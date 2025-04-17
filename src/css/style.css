@@ -1,0 +1,7 @@
+@import "partials/general.sass";
+@import "partials/fonts.sass";
+@import "partials/nav.sass";
+@import "partials/hamburger/hamburger.sass";
+@import "partials/page-headers.sass";
+@import "partials/blocks.sass";
+@import "partials/footer.sass";

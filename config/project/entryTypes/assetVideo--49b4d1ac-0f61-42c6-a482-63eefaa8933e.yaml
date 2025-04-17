@@ -6,19 +6,19 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: null
+            dateAdded: '2025-04-17T16:33:55+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 588b4c33-d66a-429a-a796-a6146b14a0f8
-            handle: video
-            includeInCards: true
+            fieldUid: 06f9df10-79bb-42fe-adea-b76fd8bf6b8b # Asset Video
+            handle: null
+            includeInCards: false
             instructions: null
-            label: Video
-            providesThumbs: true
+            label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 7dbe3260-e39f-4dcc-93ef-dc4deaab5baa
+            uid: 6f83285c-6c80-4e89-95a2-d7d56089830e
             userCondition: null
             warning: null
             width: 100

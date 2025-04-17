@@ -8,7 +8,7 @@ fieldLayouts:
             dateAdded: null
             editCondition: null
             elementCondition: null
-            fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Copy
+            fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Text
             handle: address
             includeInCards: false
             instructions: null

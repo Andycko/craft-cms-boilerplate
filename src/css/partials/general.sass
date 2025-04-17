@@ -1,0 +1,187 @@
+@use 'variables'
+
+html, body
+  overflow-x: hidden
+  padding: 0
+  margin: 0
+
+html.no-scroll
+  overflow-y: hidden
+
+@media (min-width: 576px)
+  .container
+    max-width: 90%
+@media (min-width: 2150px)
+  .container
+    max-width: 2000px
+  .container-fluid
+    max-width: 3000px
+  .outer
+    max-width: 3000px
+    margin: auto
+
+// Background color classes
+.bg-white
+  background-color: variables.$white
+.bg-black
+  background-color: variables.$black      
+
+.outer
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+// Font colour classes
+.text-white
+  color: variables.$white
+.text-black
+  color: variables.$white
+
+h2.eyebrow
+  font-size: 1rem
+  font-family: "neue-haas-grotesk-display", sans-serif !important
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 2px
+
+// Link colour classes
+
+.link-white
+  a
+    color: #ffffff
+.link-black
+  a
+    color: #000000
+
+
+.button
+  padding: 0.6rem 1.5rem !important
+  border: 1px solid
+  border-radius: 40px !important
+  text-decoration: none
+  display: inline-flex
+  align-items: center
+  svg
+    width: 20px
+    margin-left: 0.75rem
+    transition: margin 200ms  
+  &:hover
+    svg
+      transition: margin 200ms 
+      margin-left: 1.5rem  
+
+.button-white
+  border: 1px solid variables.$black
+  background-color: variables.$white
+  color: variables.$black
+
+
+.button-white-outline
+  border: 1px solid #ffffff
+  background-color: none
+  color: #ffffff
+               
+
+.link
+  border-bottom: 1px solid
+  text-decoration: none
+  padding-bottom: 0.35rem
+  svg
+    width: 20px
+    margin-left: 0.75rem
+    transition: margin 200ms  
+  &:hover
+    text-decoration: none
+    border-bottom: none
+    svg
+      transition: margin 200ms 
+      margin-left: 1.5rem  
+
+
+.spacer
+  &--small
+    --setHeight: 75px
+    height: var(--setHeight)
+    @media screen and (max-width: 991px)
+      height: calc(var(--setHeight) / 2)
+    @media screen and (max-width: 576px)
+      height: calc(var(--setHeight) / 4)
+  &--medium
+    --setHeight: 150px
+    height: var(--setHeight)
+    @media screen and (max-width: 991px)
+      height: calc(var(--setHeight) / 2)
+    @media screen and (max-width: 576px)
+      height: calc(var(--setHeight) / 4)
+  &--large
+    --setHeight: 300px
+    height: var(--setHeight)
+    @media screen and (max-width: 991px)
+      height: calc(var(--setHeight) / 2)
+    @media screen and (max-width: 576px)
+      height: calc(var(--setHeight) / 4)
+  &--extra-large
+    --setHeight: 600px
+    height: var(--setHeight)
+    @media screen and (max-width: 991px)
+      height: calc(var(--setHeight) / 2)
+    @media screen and (max-width: 576px)
+      height: calc(var(--setHeight) / 4)
+
+
+
+a:hover
+  .zoomy--img
+    position: relative
+    overflow: hidden
+    img
+      transition: all .2s ease-in-out
+      -ms-transform: scale(1.1)
+      transform: scale(1.1)
+      transform-origin: center
+
+.zoomy--img
+    position: relative
+    overflow: hidden
+    &:hover
+      img
+        transition: all .2s ease-in-out
+        -ms-transform: scale(1.1)
+        transform: scale(1.1)
+        transform-origin: center   
+
+.article
+  a
+    text-decoration: none
+    color: inherit
+    &:hover
+      h3
+        text-decoration: underline
+  h3
+    font-size: 1rem
+    font-family: "neue-haas-grotesk-display", sans-serif
+    font-weight: 600
+    font-style: normal    
+    
+.article-copy
+  font-size: 1.2rem
+  img
+    margin: 1.5rem 0
+    height: auto
+  h1,h2,h3,h4,h5,h6
+    margin-bottom: 1.2rem
+    font-family: "big-caslon-fb", serif
+    font-family: "neue-haas-grotesk-display", sans-serif
+    font-weight: 400
+  blockquote
+    font-size: 2.6rem
+    font-family: "big-caslon-fb", serif
+    font-weight: 500
+    margin: 1.5rem 0
+    line-height: 3rem
+    @media screen and (max-width: 991px)
+      font-size: 2rem
+      line-height: 2.6rem
+    @media screen and (max-width: 575px)
+      font-size: 1.6rem
+      line-height: 2rem

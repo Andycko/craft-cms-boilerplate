@@ -1,11 +1,33 @@
 columnSuffix: tvhourzi
-contentColumnType: char(7)
 handle: textColour
-instructions: 'Use this colour picker to change the colour of your body text'
+instructions: 'Pick a font colour (black by default). Click for more colour presets. '
 name: 'Text Colour'
 searchable: false
 settings:
-  defaultColor: '#000000'
+  allowCustomColors: true
+  palette:
+    -
+      __assoc__:
+        -
+          - color
+          - '#000000'
+        -
+          - label
+          - Black
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - color
+          - '#ffffff'
+        -
+          - label
+          - White
+        -
+          - default
+          - ''
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Color

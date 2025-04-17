@@ -1,0 +1,31 @@
+columnSuffix: null
+handle: heroes
+instructions: 'Add a hero to the top of the page (max 1)'
+name: Heroes
+searchable: false
+settings:
+  createButtonLabel: 'Add a hero'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - e498ac8f-eca7-4569-b1ca-bef70f02d9db # Image Hero
+    -
+      __assoc__:
+        -
+          - uid
+          - 74cb900e-d535-4db2-ba9f-4953de3f2dc7 # Video Hero
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

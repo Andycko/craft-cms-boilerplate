@@ -1,0 +1,32 @@
+<div class="outer py-md-5 py-4" style="background-color: {{ block.backgroundColour }}" id="anchor-{{ block.id }}">
+    <div class="container largeText-block" style="color:{{block.textColour}}">
+        <div class="row py-lg-5 align-items-center {% if block.swapImageText %}flex-row-reverse{% endif %}">
+            {% if block.title | length or block.text | length %}
+                <div class="col-lg-6">
+                    {% if block.title | length %}
+                        <div class="mb-4 text-uppercase">{{ block.title }}</div>
+                    {% endif %}
+                    {% if block.text | length %}
+                        <div class="mb-4">{{ block.text }}</div>
+                    {% endif %}
+                    {# {% if block.buttonOrLink.one %}
+                        <div class="mt-lg-5 mb-lg-0 mb-5">
+                            {% include '/_includes/_content-builder/_partial/buttonOrLink.twig' %}
+                        </div>
+                    {% endif %} #}
+                </div>
+            {% endif %}
+
+            {% if block.image.one %}
+                <div class="col-lg-6" >
+                    <img src="{{ block.image.one.url({width:800, height:800, format:'webp' }) }}" alt="{{ block.image.one.title }}" class="w-100">
+                </div>
+            {% else %}
+                <div class="col-lg-6" >
+                    <img src="https://placehold.co/800x800.jpg" alt="placeholder image" class="w-100">
+                </div>    
+            {% endif %}
+            
+        </div>
+    </div>
+</div>

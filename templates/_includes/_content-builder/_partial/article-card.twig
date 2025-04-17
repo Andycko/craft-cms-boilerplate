@@ -1,0 +1,17 @@
+<div class="col-6 col-md-6 col-lg-4 mb-4 article">
+    <a href="{{ item.url }}" class="d-flex flex-column">
+        {% if item.summaryImage.one %}
+            <div class="zoomy--img img mb-4">
+                <img data-src="{{ item.summaryImage.one.url({ width: 500, height: 500, format: 'webp' }) }}" alt="{{ item.title }}" class="w-100 lazyload">
+            </div>
+        {% endif %}
+        <div class="neue-haas-grotesk-light">{{ item.postDate | date("d.m.y") | upper }}</div>
+        <h3 class="pt-2 mb-3">
+            {{ item.title|length > 65 ? item.title|slice(0, 65) ~ '...' : item.title }}
+        </h3>
+        {# {% if item.pageSummary %}
+            <div class="copy mb-3">{{ item.pageSummary|length > 170 ? item.pageSummary|slice(0, 170) ~ '...' : item.pageSummary }}</div>
+        {% endif %} #}
+        
+    </a>
+</div>

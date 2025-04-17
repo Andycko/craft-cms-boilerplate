@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a843ccfcb83f8f29f57cc3bf2ea48cc",
+    "content-hash": "972194216d0ba57e79bfc05dd89dc1c9",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2255,6 +2255,49 @@
             "time": "2023-06-05T12:46:42+00:00"
         },
         {
+            "name": "johnhenry/matrix-block-anchor",
+            "version": "2.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/john-henry/matrix-block-anchor/zipball/d6638badd447160a1855117882edc56f7f9ebeb1",
+                "reference": "d6638badd447160a1855117882edc56f7f9ebeb1",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0",
+                "php": ">=8.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "matrix-block-anchor",
+                "name": "Matrix Block Anchor",
+                "class": "johnhenry\\matrixblockanchor\\MatrixBlockAnchor",
+                "developer": "John Henry Donovan",
+                "documentationUrl": ""
+            },
+            "autoload": {
+                "psr-4": {
+                    "johnhenry\\matrixblockanchor\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "Anchor field that allows a user to copy a link to the ID of a Matrix block",
+            "keywords": [
+                "anchor",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "matrix"
+            ],
+            "support": {
+                "email": "info@johnhenry.ie"
+            },
+            "time": "2024-09-08T23:04:30+00:00"
+        },
+        {
             "name": "lcobucci/clock",
             "version": "3.3.1",
             "dist": {
@@ -3336,6 +3379,95 @@
                 "twig"
             ],
             "time": "2024-09-23T17:20:25+00:00"
+        },
+        {
+            "name": "nystudio107/craft-plugin-vite",
+            "version": "5.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/023ea9013f03ac8b15c9b800c66943ce4d02cf48",
+                "reference": "023ea9013f03ac8b15c9b800c66943ce4d02cf48",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\pluginvite\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Plugin Vite is the conduit between Craft CMS plugins and Vite, with manifest.json & HMR support",
+            "keywords": [
+                "craftcms",
+                "plugin",
+                "vite"
+            ],
+            "support": {
+                "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v5/README.md",
+                "issues": "https://github.com/nystudio107/craft-plugin-vite/issues"
+            },
+            "time": "2024-08-14T02:02:01+00:00"
+        },
+        {
+            "name": "nystudio107/craft-vite",
+            "version": "5.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/a2eaa9beb4abf1add99e8fc7892e8df57c6b49e8",
+                "reference": "a2eaa9beb4abf1add99e8fc7892e8df57c6b49e8",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0",
+                "nystudio107/craft-plugin-vite": "^5.0.2",
+                "php": "^8.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-vite/v5/CHANGELOG.md",
+                "class": "nystudio107\\vite\\Vite",
+                "handle": "vite",
+                "name": "Vite"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\vite\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Allows the use of the Vite.js next generation frontend tooling with Craft CMS",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "vite"
+            ],
+            "support": {
+                "docs": "https://nystudio107.com/docs/vite/",
+                "issues": "https://nystudio107.com/plugins/vite/support",
+                "source": "https://github.com/nystudio107/craft-vite"
+            },
+            "time": "2024-08-14T02:05:18+00:00"
         },
         {
             "name": "oscarotero/html-parser",

@@ -1,0 +1,165 @@
+color: orange
+fieldLayouts:
+  265bb5fe-bf02-4f3a-895e-1a68fd6d739f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-04-17T11:54:39+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d74e5dbb-477e-4223-8882-5ef9fd55e82f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-17T11:57:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c68ea501-3528-411d-a603-a0a219ed83fe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-17T11:57:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0ffba24e-268b-4f2c-a3f2-ad976b64c979 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 007779be-0f6b-48bd-8c9b-49805f96eb64
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6488e12f-6c4a-4757-bdd5-add607996dda
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-17T11:57:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e5b76ff1-163b-49c0-bd4d-718bc1b5db55 # Text Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3b2c8a6-f5df-4de7-8907-b1ef27f357a3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-17T16:12:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4a75a36d-742c-4bd9-ad78-303d9f1f4b51 # Background Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72d465a7-93de-4a27-bfc3-8802c755c979
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-17T16:26:29+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a2195e5c-ac33-44bb-afa8-22ca957ae84b # Lightswitch
+            handle: swapImageText
+            includeInCards: false
+            instructions: 'Enable this switch to swap the image and text positions'
+            label: 'Swap Image & Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23dfebd6-ca22-417a-939f-2a4bdd6f37c4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: f7671d35-cac4-4feb-a9fb-73144e7833a0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-17T11:57:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1131725d-b336-42f4-9d4c-a9ad5ae609f5 # Anchor
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e8d22b7-64dd-4768-ab83-22e44184f25a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Anchor
+        uid: c281c20e-2f42-41d7-a5f4-26529e4e7d7b
+        userCondition: null
+handle: imageText
+hasTitleField: true
+icon: newspaper
+name: 'Image & Text'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{header}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
