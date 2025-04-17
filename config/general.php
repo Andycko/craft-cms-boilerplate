@@ -10,9 +10,9 @@
 
 use craft\helpers\App;
 
-$isDev = App::env('ENVIRONMENT') === 'dev';
-$isStaging = App::env('ENVIRONMENT') === 'staging';
-$isProd = App::env('ENVIRONMENT') === 'production';
+$isDev = App::env('CRAFT_ENVIRONMENT') === 'dev';
+$isStaging = App::env('CRAFT_ENVIRONMENT') === 'staging';
+$isProd = App::env('CRAFT_ENVIRONMENT') === 'production';
 
 return [
     '*' => [
