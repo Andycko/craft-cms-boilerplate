@@ -1,7 +1,20 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: f6901440-dc45-4323-a125-0a7d3d90f06c # About
 handle: about
+maxAuthors: 1
 name: About
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   18d78006-3985-4ea4-b620-67bae10d9c2d: # $SITE_NAME

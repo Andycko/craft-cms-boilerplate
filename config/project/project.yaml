@@ -1,4 +1,4 @@
-dateModified: 1744884681
+dateModified: 1744887135
 email:
   fromEmail: $ADMIN_EMAIL
   fromName: $SITE_NAME
@@ -15,105 +15,55 @@ email:
   transportType: craft\mail\transportadapters\Smtp
 meta:
   __names__:
-    0aa3f322-8216-4121-a142-bb7e5bdd3c41: 'Related Content' # Related Content
     0ffba24e-268b-4f2c-a3f2-ad976b64c979: Image # Image
-    1af5640c-d8b3-4503-89a1-8d0581554915: 'Main Header' # Main Header
     1d1c9f28-39de-4df6-b077-856d16c001ca: Copy # Copy
-    1d1d5665-5674-4388-8d46-9b87e4dc65d3: 'Content Builder' # Content Builder
-    1f6a1dc8-82d8-47a8-ae54-01af20652730: Name # Name
     2f28cd37-4b8e-4b68-806e-97ecc9f63d04: 'Latest Index' # Latest Index
     2f64efd3-101a-4ed1-a31e-96657d6dc6e5: Header # Header
-    2fde90f2-c40d-4a04-a52c-94fbf040f6f1: Spacer # Spacer
-    3cca813e-09a9-4025-8efa-d5ba11d4dd89: Email # Email
     3f092924-7454-4778-a975-9d6112f3eb20: 'Google Analytics' # Google Analytics
-    4af3caf9-e4e3-4acd-90f8-1e8cd585e497: Address # Address
     4b0ce80c-181f-4c40-bcce-5146dc8c903e: Video # Video
-    4ee575cd-9fd3-4198-a6d1-3d8f2f13ea83: Copy # Copy
     4eee8941-c961-4c14-96de-47037bca5192: Simple # Simple
-    5cd6ad16-cb88-45ba-b275-1558f8f27c05: Link # Link
     5d2dca76-1ede-413a-8adf-b4a756ed42ae: 'Site Info' # Site Info
-    6abd3112-8db8-4e93-b4ed-d681318ea294: 'Large Quote' # Large Quote
     6ac042db-b73d-43c5-b994-c51077efd7dc: Default # Default
-    6b6833e3-09b6-4302-8492-fd06e3f794e4: Summary # Summary
-    6bc4604d-7a4d-4a0c-ad53-c3a6adc1a6e8: Header # Header
     6c4a2320-184d-4f3b-9482-070fc8b8194a: 'Bottom Spacing' # Bottom Spacing
     6d7eb6cb-ab6f-462f-b9ee-719061830781: 'Font Weight' # Font Weight
-    7bbeec1d-6526-44a3-9897-d6d1e5918a05: Settings # Settings
-    7bbfb4fd-f907-4f9c-8c1a-f2a2c7e60aa2: 'Overlay Colour' # Overlay Colour
     7c5c4db7-bc5e-4979-a31b-6b7734989556: SEO # SEO
-    7d034fae-78a0-49b6-a213-aa01fcdf690e: Video # Video
     7fc480fa-d689-40a4-9f68-2e36e07830d5: 'Company Info' # Company Info
-    8adc1cc2-e466-4df6-8ad4-71e17361821d: Map # Map
     8b5fa4d7-86cd-4e9b-b8d4-3731f1a60289: 'Main Navigation' # Main Navigation
-    8d7e4ca7-1762-4215-b1e0-3022ed0176b3: 'Transparent Nav' # Transparent Nav
-    8f3d51d8-227c-42c1-b81e-f3cba4189a99: SEO # SEO
-    9b2615ce-8e18-4334-aff3-d8c10a256d95: 'Video Header' # Video Header
-    9c3f9dfb-fbb4-4ab1-b8db-5dc9b6045f2d: Blocks # Blocks
-    9fa8596c-cc11-4009-8d86-3214b5170cac: Button # Button
     13d35453-527a-4094-b642-42292f193f8c: 'Social Profiles' # Social Profiles
     18d78006-3985-4ea4-b620-67bae10d9c2d: $SITE_NAME # $SITE_NAME
     32e8ea43-4e6d-46eb-9344-6755923c28de: Homepage # Homepage
-    42ffab40-fc4c-47cc-a21b-f6998da1d15a: Latitude # Latitude
-    49b4d1ac-0f61-42c6-a482-63eefaa8933e: 'Asset Video' # Asset Video
-    70f3e289-0ffa-4d8a-a2a4-e8c6db06ee3c: 'Content Builder Fields' # Content Builder Fields
     73bc541a-22cb-4ec3-a948-a66733e45d32: 'News Categories' # News Categories
-    75e32298-2afc-42e4-a7a1-a0df691a9522: Button # Button
     76ee93ec-459e-4fa9-967f-aa9b48f7b9e1: Contact # Contact
     181f8d87-6d88-42ed-96e8-26a3a728eef8: Images # Images
-    308d7a68-be55-4f59-b9a4-c108480bd78f: Coordinates # Coordinates
     317d7eec-729b-4cbc-8476-5db0fd7528fc: 'Public Schema' # Public Schema
     336f207f-f4fb-43c3-bbc3-f10b641e940a: 'Background Colour' # Background Colour
     369ea60f-6259-4683-adcc-23418cf8285e: Homepage # Homepage
-    386e1cf1-acc9-4336-90e1-fb74daefd6f5: 'Phone Number' # Phone Number
-    431efb4a-9ace-451f-8b70-aeda20b1f83f: Globals # Globals
-    588b4c33-d66a-429a-a796-a6146b14a0f8: Video # Video
     714a1c4f-39d2-4a93-b0fc-1d7089a16ff2: 'Latest Index' # Latest Index
     876acaa4-cad8-4ddb-b96f-1a25037ad2ed: 'Header Type Size' # Header Type Size
-    4184d945-e90d-4433-b1f3-727edf65107e: 'Summary Image' # Summary Image
-    8062a4c1-1fc1-482e-9121-c05e1d679599: Accordion # Accordion
     23255a47-8fcd-4ad9-8129-8bd0e89121e5: 'Footer Navigation' # Footer Navigation
-    24301a2b-def0-4ce7-baf1-9b424815122c: Author # Author
-    80190ffa-9de6-4824-befb-1c21b98c9752: Item # Item
     4870444e-6820-4ab0-a141-99e310305629: 'Background Image' # Background Image
     39237593-ff51-4bd3-851a-a9dfac329c0b: 'Page Summary' # Page Summary
-    a596aec7-c8ec-49d7-ab4d-97dcdf5ac990: Icon # Icon
     ac39eb09-91e2-4240-ba65-e20c3dcf3012: 'Related Entries' # Related Entries
-    ada0f70b-1449-4c51-a201-050201a240a8: Header # Header
     ae523ce4-60b9-4674-8ed4-cbfa6ff0c20c: Button # Button
     b2c6e66f-5fcd-4220-b710-2624b1ef531d: 'Accordion Matrix' # Accordion Matrix
     b8e69404-8329-47fa-8f41-a98c933804c3: About # About
-    b4718bab-e938-4b97-a8e4-adc9fe5f4ca7: 'Content Builder' # Content Builder
-    ba88d9cd-1570-43ff-9e92-aa456cff2540: Video # Video
     bb3731df-a01f-4725-9f8b-06d99359fd9f: 'Top Spacing' # Top Spacing
     c01ae0b2-724f-499b-b0f2-ff2b6fe171a4: 'Footer Disclaimer' # Footer Disclaimer
     c2e72f3c-fb9f-4c37-a442-ed5cdea1f393: 'Custom Pages' # Custom Pages
     c4480af9-afa8-430b-b22c-e0eddbe00de3: 'Map Coordinates' # Map Coordinates
-    ceb187cb-42b6-4867-baa4-870b46390018: 'Header + Copy' # Header + Copy
-    d0dfc594-439a-40f9-8d15-a5ba6a0a5a1b: 'Header Colour' # Header Colour
-    d9a8f905-7705-41f9-a662-e8966f03085f: Longitude # Longitude
-    d9aafe6e-671c-45da-9958-ccb6470336d6: 'Alt Icon' # Alt Icon
     d305657a-b071-42af-960e-aa7b81715a02: Latest # Latest
-    d783368e-a494-4457-9e99-5a027ae72a18: 'Page Header' # Page Header
-    dcc7e763-cfad-42ba-a4ed-f0c111f2446b: Media # Media
     dd77ad9a-983f-42c9-9b08-6d476485a963: 'Spacer Options' # Spacer Options
     ddd7384c-d723-4aad-b2f6-845216bb1dbf: Latest # Latest
     dea301bb-972e-43c2-81fe-f145398244c7: 'Sub Footer Navigation' # Sub Footer Navigation
-    df00ec17-8cfe-4dc9-b2f9-095eea3f665c: 'Latest Articles' # Latest Articles
+    dfd34224-0241-4c43-aec4-0c7abd7e9dab: 'Social Profiles Block' # Social Profiles Block
     e0603daf-7cb8-485e-9c55-2011a86f0489: 'Overlay Opacity' # Overlay Opacity
     e5b76ff1-163b-49c0-bd4d-718bc1b5db55: 'Text Colour' # Text Colour
-    e946413a-eda6-4421-a193-be4432b008be: CTAs # CTAs
-    ead943da-9146-4b32-9f33-8096b522e085: 'External Video' # External Video
-    ecaf2e51-4a07-4d82-a78b-8181faba1e87: 'Image Slider' # Image Slider
     ed9d2994-c74c-40fe-9f3f-280fe7a5360a: Default # Default
-    f015d92d-b254-4665-af27-dfbe1ab2ab62: 'Button Colour' # Button Colour
     f1abfa1e-3f54-4765-8991-815c87484c9b: Contact # Contact
     f4ab9061-e9c0-4e8c-9e1f-70b599725985: 'Show Overlay' # Show Overlay
-    f85e63c0-1f6c-495c-95b7-6b70d338bd07: Copy # Copy
     f99d20c5-6966-4180-8dc1-595df3b8f876: $SITE_NAME # $SITE_NAME
-    f122d996-7ed0-4bc1-ad02-50e74deac2df: Image # Image
     f6901440-dc45-4323-a125-0a7d3d90f06c: About # About
     fe0d9230-b9ce-4436-9f44-35a700886cfc: 'News Categories' # News Categories
-    fea296bc-90b6-49bf-8aac-b065d489368b: Button # Button
 plugins:
   aws-s3:
     edition: standard
@@ -131,42 +81,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
-  cookie-consent-banner:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.1
-    settings:
-      allow: 'Allow cookies'
-      async_js: ''
-      auto_inject: '1'
-      decline: Decline
-      defer_js: ''
-      disable_in_live_preview: ''
-      dismiss: 'Got it!'
-      dismiss_on_scroll: '0'
-      dismiss_on_timeout: '0'
-      excluded_categories: null
-      excluded_entry_types: null
-      expiry_days: '365'
-      honour_do_not_track_header: ''
-      layout: block
-      learn: 'Learn More'
-      learn_more_link: 'http://cookiesandyou.com/'
-      message: 'This website uses cookies to ensure you get the best experience on our website.'
-      palette: default
-      palette_banner: '000000'
-      palette_banner_text: ffffff
-      palette_button: ffffff
-      palette_button_text: '000000'
-      palette_left_button_bg: ffffff
-      palette_left_button_text: '000000'
-      palette_link: ffffff
-      position: bottom
-      preload_css: ''
-      revokable: ''
-      secure_only: ''
-      target: _blank
-      type: info
   freeform:
     edition: lite
     enabled: true
@@ -259,12 +173,12 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 7LVFR2AP25MOQ999X51S4JL6
-    schemaVersion: 2.0.7
+    schemaVersion: 2.1.0
   neo:
     edition: standard
     enabled: true
     licenseKey: ZPICGH68FLND71JVXT3VKDR9
-    schemaVersion: 4.0.0
+    schemaVersion: 5.1.0.1
   oembed:
     edition: standard
     enabled: true
@@ -317,7 +231,7 @@ plugins:
   super-table:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0
+    schemaVersion: 4.0.0
   typedlinkfield:
     edition: standard
     enabled: true
@@ -327,7 +241,7 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 4.15.0.0
+  schemaVersion: 5.7.0.3
   timeZone: Europe/London
 users:
   allowPublicRegistration: false

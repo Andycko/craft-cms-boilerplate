@@ -1,11 +1,11 @@
 columnSuffix: yfbgcian
 contentColumnType: text
-fieldGroup: 7bbeec1d-6526-44a3-9897-d6d1e5918a05 # Settings
 handle: fontWeight
 instructions: 'You can change the weight of your font here by selecting Thin, Regular, or Bold (Regular by default)'
 name: 'Font Weight'
 searchable: false
 settings:
+  columnType: string
   displayAsGraphic: null
   displayFullwidth: null
   options:

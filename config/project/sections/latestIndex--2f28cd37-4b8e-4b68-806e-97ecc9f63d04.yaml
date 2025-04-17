@@ -1,7 +1,20 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 714a1c4f-39d2-4a93-b0fc-1d7089a16ff2 # Latest Index
 handle: latestIndex
+maxAuthors: 1
 name: 'Latest Index'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   18d78006-3985-4ea4-b620-67bae10d9c2d: # $SITE_NAME

@@ -1,0 +1,38 @@
+color: null
+fieldLayouts:
+  9d1dd6bd-ecbd-4cec-a43f-fe57ed410352:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7d034fae-78a0-49b6-a213-aa01fcdf690e
+            handle: video
+            includeInCards: false
+            instructions: null
+            label: Video
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e5b8030-8317-4dd5-aa2c-e8703b2a1728
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 62a8e3ac-d110-455c-b23e-1cb7e1483851
+        userCondition: null
+handle: externalVideo
+hasTitleField: false
+icon: null
+name: 'External Video'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

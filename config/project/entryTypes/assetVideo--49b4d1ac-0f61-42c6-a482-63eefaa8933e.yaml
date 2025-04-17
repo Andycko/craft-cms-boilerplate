@@ -1,0 +1,38 @@
+color: null
+fieldLayouts:
+  8be94203-c156-4c39-9b45-466e97070395:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 588b4c33-d66a-429a-a796-a6146b14a0f8
+            handle: video
+            includeInCards: true
+            instructions: null
+            label: Video
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7dbe3260-e39f-4dcc-93ef-dc4deaab5baa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: abe24771-fb00-4371-b891-f4dc93971fb8
+        userCondition: null
+handle: assetVideo
+hasTitleField: false
+icon: null
+name: 'Asset Video'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

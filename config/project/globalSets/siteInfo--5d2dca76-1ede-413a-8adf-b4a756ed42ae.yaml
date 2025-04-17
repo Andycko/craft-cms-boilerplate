@@ -2,18 +2,23 @@ fieldLayouts:
   f2d8768a-cbb9-4a52-a62f-3cebeccc956b:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 3f092924-7454-4778-a975-9d6112f3eb20 # Google Analytics
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6f188da6-95a9-4ebd-a836-87c065e963a4
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 6cb1000a-d445-4599-b125-aa8b99e846f9
+        userCondition: null
 handle: siteInfo
 name: 'Site Info'
 sortOrder: 2

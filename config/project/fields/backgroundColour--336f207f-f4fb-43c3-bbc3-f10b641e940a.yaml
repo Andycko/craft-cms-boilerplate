@@ -1,11 +1,11 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: 7bbeec1d-6526-44a3-9897-d6d1e5918a05 # Settings
 handle: backgroundColour
 instructions: null
 name: 'Background Colour'
 searchable: false
 settings:
+  columnType: string
   options:
     -
       __assoc__:
@@ -35,6 +35,7 @@ settings:
         -
           - default
           - ''
+  placeholderText: 'Select an option'
 translationKeyFormat: null
 translationMethod: none
 type: verbb\buttonbox\fields\Colours

@@ -1,6 +1,7 @@
+defaultPlacement: end
 handle: mainNavigation
-instructions: ''
-maxNodes: ''
+instructions: null
+maxNodes: null
 name: 'Main Navigation'
 permissions:
   craft\elements\Asset:
@@ -21,7 +22,8 @@ permissions:
     enabled: '1'
 propagationMethod: none
 siteSettings:
-  18d78006-3985-4ea4-b620-67bae10d9c2d: null # $SITE_NAME
+  18d78006-3985-4ea4-b620-67bae10d9c2d: # $SITE_NAME
+    enabled: true
 sortOrder: 2
 structure:
   maxLevels: null

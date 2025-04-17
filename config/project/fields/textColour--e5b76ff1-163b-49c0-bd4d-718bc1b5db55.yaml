@@ -1,6 +1,5 @@
 columnSuffix: tvhourzi
-contentColumnType: string(7)
-fieldGroup: 7bbeec1d-6526-44a3-9897-d6d1e5918a05 # Settings
+contentColumnType: char(7)
 handle: textColour
 instructions: 'Use this colour picker to change the colour of your body text'
 name: 'Text Colour'

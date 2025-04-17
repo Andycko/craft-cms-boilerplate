@@ -9,9 +9,11 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,8 +22,9 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -32,10 +35,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
             fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Copy
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,10 +52,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
             fieldUid: 73bc541a-22cb-4ec3-a948-a66733e45d32 # News Categories
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -62,10 +75,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
             fieldUid: 39237593-ff51-4bd3-851a-a9dfac329c0b # Page Summary
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -74,10 +92,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: 4184d945-e90d-4433-b1f3-727edf65107e # Summary Image
+            fieldUid: 0ffba24e-268b-4f2c-a3f2-ad976b64c979 # Image
+            handle: summaryImage
+            includeInCards: false
             instructions: null
-            label: null
+            label: 'Summary Image'
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -92,10 +115,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
             fieldUid: 7c5c4db7-bc5e-4979-a31b-6b7734989556 # SEO
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -109,7 +137,6 @@ fieldLayouts:
 handle: latest
 hasTitleField: true
 name: Latest
-section: ddd7384c-d723-4aad-b2f6-845216bb1dbf # Latest
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

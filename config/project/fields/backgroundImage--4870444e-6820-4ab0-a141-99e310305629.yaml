@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 70f3e289-0ffa-4d8a-a2a4-e8c6db06ee3c # Content Builder Fields
 handle: backgroundImage
 instructions: null
 name: 'Background Image'
@@ -11,9 +10,11 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
+  branchLimit: null
   defaultUploadLocationSource: 'volume:732acb4b-dcae-4506-b8b8-3e1b6bf9454f'
   defaultUploadLocationSubpath: null
   localizeRelations: false
+  maintainHierarchy: false
   maxRelations: 1
   minRelations: null
   previewMode: full
@@ -22,22 +23,10 @@ settings:
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:732acb4b-dcae-4506-b8b8-3e1b6bf9454f'
   restrictedLocationSubpath: null
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Asset
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  source: null
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false

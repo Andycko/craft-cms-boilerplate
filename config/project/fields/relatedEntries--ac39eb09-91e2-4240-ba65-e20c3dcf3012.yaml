@@ -1,17 +1,18 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 70f3e289-0ffa-4d8a-a2a4-e8c6db06ee3c # Content Builder Fields
 handle: relatedEntries
-instructions: ''
+instructions: null
 name: 'Related Entries'
 searchable: false
 settings:
   allowSelfRelations: false
-  limit: '6'
+  branchLimit: null
   localizeRelations: false
-  selectionLabel: ''
+  maintainHierarchy: false
+  maxRelations: 6
+  minRelations: null
+  selectionLabel: null
   showSiteMenu: false
-  source: null
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false

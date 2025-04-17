@@ -2,14 +2,19 @@ fieldLayouts:
   7834aadb-497b-49cf-849b-b919602283d9:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,78 +22,133 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b4de0439-5246-4ab4-a9de-defbd4504f4d
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: d783368e-a494-4457-9e99-5a027ae72a18 # Page Header
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: d783368e-a494-4457-9e99-5a027ae72a18
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f24fa933-e400-4c63-baec-272f3116c274
+            userCondition: null
             warning: null
             width: 100
           -
+            dateAdded: null
+            dismissible: false
+            elementCondition: null
             style: warning
             tip: 'Any content blocks you add here will appear below the enquiry form'
             type: craft\fieldlayoutelements\Tip
+            uid: 64a9a979-3033-4959-b441-08fc6c979927
+            userCondition: null
           -
-            fieldUid: 1d1d5665-5674-4388-8d46-9b87e4dc65d3 # Content Builder
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1d1d5665-5674-4388-8d46-9b87e4dc65d3
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c1f6c5a7-41e4-4f97-bbfe-5bf9dd6998f3
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 56bee667-c656-49f9-844b-4acfbe2a4cb8
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
             fieldUid: 39237593-ff51-4bd3-851a-a9dfac329c0b # Page Summary
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: afbd5cec-8347-42df-9ba7-e306ff55cf48
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 4184d945-e90d-4433-b1f3-727edf65107e # Summary Image
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0ffba24e-268b-4f2c-a3f2-ad976b64c979 # Image
+            handle: summaryImage
+            includeInCards: false
             instructions: null
-            label: null
+            label: 'Summary Image'
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3d750ccd-4e1a-4ffa-8963-68b7cd66261a
+            userCondition: null
             warning: null
             width: 100
         name: Summary
-        sortOrder: 2
+        uid: ad9df107-45b5-4385-9dc2-3016f1f3633f
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
             fieldUid: 7c5c4db7-bc5e-4979-a31b-6b7734989556 # SEO
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f5433a66-b711-4660-918e-7b074623191c
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 3
+        uid: 2ac09393-df45-47dc-9289-69dd6c931ce1
+        userCondition: null
 handle: contact
 hasTitleField: true
 name: Contact
-section: f1abfa1e-3f54-4765-8991-815c87484c9b # Contact
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
