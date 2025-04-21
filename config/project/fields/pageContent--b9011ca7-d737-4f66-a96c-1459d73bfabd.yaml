@@ -12,12 +12,22 @@ settings:
       __assoc__:
         -
           - uid
+          - ff883963-defd-4375-8bb3-ab4baa1050ec # All Articles
+    -
+      __assoc__:
+        -
+          - uid
           - 03808ef1-4837-4bf6-bd64-fe67f8fb5272 # Accordion
     -
       __assoc__:
         -
           - uid
           - 83a67091-7f4d-437b-ada3-6154d0926353 # Button/Link
+    -
+      __assoc__:
+        -
+          - uid
+          - 74ade5f3-d3ce-460b-a66f-9e3db4fa0dba # Contact Form
     -
       __assoc__:
         -

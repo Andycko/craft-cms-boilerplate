@@ -45,7 +45,6 @@ h2.eyebrow
   letter-spacing: 2px
 
 // Link colour classes
-
 .link-white
   a
     color: #ffffff
@@ -53,10 +52,8 @@ h2.eyebrow
   a
     color: #000000
 
-
 .button
   padding: 0.6rem 1.5rem !important
-  border: 1px solid
   border-radius: 40px !important
   text-decoration: none
   display: inline-flex
@@ -75,13 +72,19 @@ h2.eyebrow
   background-color: variables.$white
   color: variables.$black
 
-
 .button-white-outline
   border: 1px solid #ffffff
   background-color: none
   color: #ffffff
-               
 
+.button-black
+  border: 1px solid variables.$black
+  background-color: variables.$black
+  color: variables.$white  
+  svg
+    path
+      stroke: variables.$white
+               
 .link
   border-bottom: 1px solid
   text-decoration: none
@@ -96,7 +99,6 @@ h2.eyebrow
     svg
       transition: margin 200ms 
       margin-left: 1.5rem  
-
 
 .spacer
   &--small
@@ -127,8 +129,6 @@ h2.eyebrow
       height: calc(var(--setHeight) / 2)
     @media screen and (max-width: 576px)
       height: calc(var(--setHeight) / 4)
-
-
 
 a:hover
   .zoomy--img
@@ -185,3 +185,60 @@ a:hover
     @media screen and (max-width: 575px)
       font-size: 1.6rem
       line-height: 2rem
+
+.filters
+  @media screen and (max-width: 575px)
+    overflow-x: scroll
+    overflow-y: clip
+  .button
+    padding: 0.2rem 1rem !important
+    min-width: max-content
+    &:hover
+      background: variables.$white
+      color: variables.$black
+    &.active
+      background: variables.$white
+      color: variables.$black
+  .dropdown 
+    position: relative
+    display: inline-block
+    cursor: pointer
+    @media screen and (max-width: 575px)
+      position: unset
+    .dropdown-content 
+      display: none
+      position: absolute
+      background-color: variables.$white
+      min-width: 160px
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+      z-index: 1
+      border-radius: 4px
+      @media screen and (max-width: 575px)
+        width: 96%
+        left: 2%
+      a
+        color: variables.$black
+        padding: 12px 16px
+        text-decoration: none
+        display: block
+        border-bottom: 1px solid
+        &:hover
+          color: variables.$white
+          background-color: variables.$black
+        &:last-of-type
+          border-bottom: none
+      a.active
+        background: variables.$black
+        color: variables.$black    
+    &:hover
+      .dropdown-content
+        display: block
+
+.category-pill
+  background-color: variables.$black
+  color: variables.$white
+  border-radius: 30px 
+  padding: 3px 12px
+  display: inline-block
+  text-transform: lowercase
+  font-size: 0.8rem        

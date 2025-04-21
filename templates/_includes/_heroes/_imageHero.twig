@@ -4,17 +4,17 @@
     {% set bg = 'background-image: url("https://placehold.co/1920x1080.jpg");'%}
 {% endif %}
 
-<header class="pageHeader imageHero outer mb-5" style="background-color: {{ hero.backgroundColour }}; {{ bg }}">
+<header class="pageHeader imageHero outer" style="background-color: {{ hero.backgroundColour }}; {{ bg }}">
     <div class="container py-lg-5">
-        <div class="row">
+        <div class="row py-5">
             <div class="col-lg-9" style="color: {{ hero.textColour }}">
                 {% if hero.title | length %}
-                    <h1 class="xl-font {% if hero.text | length %}mb-5{% endif %}">
+                    <h1 class="{% if hero.text | length %}mb-5{% endif %}">
                         {{ hero.title }}
                     </h1>
                 {% endif %}
                 {% if hero.text | length %}
-                    <div class="md-font">
+                    <div class="">
                         {{ hero.text }}
                     </div>
                 {% endif %}

@@ -1,41 +1,34 @@
 <header class="pageHeader videoHeader outer" style="background-color: {{ hero.backgroundColour }}">
-    <div class="row text-center video-block w-100">
-        <div class="col-12">
-            {% if hero.title | length %}
-                <h1 class="d-none">
-                    {{ hero.title }}
-                </h1>
-            {% endif %}
-            {% if hero.video.one %}
-                <div class="row">
-                    <div class="col-12">
-                        <div class="video-wrapper d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" data-aos-once="true">
-                            {% set vid = hero.video.one %}
-                            {% if vid.type == 'externalVideo' %}
-                                {% if vid.video.media.type == 'video' %}
-                                    {{ vid.video.render({
-                                        params: {
-                                            autoplay: 0,
-                                            controls: 1,
-                                            loop: 1,
-                                            mute: 1,
-                                        }
-                                    }) }}
-                                {% endif %}
-                            {% else %}
-                                {% if vid.assetVideo.one %}
-                                    <video src="{{ vid.assetVideo.one.url }}" alt="{{ vid.assetVideo.one.title }}" autoplay loop muted playsinline></video>
-                                {% else %}
-                                    <video autoplay loop muted playsinline>
-                                        <source src="./img/video_placeholder.mp4">
-                                    </video>
-                                {% endif %}
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            {% endif %}
-        </div>
+    <div class="text-center video-block w-100">
+        {% if hero.title | length %}
+            <h1 class="d-none">
+                {{ hero.title }}
+            </h1>
+        {% endif %}
+        {% if hero.video.one %}
+            <div class="video-wrapper d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" data-aos-once="true">
+                {% set vid = hero.video.one %}
+                {% if vid.type == 'externalVideo' %}
+                    {% if vid.externalVideo.media.type == 'video' %}
+                        {{ vid.externalVideo.render({
+                            params: {
+                                autoplay: 0,
+                                controls: 1,
+                                loop: 1,
+                                mute: 1,
+                            }
+                        }) }}
+                    {% endif %}
+                {% else %}
+                    {% if vid.assetVideo.one %}
+                        <video src="{{ vid.assetVideo.one.url }}" alt="{{ vid.assetVideo.one.title }}" autoplay loop muted playsinline></video>
+                    {% else %}
+                        <video autoplay loop muted playsinline>
+                            <source src="./img/video_placeholder.mp4">
+                        </video>
+                    {% endif %}
+                {% endif %}
+            </div>
+        {% endif %}
     </div>
-   
 </header>

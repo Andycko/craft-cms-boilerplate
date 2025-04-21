@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: d305657a-b071-42af-960e-aa7b81715a02 # Latest
+    uid: d305657a-b071-42af-960e-aa7b81715a02 # Latest Entries
 handle: latest
 maxAuthors: 1
 name: Latest

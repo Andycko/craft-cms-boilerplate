@@ -3,6 +3,7 @@
 nav#main-nav
   width: 100%
   z-index: 1000
+  position: relative
   &.transparent
     position: absolute
     background-color: transparent
@@ -42,6 +43,9 @@ nav#main-nav
         transform: translateY(-10%)
         transition: .2s ease-in-out .1s
         background-color: rgb(208, 208, 208)
+        .link
+          padding: 0.5rem 0
+          display: block
         .sub-menu
           left: 100%
           top: 0

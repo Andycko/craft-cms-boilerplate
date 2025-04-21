@@ -1,5 +1,6 @@
+color: purple
 fieldLayouts:
-  7dbf399e-3c1f-423e-a751-ddc09e73f155:
+  0d313d7c-e4bd-435c-a7c6-a6a8fedf3b59:
     tabs:
       -
         elementCondition: null
@@ -9,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: null
+            dateAdded: '2025-04-21T14:39:13+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,61 +25,36 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            required: true
+            required: false
             size: null
             step: null
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 64ee2b07-5bc1-46b5-8cf0-19b2639a47f5
+            uid: 165d039d-998f-4ce8-a95e-a1abc3d20c08
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: null
-            editCondition: null
+            dateAdded: '2025-04-21T14:42:07+00:00'
+            dismissible: false
             elementCondition: null
-            fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Text
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6693a871-da5a-4da2-956a-bac59e8453d4
+            style: tip
+            tip: 'The contact form is automatically added here (setup in Freeform > Forms > Contact Form)'
+            type: craft\fieldlayoutelements\Tip
+            uid: c121c47d-d689-4f5b-a526-dda3d3edd1fa
             userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            fieldUid: 73bc541a-22cb-4ec3-a948-a66733e45d32 # News Categories
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 98fd4646-2fc8-4bcc-8650-cdfc44b7b139
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
-        uid: fc6d2f01-950a-4673-93e8-95d3af051c57
+        uid: bce81e5f-2c11-4bef-a1b4-3e6d175ff539
         userCondition: null
       -
         elementCondition: null
         elements:
           -
-            dateAdded: null
+            dateAdded: '2025-04-21T14:42:07+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 39237593-ff51-4bd3-851a-a9dfac329c0b # Page Summary
+            fieldUid: e5b76ff1-163b-49c0-bd4d-718bc1b5db55 # Text Colour
             handle: null
             includeInCards: false
             instructions: null
@@ -87,38 +63,15 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f18a522c-1be4-4d0c-944d-16196e387f13
+            uid: dcadfa83-8703-42b2-838e-ec52cc02181c
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: null
+            dateAdded: '2025-04-21T14:42:07+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 0ffba24e-268b-4f2c-a3f2-ad976b64c979 # Image
-            handle: summaryImage
-            includeInCards: false
-            instructions: null
-            label: 'Summary Image'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 361d5c5b-8334-4ea4-979e-5eb1053a03d0
-            userCondition: null
-            warning: null
-            width: 100
-        name: Summary
-        uid: ee62e1cc-cb90-41ab-ac52-9ffe1e744ef2
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            fieldUid: 7c5c4db7-bc5e-4979-a31b-6b7734989556 # SEO
+            fieldUid: 4a75a36d-742c-4bd9-ad78-303d9f1f4b51 # Background Colour
             handle: null
             includeInCards: false
             instructions: null
@@ -127,20 +80,44 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: dd2e98f0-9c30-4f89-8f01-35f9088f2782
+            uid: 996ac04d-1862-45d1-a001-3ebb9b4c9a74
             userCondition: null
             warning: null
             width: 100
-        name: SEO
-        uid: 355b70a4-ef87-41ce-a27c-dfef47ea057d
+        name: Settings
+        uid: 7e8c4d2a-4a6c-4f0c-8ad0-1152222a1ee3
         userCondition: null
-handle: latest
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-21T14:42:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1131725d-b336-42f4-9d4c-a9ad5ae609f5 # Anchor
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66d7441e-5631-47fa-9761-7ae8e8b78cea
+            userCondition: null
+            warning: null
+            width: 100
+        name: Anchor
+        uid: 699b21ee-2c27-4cb1-b87d-34350b586e6f
+        userCondition: null
+handle: contactForm
 hasTitleField: true
-name: Latest
+icon: envelope-open-text
+name: 'Contact Form'
+showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -1,80 +1,107 @@
+{# Set the component's default properties #}
+{% set content = category.pageContent.eagerly().all() | default(null) %}
+
 {% extends "_layout" %}
-
-{# sets up the categorySlug based on the last segment of the URL #}
-{% set categorySlug = craft.app.request.segments | last %}
-
-{# set page title and description for news filtered pages #}
-{% if entry is not defined %}
-    {% set entry = craft.entries.section("latestIndex").one %}
-    {% set title = "Latest - " ~ craft.app.request.segments|last|title %}
-    {% set filter = craft.app.request.segments|last|title %}
-    {% set pageDescription = "Latest - Filtered by " ~ craft.app.request.segments|last|title %}
-    {% set seo = craft.seo.custom(
-        {
-            title:  title
-        },
-        pageDescription
-    ) %}
-{% endif %}
 
 {% block content %}
 
-    {% if entry.pageHeader.count() %}
-        {% set header = entry.pageHeader.one %}
-        {% include '_includes/_page-headers/_' ~ header.type.handle %}
-    {% endif %}
-
-    <div class="container">
-
-        <div class="news-categories d-flex flex-wrap align-items-center mb-5">
-            <span class="text-uppercase font-weight-bold underline mb-2 me-4">Filters:</span>
-            <a href="/latest" class=" text-uppercase mb-2">All</a>
-            <span class="text-aqua px-3 mb-2">|</span>
-            {% for cat in craft.categories().group('newsCategories').all() %}
-                <a href="{{ cat.url }}" class="text-uppercase mb-2 {% if categorySlug == cat.slug %}fw-bold{% endif %}">{{ cat.title }}</a>
-                {% if not loop.last %}<span class="px-3 mb-2">|</span>{% endif %}
-            {% endfor %}
-        </div>
-
-        <div class="row pb-5">
-            {# Now that we have set the category slug above we can get the realted category object #}
-            {% set category = craft.categories.slug(categorySlug).one() %}
-            {% set section = craft.entries.section('latest').relatedTo(category) %}
-            {% set query = section.limit(6) %}
-            {% paginate query as pageInfo, pageEntries %}
-            {% for item in pageEntries %}
-                {% include '/_includes/_content-builder/_partial/article.twig' %}
-            {% endfor %}
-        </div>
-        {% if pageInfo.totalPages > 1 %}
-            <div class="row justify-content-center pagination-links pb-5">
-                {% if craft.app.request.absoluteUrl == pageInfo.firstUrl %}
-                    <span class="px-2">First page</span>
-                {% else %}
-                    <a href="{{ pageInfo.firstUrl }}" class="px-2">First Page</a>
-                {% endif %}
-
-                {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}" class="px-2">Previous Page</a>{% endif %}
-
-                {% for page, url in pageInfo.getPrevUrls(5) %}
-                    <a href="{{ url }}" class="px-2">{{ page }}</a>
-                {% endfor %}
-
-                <span class="current px-2">{{ pageInfo.currentPage }}</span>
-
-                {% for page, url in pageInfo.getNextUrls(5) %}
-                    <a href="{{ url }}" class="px-2">{{ page }}</a>
-                {% endfor %}
-
-                {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}" class="px-2">Next Page</a>{% endif %}
-
-                {% if craft.app.request.absoluteUrl == pageInfo.lastUrl %}
-                    <span class="px-2">Last page</span>
-                {% else %}
-                    <a href="{{ pageInfo.lastUrl }}" class="px-2">Last Page</a>
-                {% endif %}
+    <header class="outer bg-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h1 class=" mb-5">
+                        Journal Category: {{ category.slug }}
+                    </h1>
+                    <div class="">
+                        Showing all <u>{{ category.slug }}</u> articles 
+                    </div>
+                </div>
             </div>
-        {% endif %}
-    </div>
+        </div>
+    </header>
+
+    {% set category = craft.categories.group('newsCategories').slug(category.slug).one() %}
+
+    {% set section = craft.entries.relatedTo(category) %}
+    {% set query = section.limit(9) %}
+    {% paginate query as pageInfo, pageEntries %}
+
+    <div class="outer bg-white pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center filters mb-5">
+                    <a href="/latest" class="button button-black mb-2">All</a>
+                    {% for cat in craft.categories().group('newsCategories').level(1).all() %}
+                        {% if cat.children | length %}
+                            <div class="dropdown">
+                                <span class="button button-black mb-2 ms-2">{{ cat.title }}</span>
+                                <div class="dropdown-content">
+                                    {% for child in cat.children.all() %}
+                                        <a href="{{ child.url }}">{{ child.title }}</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% else %}
+                            <a href="{{ cat.url }}" class="button button-black mb-2 ms-2 {% if cat.slug == category.slug %}active{% endif %}">{{ cat.title }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="row">
+                {% for item in pageEntries %}
+                    {% include '/_includes/_content-builder/_partial/article-card.twig' %}
+                {% else %}
+                    <h2 class="py-5">There are currently no articles tagged with <u>{{ category.slug }}</u>.</h2>    
+                {% endfor %}
+            </div>
+
+            {% if pageInfo.totalPages > 1 %}
+                <div class="row py-5">
+                    <div class="col-12 d-flex justify-content-center">
+                        <a href="{{ pageInfo.firstUrl }}" class="me-1">First Page</a>
+                        {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}" class="mx-1">Previous Page</a>{% endif %}
+
+                        {% for page, url in pageInfo.getPrevUrls(5) %}
+                            <a href="{{ url }}" class="mx-1">{{ page }}</a>
+                        {% endfor %}
+
+                        <span class="current mx-1">{{ pageInfo.currentPage }}</span>
+
+                        {% for page, url in pageInfo.getNextUrls(5) %}
+                            <a href="{{ url }}" class="mx-1">{{ page }}</a>
+                        {% endfor %}
+
+                        {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}" class="mx-1">Next Page</a>{% endif %}
+                        <a href="{{ pageInfo.lastUrl }}" class="ms-1">Last Page</a>
+                    </div>
+                </div>
+            {% endif %}
+
+            {# {% if pageInfo.totalPages > 1 %}
+                <div class="col-12 page-load-status d-flex justify-content-start text-start pb-5 mb-lg-5 mt-4">
+                    <div class="infinite-scroll-request button  align-items-center">Load more 
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.9707 0.941895V16.9419M0.970703 8.94189H16.9707" stroke="#421828" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="infinite-scroll-last button">No more articles</div>
+                    <div class="infinite-scroll-error button">No more articles to load</div>
+                </div>
+
+                <div class="d-none">
+                    {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}" class="pagination__next px-2">Next Page</a>{% endif %}
+                </div>
+            {% endif %} #}
+        </div>
+     </div>
+
+     {# Content #}
+    {% for index, block in content %}
+        {% include '/_includes/_content-builder/_' ~ (block.type.handle | kebab) ignore missing with {
+            index: index,
+            block: block,
+        } only %}
+    {% endfor %}
 
 {% endblock %}

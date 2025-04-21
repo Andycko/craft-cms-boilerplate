@@ -6,32 +6,19 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2025-04-17T12:30:18+00:00'
-            disabled: false
+            dateAdded: '2025-04-21T15:31:04+00:00'
+            editCondition: null
             elementCondition: null
-            id: null
+            fieldUid: 85f247ee-d780-44a3-9af4-226064c7cfd7 # Link
+            handle: null
             includeInCards: false
-            inputType: null
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
             providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 257dc955-c15b-4ecd-83a7-1e642356354e
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a082c29-f2a8-4a16-bc2d-27bc46b9296a
             userCondition: null
             warning: null
             width: 100
@@ -39,7 +26,7 @@ fieldLayouts:
         uid: cff15bbc-ba28-42d8-b8bc-1798113ec2af
         userCondition: null
 handle: links
-hasTitleField: true
+hasTitleField: false
 icon: link
 name: Links
 showSlugField: false

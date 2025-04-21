@@ -1,0 +1,93 @@
+color: red
+fieldLayouts:
+  a60aa978-c6b8-4de1-ac9f-3fa52ee51235:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-21T14:39:57+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'All latest articles are automatically added here (articles are created via: Entries > Latest)'
+            type: craft\fieldlayoutelements\Tip
+            uid: fd481514-2c75-417f-bd4b-c424277e63b3
+            userCondition: null
+        name: Content
+        uid: 3c27bac0-250c-42b5-948b-a63ddcb57ae4
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-21T14:39:57+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e5b76ff1-163b-49c0-bd4d-718bc1b5db55 # Text Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6dec6f1e-25f1-424b-94dc-62377b9194ce
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-21T14:39:57+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4a75a36d-742c-4bd9-ad78-303d9f1f4b51 # Background Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 218820b8-a154-4e1b-aa56-e7f55fb25bcc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: 173c7c01-adf4-4b60-aae9-439f2f3193c2
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-21T14:39:57+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1131725d-b336-42f4-9d4c-a9ad5ae609f5 # Anchor
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a18f4998-d05b-4f2b-9509-9c647354e1f3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Anchor
+        uid: 49b5c880-c4b7-4376-b154-83dea40cc92d
+        userCondition: null
+handle: allArticles
+hasTitleField: false
+icon: newspaper
+name: 'All Articles'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
