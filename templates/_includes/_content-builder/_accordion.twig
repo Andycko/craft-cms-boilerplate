@@ -3,7 +3,7 @@
         {% if block.title | length %}
             <div class="row py-5">
                 <div class="col-12">
-                    <h2 class="eyebrow" style="border-color: {{ block.textColour }} !important;">{{ block.title }}</h2>
+                    <h2 class="eyebrow">{{ block.title }}</h2>
                 </div>
             </div>
         {% endif %}
@@ -13,7 +13,7 @@
                     {% for item in block.accordionMatrix.all() %}
                         <div class="item">
                             <div id="{{ 'header' ~ loop.index }}" class="header">
-                                <button class="position-relative collapsed lg-font big-calson-regular" data-bs-toggle="collapse"
+                                <button class="position-relative collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#{{ 'collapse' ~ loop.index }}" aria-expanded="false"
                                         aria-controls="{{ 'collapse' ~ loop.index }}" style="color: {{ block.textColour }}; border-color: {{ block.textColour }} !important;">
                                     {% if item.header | length %}
