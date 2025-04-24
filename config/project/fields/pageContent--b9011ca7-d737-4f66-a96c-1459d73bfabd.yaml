@@ -52,6 +52,11 @@ settings:
       __assoc__:
         -
           - uid
+          - c02083a7-2f81-4d19-aef4-ceca16f5211a # Slider
+    -
+      __assoc__:
+        -
+          - uid
           - 0592e90e-a8c1-4f31-ba39-237b8525a983 # Text Block
     -
       __assoc__:

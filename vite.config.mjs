@@ -9,6 +9,7 @@ export default defineConfig(({ command, mode }) => {
     return {
         base: command === "serve" ? "" : "/dist/",
         build: {
+            target: 'esnext', //browsers can handle the latest ES features
             chunkSizeWarningLimit: 1700,
             manifest: true,
             outDir: "web/dist",

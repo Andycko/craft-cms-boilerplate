@@ -19,11 +19,11 @@
 
             {% if block.image.one %}
                 <div class="col-lg-6" >
-                    <img src="{{ block.image.one.url({width:800, height:800, format:'webp' }) }}" alt="{{ block.image.one.title }}" class="w-100">
+                    <img src="{{ block.image.one.url({width:800, height:800, format:'webp' }) }}" alt="{{ block.image.one.title }}" class="w-100 lazy">
                 </div>
             {% else %}
                 <div class="col-lg-6" >
-                    <img src="https://placehold.co/800x800.jpg" alt="placeholder image" class="w-100">
+                    <img src="https://placehold.co/800x800.jpg" alt="placeholder image" class="w-100 lazy">
                 </div>    
             {% endif %}
         </div>

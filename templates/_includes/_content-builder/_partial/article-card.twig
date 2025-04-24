@@ -2,11 +2,11 @@
     <a href="{{ item.url }}" class="d-flex flex-column">
         {% if item.summaryImage.one %}
             <div class="zoomy--img img mb-4">
-                <img src="{{ item.summaryImage.one.url({ width: 500, height: 500, format: 'webp' }) }}" alt="{{ item.title }}" class="w-100">
+                <img src="{{ item.summaryImage.one.url({ width: 500, height: 500, format: 'webp' }) }}" alt="{{ item.title }}" class="w-100 lazy">
             </div>
         {% else %}
             <div class="zoomy--img img mb-4">
-                <img src="https://placehold.co/1920x1080.jpg" alt="{{ item.title }}" class="w-100">
+                <img src="https://placehold.co/1920x1080.jpg" alt="{{ item.title }}" class="w-100 lazy">
             </div>
         {% endif %}
         <div class="">{{ item.postDate | date("d.m.y") | upper }}</div>

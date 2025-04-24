@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "@popperjs/core": "^2.11.8",
+        "@splidejs/splide": "^4.1.4",
         "jquery": "^3.7.1",
         "lazysizes": "^5.3.2",
         "vanilla-lazyload": "^19.1.3"

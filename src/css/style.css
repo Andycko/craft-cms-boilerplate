@@ -5,3 +5,6 @@
 @import "partials/page-headers.sass";
 @import "partials/blocks.sass";
 @import "partials/footer.sass";
+
+/* Import all of Bootstrap's CSS */
+@import "~bootstrap/scss/bootstrap.scss";
