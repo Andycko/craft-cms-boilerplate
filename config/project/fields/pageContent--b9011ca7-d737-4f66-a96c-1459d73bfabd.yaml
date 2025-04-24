@@ -32,6 +32,11 @@ settings:
       __assoc__:
         -
           - uid
+          - fe53159d-13d1-4490-8d3c-e11feb21361b # Embed
+    -
+      __assoc__:
+        -
+          - uid
           - 88366ff2-676d-4832-b7dd-720a6c4b30fa # Image
     -
       __assoc__:

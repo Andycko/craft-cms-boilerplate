@@ -1,4 +1,4 @@
-dateModified: 1745249464
+dateModified: 1745488795
 elementSources:
   craft\elements\Entry:
     -
@@ -103,6 +103,7 @@ meta:
     f2d0f062-b6cd-48f4-a98d-e1f7529ff3ae: 'External Video' # External Video
     f99d20c5-6966-4180-8dc1-595df3b8f876: $SITE_NAME # $SITE_NAME
     fe0d9230-b9ce-4436-9f44-35a700886cfc: 'News Categories' # News Categories
+    fe53159d-13d1-4490-8d3c-e11feb21361b: Embed # Embed
     fea296bc-90b6-49bf-8aac-b065d489368b: Buttons # Buttons
     ff883963-defd-4375-8bb3-ab4baa1050ec: 'All Articles' # All Articles
 plugins:
