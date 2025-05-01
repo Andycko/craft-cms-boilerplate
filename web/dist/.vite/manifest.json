@@ -15,7 +15,7 @@
     ]
   },
   "src/js/main.js": {
-    "file": "assets/main-BRAuSWgl.js",
+    "file": "assets/main-BCyolJX7.js",
     "name": "main",
     "src": "src/js/main.js",
     "isEntry": true,
@@ -24,7 +24,7 @@
       "src/js/libraries/splide.js"
     ],
     "css": [
-      "assets/main-HkBFwwIt.css"
+      "assets/main-DmlRBrzT.css"
     ]
   }
 }

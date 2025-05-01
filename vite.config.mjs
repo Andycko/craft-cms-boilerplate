@@ -21,7 +21,7 @@ export default defineConfig(({ command, mode }) => {
             },
         },
         css: {
-            postcss,
+            postcss
         },
         publicDir: "src/public",
         resolve: {
