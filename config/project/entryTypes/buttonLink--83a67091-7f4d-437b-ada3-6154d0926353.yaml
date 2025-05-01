@@ -1,0 +1,84 @@
+color: purple
+fieldLayouts:
+  922c0fea-a441-4609-add0-6f55f6c6b629:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-17T14:03:27+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e58eb24e-59da-4ef6-8fa8-db82be0dd18b # Button Or Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d39f5d78-056f-48d5-9631-2e5bb9524707
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 72870c02-ad6a-42c1-8e88-c34e12e07177
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-17T16:14:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4a75a36d-742c-4bd9-ad78-303d9f1f4b51 # Background Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 102b367e-3201-4ace-ba8c-868b6742299c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: 184b7eda-e6fc-49b8-b2a4-3106264bb228
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-17T14:03:27+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1131725d-b336-42f4-9d4c-a9ad5ae609f5 # Anchor
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1165a5af-1644-4d52-8fd3-44c2cbffdaed
+            userCondition: null
+            warning: null
+            width: 100
+        name: Anchor
+        uid: 5db4e677-9798-4728-99a1-1fdb4eec72ae
+        userCondition: null
+handle: buttonLink
+hasTitleField: false
+icon: link
+name: Button/Link
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

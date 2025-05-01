@@ -1,17 +1,16 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: 431efb4a-9ace-451f-8b70-aeda20b1f83f # Globals
 handle: googleAnalytics
-instructions: ''
+instructions: null
 name: 'Google Analytics'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: '1'
+  initialRows: 4
+  multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

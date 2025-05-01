@@ -1,16 +1,18 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 70f3e289-0ffa-4d8a-a2a4-e8c6db06ee3c # Content Builder Fields
 handle: accordionMatrix
-instructions: ''
+instructions: null
 name: 'Accordion Matrix'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_accordionmatrix}}'
-  maxBlocks: ''
-  minBlocks: ''
+  entryTypes:
+    -
+      uid: 80190ffa-9de6-4824-befb-1c21b98c9752
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

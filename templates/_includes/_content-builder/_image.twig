@@ -1,0 +1,13 @@
+<div class="outer {{ block.backgroundColour }}" id="anchor-{{ block.id }}">
+    <div class="container image-block">
+        <div class="row py-5">
+            <div class="col-12">
+                {% if block.image.one() %}
+                    <img src="{{ block.image.one.url({ width: 1920, format: 'webp' }) }}" alt="{{ block.image.one.title }}" class="w-100 lazy">
+                {% else %}
+                    <img src="https://placehold.co/1920x1080.jpg" alt="placeholder image" class="w-100 lazy">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

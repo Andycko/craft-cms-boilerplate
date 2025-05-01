@@ -1,0 +1,40 @@
+columnSuffix: hyrdujjg
+handle: buttonColour
+instructions: null
+name: 'Button Colour'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Black
+        -
+          - value
+          - button-black
+        -
+          - cssColour
+          - '000'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - White
+        -
+          - value
+          - button-white
+        -
+          - cssColour
+          - fff
+        -
+          - default
+          - ''
+  placeholderText: 'Select an option'
+translationKeyFormat: null
+translationMethod: none
+type: verbb\buttonbox\fields\Colours

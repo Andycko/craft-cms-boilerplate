@@ -1,0 +1,76 @@
+columnSuffix: null
+handle: pageContent
+instructions: null
+name: 'Page Content'
+searchable: false
+settings:
+  createButtonLabel: 'New content block'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - ff883963-defd-4375-8bb3-ab4baa1050ec # All Articles
+    -
+      __assoc__:
+        -
+          - uid
+          - 03808ef1-4837-4bf6-bd64-fe67f8fb5272 # Accordion
+    -
+      __assoc__:
+        -
+          - uid
+          - 83a67091-7f4d-437b-ada3-6154d0926353 # Button/Link
+    -
+      __assoc__:
+        -
+          - uid
+          - 74ade5f3-d3ce-460b-a66f-9e3db4fa0dba # Contact Form
+    -
+      __assoc__:
+        -
+          - uid
+          - fe53159d-13d1-4490-8d3c-e11feb21361b # Embed
+    -
+      __assoc__:
+        -
+          - uid
+          - 88366ff2-676d-4832-b7dd-720a6c4b30fa # Image
+    -
+      __assoc__:
+        -
+          - uid
+          - 1e57022e-84ac-4f4d-9907-aed0444c6894 # Image & Text
+    -
+      __assoc__:
+        -
+          - uid
+          - 04fbd8b3-eaf2-4a9f-8193-fabc8c2065f1 # Latest Articles
+    -
+      __assoc__:
+        -
+          - uid
+          - c02083a7-2f81-4d19-aef4-ceca16f5211a # Slider
+    -
+      __assoc__:
+        -
+          - uid
+          - 0592e90e-a8c1-4f31-ba39-237b8525a983 # Text Block
+    -
+      __assoc__:
+        -
+          - uid
+          - 6b82122d-80cc-4db6-a7b6-8d6598811da5 # Video
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

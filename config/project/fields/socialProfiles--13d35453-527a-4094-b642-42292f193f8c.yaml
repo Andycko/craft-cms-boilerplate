@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 431efb4a-9ace-451f-8b70-aeda20b1f83f # Globals
 handle: socialProfiles
 instructions: null
 name: 'Social Profiles'
@@ -11,41 +10,45 @@ settings:
   columns:
     __assoc__:
       -
-        - 1f6a1dc8-82d8-47a8-ae54-01af20652730 # Name
+        - 1f6a1dc8-82d8-47a8-ae54-01af20652730
         -
           __assoc__:
             -
               - width
               - ''
       -
-        - 5cd6ad16-cb88-45ba-b275-1558f8f27c05 # Link
+        - 5cd6ad16-cb88-45ba-b275-1558f8f27c05
         -
           __assoc__:
             -
               - width
               - ''
       -
-        - a596aec7-c8ec-49d7-ab4d-97dcdf5ac990 # Icon
+        - a596aec7-c8ec-49d7-ab4d-97dcdf5ac990
         -
           __assoc__:
             -
               - width
               - ''
       -
-        - d9aafe6e-671c-45da-9958-ccb6470336d6 # Alt Icon
+        - d9aafe6e-671c-45da-9958-ccb6470336d6
         -
           __assoc__:
             -
               - width
               - ''
-  contentTable: '{{%stc_socialprofiles}}'
+  entryTypes:
+    - dfd34224-0241-4c43-aec4-0c7abd7e9dab # Social Profiles Block
   fieldLayout: table
+  maxEntries: null
   maxRows: null
+  minEntries: null
   minRows: null
   propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: null
   staticField: null
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: none
 type: verbb\supertable\fields\SuperTableField

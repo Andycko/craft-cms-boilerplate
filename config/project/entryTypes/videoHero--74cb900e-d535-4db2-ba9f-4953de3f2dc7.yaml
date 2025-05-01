@@ -1,0 +1,91 @@
+color: green
+fieldLayouts:
+  026dd49c-8737-4f9e-80cf-3ea806f685dc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-04-17T13:53:29+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8ca6e680-c980-432e-a49b-fbe9552217bb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-17T13:56:01+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4b0ce80c-181f-4c40-bcce-5146dc8c903e # Video
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a55e911-3b04-4c86-8e60-7130d05cdde2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 199dbc50-5ae9-4f02-b99e-05c8fdfea930
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-17T16:14:14+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4a75a36d-742c-4bd9-ad78-303d9f1f4b51 # Background Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77a5e1bf-cd9d-49d9-b450-1e563a960a77
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: d788ca2f-a636-42be-b844-4d58d7caea53
+        userCondition: null
+handle: videoHero
+hasTitleField: true
+icon: mask
+name: 'Video Hero'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

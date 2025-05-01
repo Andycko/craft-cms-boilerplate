@@ -1,0 +1,101 @@
+color: red
+fieldLayouts:
+  63e4ba21-7b22-414b-a000-7416736c7505:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-24T13:40:01+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1631bb08-7ce0-4101-8c3b-a29620d9f8c5 # Slider Matrix
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0f54cedd-948d-4719-9631-0b15a2751656
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d7c0c5dc-7b59-40e3-85d7-37c745ea1be3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-24T13:40:01+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e5b76ff1-163b-49c0-bd4d-718bc1b5db55 # Text Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79863f1f-705a-40f1-809f-43d624a63d10
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-24T13:40:01+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4a75a36d-742c-4bd9-ad78-303d9f1f4b51 # Background Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 35e921d3-698e-4e2a-81e7-ee7f1a3ad2db
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: 7881fe3a-52b7-4a05-aa45-5bd89fb24bae
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-24T13:40:01+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1131725d-b336-42f4-9d4c-a9ad5ae609f5 # Anchor
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fbd04170-34b2-44c5-84bc-2d93a45e5bac
+            userCondition: null
+            warning: null
+            width: 100
+        name: Anchor
+        uid: 3b7cda4a-3d36-47c4-ab54-fad032b2a854
+        userCondition: null
+handle: slider
+hasTitleField: false
+icon: rectangle-history
+name: Slider
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

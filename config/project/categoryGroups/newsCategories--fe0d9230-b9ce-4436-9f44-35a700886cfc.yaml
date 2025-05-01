@@ -10,9 +10,11 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-04-21T15:23:00+00:00'
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -21,6 +23,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -32,8 +35,97 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-04-21T15:26:15+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Any content blocks you add here will appear below the filtered articles'
+            type: craft\fieldlayoutelements\Tip
+            uid: 2abec54f-afc6-4e4c-8542-b5174e9fe1ac
+            userCondition: null
+          -
+            dateAdded: '2025-04-21T15:26:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b9011ca7-d737-4f66-a96c-1459d73bfabd # Page Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42290556-f5ce-41ca-a001-7a146679fc00
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 8cae974b-598d-4f75-b87b-9feda7237f62
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-21T15:26:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 39237593-ff51-4bd3-851a-a9dfac329c0b # Page Summary
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a01220d-2375-4a09-af31-55d8aaac92ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-21T15:26:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0ffba24e-268b-4f2c-a3f2-ad976b64c979 # Image
+            handle: summaryImage
+            includeInCards: false
+            instructions: null
+            label: 'Summary Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27b40313-8a37-4071-9a4d-574e71e6038d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Summary
+        uid: f06c08ed-5905-419f-9218-199aa1263245
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-21T15:26:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7c5c4db7-bc5e-4979-a31b-6b7734989556 # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01f082d0-9e75-4609-90d4-8071bbc7617a
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 02c537bc-b82f-42af-a0e4-970046c9a5e1
         userCondition: null
 handle: newsCategories
 name: 'News Categories'

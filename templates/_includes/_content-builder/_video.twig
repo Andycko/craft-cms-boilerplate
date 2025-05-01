@@ -1,0 +1,33 @@
+<div class="outer" style="background-color: {{ block.backgroundColour }}" id="anchor-{{ block.id }}">
+    <div class="container video-block">
+        {% if block.video.one %}
+            <div class="row py-5">
+                <div class="col-12">
+                    <div class="video-wrapper d-flex justify-content-center align-items-center">
+                        {% set vid = block.video.one %}
+                        {% if vid.type == 'externalVideo' %}
+                            {% if vid.externalVideo.media.type == 'video' %}
+                                {{ vid.externalVideo.render({
+                                    params: {
+                                        autoplay: 0,
+                                        controls: 1,
+                                        loop: 1,
+                                        mute: 1,
+                                    }
+                                }) }}
+                            {% endif %}
+                        {% else %}
+                            {% if vid.assetVideo.one %}
+                                <video src="{{ vid.assetVideo.one.url }}" alt="{{ vid.assetVideo.one.title }}" autoplay loop muted playsinline></video>
+                            {% else %}
+                                <video autoplay loop muted playsinline>
+                                    <source src="./img/video_placeholder.mp4">
+                                </video>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>

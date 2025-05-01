@@ -1,0 +1,30 @@
+{
+  "src/js/libraries/lazy-load.js": {
+    "file": "assets/lazy-load-m2ei6vfF.js",
+    "name": "lazy-load",
+    "src": "src/js/libraries/lazy-load.js",
+    "isDynamicEntry": true
+  },
+  "src/js/libraries/splide.js": {
+    "file": "assets/splide-DE3H4QjU.js",
+    "name": "splide",
+    "src": "src/js/libraries/splide.js",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/splide-BRKXMWAJ.css"
+    ]
+  },
+  "src/js/main.js": {
+    "file": "assets/main-BCyolJX7.js",
+    "name": "main",
+    "src": "src/js/main.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/js/libraries/lazy-load.js",
+      "src/js/libraries/splide.js"
+    ],
+    "css": [
+      "assets/main-DmlRBrzT.css"
+    ]
+  }
+}

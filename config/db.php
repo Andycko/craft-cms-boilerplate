@@ -20,6 +20,6 @@ return [
     'password' => App::env('CRAFT_DB_PASSWORD'),
     'schema' => App::env('CRAFT_DB_SCHEMA'),
     'tablePrefix' => App::env('CRAFT_DB_TABLE_PREFIX'),
-    'charset' => 'utf8',
-    'collation' => 'utf8_unicode_ci',
+    // 'charset' => App::env('CRAFT_DB_CHARSET'),
+    // 'collation' => App::env('CRAFT_DB_COLLATION'),
 ];

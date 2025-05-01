@@ -1,0 +1,55 @@
+color: lime
+fieldLayouts:
+  8778d519-4321-4095-b7bc-df45b3972758:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-21T15:31:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 85f247ee-d780-44a3-9af4-226064c7cfd7 # Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a082c29-f2a8-4a16-bc2d-27bc46b9296a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-24T10:36:31+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e5b76ff1-163b-49c0-bd4d-718bc1b5db55 # Text Colour
+            handle: linkColour
+            includeInCards: false
+            instructions: null
+            label: 'Link Colour'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e6ddba33-8e01-4fc8-8a74-5a309f93aaea
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cff15bbc-ba28-42d8-b8bc-1798113ec2af
+        userCondition: null
+handle: links
+hasTitleField: false
+icon: link
+name: Links
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Link(s)
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

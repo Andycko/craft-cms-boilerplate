@@ -1,0 +1,125 @@
+color: green
+fieldLayouts:
+  0baf5d8d-35bc-468e-affa-e091cf6483b3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-04-17T13:50:32+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7f2804ad-a80a-46aa-a569-b27ecaa1e784
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-17T13:53:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1d1c9f28-39de-4df6-b077-856d16c001ca # Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be4965a1-fe45-465c-bbaf-6685f5df47a2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-17T13:53:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0ffba24e-268b-4f2c-a3f2-ad976b64c979 # Image
+            handle: backgroundImage
+            includeInCards: false
+            instructions: null
+            label: 'Background Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2dbcafb7-09a7-46ad-b386-0eecb5779c75
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a9fcbee0-56da-4b3a-91dc-bbe9f134c984
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-17T13:53:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e5b76ff1-163b-49c0-bd4d-718bc1b5db55 # Text Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 80ae75d0-ac52-4b84-b0be-4e1c4a3cf086
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-17T16:12:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4a75a36d-742c-4bd9-ad78-303d9f1f4b51 # Background Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aeaf871a-f7e8-4363-b4fa-6c479c9f87dd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: cf7ae933-c6c7-4f72-923c-5b89cd22e962
+        userCondition: null
+handle: imageHero
+hasTitleField: true
+icon: mask
+name: 'Image Hero'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

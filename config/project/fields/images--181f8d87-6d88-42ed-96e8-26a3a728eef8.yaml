@@ -1,31 +1,34 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 70f3e289-0ffa-4d8a-a2a4-e8c6db06ee3c # Content Builder Fields
 handle: images
-instructions: ''
+instructions: null
 name: Images
 searchable: false
 settings:
   allowSelfRelations: false
+  allowSubfolders: false
   allowUploads: true
   allowedKinds:
     - image
-  defaultUploadLocationSource: ''
-  defaultUploadLocationSubpath: ''
-  limit: ''
+  branchLimit: null
+  defaultUploadLocationSource: null
+  defaultUploadLocationSubpath: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
   previewMode: full
-  restrictFiles: '1'
-  selectionLabel: ''
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: null
+  restrictedLocationSubpath: null
+  selectionLabel: null
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: ''
-  singleUploadLocationSubpath: ''
-  source: null
   sources: '*'
   targetSiteId: null
-  useSingleFolder: false
   validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null

@@ -1,0 +1,8 @@
+columnSuffix: null
+handle: anchor
+instructions: null
+name: Anchor
+searchable: false
+translationKeyFormat: null
+translationMethod: none
+type: johnhenry\matrixblockanchor\fields\MatrixBlockAnchorField

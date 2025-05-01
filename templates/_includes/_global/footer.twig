@@ -1,8 +1,16 @@
 {% set footerNav = craft.navigation.nodes().handle('footerNavigation').level(1).all() %}
 <footer>
     <div class="container text-center text-md-start">
-        <div class="row py-4">
-            <div class="col-12 col-md-3">
+        <div class="row py-5">
+            <div class="col-12 col-md-5 logo-container">
+                <a href="{{ siteUrl() }}" class="d-block mb-lg-5 mb-4">
+                    <img src="https://placehold.co/200x50.jpg" alt="Site logo">
+                </a>
+                {% if footerDisclaimer.text | length %}
+                    <div class="pt-4">{{ footerDisclaimer.text }}</div>
+                {% endif %}
+            </div>
+            <div class="col-12 offset-md-1 col-md-2">
                 {% if companyInfo.address | length %}
                     <div class="address">
                         {{ companyInfo.address }}
@@ -19,8 +27,7 @@
                     </div>
                 {% endif %}
             </div>
-            <div class="col-12 col-md-6 pt-4 pt-md-0 copy">{{ footerDisclaimer.copy }}</div>
-            <div class="col-12 col-md-3 footer-nav-links d-flex flex-column align-items-center align-items-md-end pt-4 pt-md-0">
+            <div class="col-12 col-md-4 footer-nav-links d-flex flex-column align-items-center align-items-md-end pt-4 pt-md-0">
                 {% for item in footerNav %}
                     <div class="item px-3">
                         <a href="{{ item.url }}" class="link">{{ item.title }}</a>

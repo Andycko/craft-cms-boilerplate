@@ -1,0 +1,84 @@
+color: orange
+fieldLayouts:
+  563aff76-4143-4daa-af48-1863e81567cf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-17T12:20:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4b0ce80c-181f-4c40-bcce-5146dc8c903e # Video
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ad0247c6-ca19-4b86-a802-74e4c5bc77c1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 28a188d3-a3f4-4e5e-a59b-6b3e057e7d10
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-17T16:13:52+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4a75a36d-742c-4bd9-ad78-303d9f1f4b51 # Background Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d19660fe-8f9b-4efa-bce5-6e0c798b059a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: e8e712ca-5e71-4340-830d-bbb4c1d95af3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-17T12:20:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1131725d-b336-42f4-9d4c-a9ad5ae609f5 # Anchor
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7634fef1-6006-42e5-91c8-a46468b15d88
+            userCondition: null
+            warning: null
+            width: 100
+        name: Anchor
+        uid: 5ac6a122-094c-4c9f-be6a-ce82532d7a2b
+        userCondition: null
+handle: video
+hasTitleField: false
+icon: play
+name: Video
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Video
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

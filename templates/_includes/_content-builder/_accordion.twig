@@ -1,0 +1,42 @@
+<div class="outer" style="background-color: {{ block.backgroundColour }};">
+    <div class="container accordion-block py-md-5 pb-5" style="color: {{ block.textColour }};">
+        {% if block.title | length %}
+            <div class="row py-5">
+                <div class="col-12">
+                    <h2 class="eyebrow">{{ block.title }}</h2>
+                </div>
+            </div>
+        {% endif %}
+        <div class="row">
+            <div class="col-12">
+                <div id="accordion" class="accordion">
+                    {% for item in block.accordionMatrix.all() %}
+                        <div class="item">
+                            <div id="{{ 'header' ~ loop.index }}" class="header">
+                                <button class="position-relative collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#{{ 'collapse' ~ loop.index }}" aria-expanded="false"
+                                        aria-controls="{{ 'collapse' ~ loop.index }}" style="color: {{ block.textColour }}; border-color: {{ block.textColour }} !important;">
+                                    {% if item.header | length %}
+                                        <div class="col-11 col-md-8">{{ item.header }}</div>
+                                    {% endif %}
+                                    <span class="plus">
+                                        <span></span>
+                                        <span></span>
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="{{ 'collapse' ~ loop.index }}" class="body collapse collapsed"
+                                 aria-labelledby="{{ 'header' ~ loop.index }}" data-bs-parent="#accordion">
+                                {% if item.text %}
+                                    <div class="copy px-4 pb-4">
+                                        {{ item.text }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="outer py-5" style="background-color: {{ block.backgroundColour }};" id="anchor-{{ block.id }}">
+    <div class="container text-block" style="color: {{ block.textColour }};">
+        <div class="row">
+            {% if block.text | length %}
+                <div class="col-12">{{ block.text }}</div>
+            {% endif %}
+        </div>
+    </div>
+</div>

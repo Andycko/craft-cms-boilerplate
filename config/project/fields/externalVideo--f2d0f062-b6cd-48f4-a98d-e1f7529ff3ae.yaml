@@ -1,0 +1,10 @@
+columnSuffix: null
+handle: externalVideo
+instructions: 'Enter the URL of the video'
+name: 'External Video'
+searchable: false
+settings:
+  url: ''
+translationKeyFormat: null
+translationMethod: none
+type: wrav\oembed\fields\OembedField

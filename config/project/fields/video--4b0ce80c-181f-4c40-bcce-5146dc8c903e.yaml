@@ -1,16 +1,31 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: 70f3e289-0ffa-4d8a-a2a4-e8c6db06ee3c # Content Builder Fields
 handle: video
 instructions: 'Please choose only one of the following: External Video or Asset Video.'
 name: Video
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_video}}'
-  maxBlocks: 1
-  minBlocks: null
+  createButtonLabel: 'Add Video'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 49b4d1ac-0f61-42c6-a482-63eefaa8933e # Asset Video
+    -
+      __assoc__:
+        -
+          - uid
+          - ead943da-9146-4b32-9f33-8096b522e085 # External Video
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

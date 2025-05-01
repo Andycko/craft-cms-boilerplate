@@ -1,0 +1,27 @@
+<div class="outer" style="background-color: {{ block.backgroundColour }}" id="anchor-{{ block.id }}">
+    <div class="container latestArticles-block py-5" style="color: {{ block.textColour }}">
+        {% if block.title | length %}
+            <div class="row pt-lg-5">
+                <div class="col-12">
+                    <h2 class="eyebrow">{{ block.title }}</h2>
+                </div>
+            </div>
+        {% endif %}
+        <div class="row py-md-5 pt-5">
+            {% for item in craft.entries.section('latest').limit(3).all() %}
+                {% include '/_includes/_content-builder/_partial/article-card.twig' %}
+            {% endfor %}
+        </div>
+        <div class="row pb-lg-5">
+            <div class="col-12">
+
+                {% set btnConfig = { 
+                    customButton: '/latest',
+                    text: 'All news'
+                } %} 
+
+                <div>{% include '/_includes/_content-builder/_partial/button.twig' with {'button': btnConfig, 'classes': 'button-white' } %}</div>
+            </div>
+        </div>
+    </div>
+</div>

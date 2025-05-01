@@ -1,0 +1,87 @@
+@use 'variables'
+
+.imageSlider-block
+  .flickity-viewport
+    transition: height 0.2s
+  .slider-wrap
+    .slide
+      min-height: 100%
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      transition: height 0.2s
+      .slide-inner
+        height: 100%
+        width: 100%
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+    .flickity-prev-next-button
+      &.previous
+        left: 30px
+      &.next
+        right: 30px
+
+.video-block
+  .video-wrapper
+    width: 100%
+    padding-top: 56.25%
+    position: relative
+    video, iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+
+.accordion-block
+  .accordion
+    .item
+      .header
+        button
+          width: 100%
+          text-align: left
+          background: none
+          border: none
+          border-top: 1px solid
+          padding: 2rem 0
+          .plus
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            height: 20px
+            span
+              background-color: black
+              opacity: .8
+              position: absolute
+              top: 50%
+              right: 10px
+              transform: translateY(-50%)
+              height: 100%
+              width: 1px
+              transition: .3s ease
+              &:last-of-type
+                transform: translateY(-50%) rotate(-90deg)
+          &[aria-expanded="true"]
+            .plus
+              span:first-of-type
+                transform: translateY(-50%) rotate(90deg)
+                
+.text-block
+  h1, h2, h3, h4, h5
+    margin-bottom: 1rem
+  strong
+    font-weight: 600 !important
+
+.slider-block
+  .splide
+    .splide__slide
+      background: grey
+      min-height: 500px
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: grab     
