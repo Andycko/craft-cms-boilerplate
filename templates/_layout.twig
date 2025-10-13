@@ -20,7 +20,7 @@
         {% set scriptAttributes = {} %}
         {% set styleAttributes = {} %}
 
-        {{ craft.vite.script('/src/js/main.js', false, scriptAttributes, styleAttributes) }}
+        {{ craft.vite.script('/src/js/app.js', false, scriptAttributes, styleAttributes) }}
 
         {% include '_includes/_global/tracking-scripts' %}
     </head>

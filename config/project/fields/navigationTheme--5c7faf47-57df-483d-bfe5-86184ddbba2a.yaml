@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: navigationTheme
+instructions: 'Enable this switch to make the logo & navigation at the top of the page dark (white by default)'
+name: 'Navigation Theme'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

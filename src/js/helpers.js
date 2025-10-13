@@ -11,25 +11,20 @@ export function isOnPage(node) {
 }
 
 /**
- * @title Get Siblings
- * @descript Get the siblings of an element
+ * @title Is Dev?
+ * @description Checks whether or not the current environment is the development environment
  */
-export function getSiblings(element) {
-	// for collecting siblings
-	let siblings = [];
-	// if no parent, return no sibling
-	if (!element.parentNode) {
-		return siblings;
-	}
-	// first child of the parent node
-	let sibling = element.parentNode.firstChild;
+export function isDev() {
+	/* `import.meta.env.MODE` is a special variable built-in to Vite */
+	if (import.meta.env.MODE === "development") return true;
 
-	// collecting siblings
-	while (sibling) {
-		if (sibling.nodeType === 1 && sibling !== element) {
-			siblings.push(sibling);
-		}
-		sibling = sibling.nextSibling;
-	}
-	return siblings;
+	return false;
+}
+
+/**
+ * @title Is Touch Device
+ * @description Determines whether or not the current device uses a touch-based input
+ */
+export function isTouchDevice() {
+	return window.matchMedia("(pointer: coarse)").matches;
 }

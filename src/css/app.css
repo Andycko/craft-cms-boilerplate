@@ -1,0 +1,38 @@
+/*
+	App (Entry point)
+	========================================
+	The entry point of the project's CSS.
+	- Do not add any styles here. Import declarations only!
+*/
+
+/*
+	This injects Tailwind's styles
+*/
+@import "tailwindcss";
+
+/* Debug plugin */
+@plugin "../../tailwind.debug.js";
+
+/*
+	This injects Tailwind's form classes
+*/
+@plugin "@tailwindcss/forms";
+
+/*
+	This injects Tailwind's utility classes and any utility classes registered by plugins.
+*/
+@import "tailwindcss/utilities";
+
+/* Preline CSS */
+@import "preline/variants.css";
+
+/*
+	Custom imports
+*/
+@import "./partials/config";
+@import "./partials/components";
+@import "./partials/general";
+@import "./partials/fonts";
+@import "./partials/nav";
+@import "./partials/hero";
+@import "./partials/footer";

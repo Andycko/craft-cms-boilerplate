@@ -1,42 +1,38 @@
-<div class="outer" style="background-color: {{ block.backgroundColour }};">
-    <div class="container accordion-block py-md-5 pb-5" style="color: {{ block.textColour }};">
-        {% if block.title | length %}
-            <div class="row py-5">
-                <div class="col-12">
-                    <h2 class="eyebrow">{{ block.title }}</h2>
-                </div>
-            </div>
-        {% endif %}
-        <div class="row">
-            <div class="col-12">
-                <div id="accordion" class="accordion">
-                    {% for item in block.accordionMatrix.all() %}
-                        <div class="item">
-                            <div id="{{ 'header' ~ loop.index }}" class="header">
-                                <button class="position-relative collapsed" data-bs-toggle="collapse"
-                                        data-bs-target="#{{ 'collapse' ~ loop.index }}" aria-expanded="false"
-                                        aria-controls="{{ 'collapse' ~ loop.index }}" style="color: {{ block.textColour }}; border-color: {{ block.textColour }} !important;">
-                                    {% if item.header | length %}
-                                        <div class="col-11 col-md-8">{{ item.header }}</div>
-                                    {% endif %}
-                                    <span class="plus">
-                                        <span></span>
-                                        <span></span>
-                                    </span>
-                                </button>
-                            </div>
-                            <div id="{{ 'collapse' ~ loop.index }}" class="body collapse collapsed"
-                                 aria-labelledby="{{ 'header' ~ loop.index }}" data-bs-parent="#accordion">
-                                {% if item.text %}
-                                    <div class="copy px-4 pb-4">
-                                        {{ item.text }}
-                                    </div>
-                                {% endif %}
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<section class="outer accordion py-20" style="background-color: {{ block.backgroundColour }}" id="anchor-{{ block.id }}">
+	<div class="container mx-auto w-full">
+		{% if block.title | length %}
+			<div class="mb-10">
+				<h2 class="">{{ block.title }}</h2>
+			</div>
+		{% endif %}
+		<div class="hs-accordion-group border-t">
+			{% for item in block.accordionMatrix.all() %}
+				<div class="hs-accordion border-b {% if loop.first %}active{% endif %}" id="hs-basic-heading-{{ loop.index }}">
+					<button class="hs-accordion-toggle py-10 grid grid-cols-12 justify-between items-center gap-x-3 w-full text-start hover:text-gray-500 cursor-pointer" {% if loop.first %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="hs-basic-collapse-{{ loop.index }}">
+						{% if item.header | length %}
+							<div class="col-span-11">
+								<h3 class="text-3xl md:text-4xl lg:text-5xl">{{ item.header }}</h3>
+							</div>
+						{% endif %}
+						<div class="col-span-1 ml-auto">
+							<svg class="hs-accordion-active:hidden block size-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M5 12h14"></path>
+								<path d="M12 5v14"></path>
+							</svg>
+							<svg class="hs-accordion-active:block hidden size-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M5 12h14"></path>
+							</svg>
+						</div>
+					</button>
+					<div id="hs-basic-collapse-{{ loop.index }}" class="hs-accordion-content {% if not loop.first %}hidden{% endif %} w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-{{ loop.index }}">
+						<div class="pb-4">
+							<p class="text-sm">
+								{{ item.text }}
+							</p>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

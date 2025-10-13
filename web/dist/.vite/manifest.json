@@ -1,30 +1,48 @@
 {
-  "src/js/libraries/lazy-load.js": {
-    "file": "assets/lazy-load-m2ei6vfF.js",
-    "name": "lazy-load",
-    "src": "src/js/libraries/lazy-load.js",
-    "isDynamicEntry": true
-  },
-  "src/js/libraries/splide.js": {
-    "file": "assets/splide-DE3H4QjU.js",
-    "name": "splide",
-    "src": "src/js/libraries/splide.js",
-    "isDynamicEntry": true,
-    "css": [
-      "assets/splide-BRKXMWAJ.css"
-    ]
-  },
-  "src/js/main.js": {
-    "file": "assets/main-BCyolJX7.js",
-    "name": "main",
-    "src": "src/js/main.js",
+  "src/js/app.js": {
+    "file": "assets/app-WUNIsyM9.js",
+    "name": "app",
+    "src": "src/js/app.js",
     "isEntry": true,
     "dynamicImports": [
       "src/js/libraries/lazy-load.js",
-      "src/js/libraries/splide.js"
+      "src/js/components/nav.js",
+      "src/js/components/accordion-image.js",
+      "src/js/components/stats.js",
+      "src/js/components/ticker.js"
     ],
     "css": [
-      "assets/main-DmlRBrzT.css"
+      "assets/app-GCaRm0Cs.css"
     ]
+  },
+  "src/js/components/accordion-image.js": {
+    "file": "assets/accordion-image-B8MHfuuZ.js",
+    "name": "accordion-image",
+    "src": "src/js/components/accordion-image.js",
+    "isDynamicEntry": true
+  },
+  "src/js/components/nav.js": {
+    "file": "assets/nav-B4O7KIaT.js",
+    "name": "nav",
+    "src": "src/js/components/nav.js",
+    "isDynamicEntry": true
+  },
+  "src/js/components/stats.js": {
+    "file": "assets/stats-C7G1AKGz.js",
+    "name": "stats",
+    "src": "src/js/components/stats.js",
+    "isDynamicEntry": true
+  },
+  "src/js/components/ticker.js": {
+    "file": "assets/ticker-e8vj-o8D.js",
+    "name": "ticker",
+    "src": "src/js/components/ticker.js",
+    "isDynamicEntry": true
+  },
+  "src/js/libraries/lazy-load.js": {
+    "file": "assets/lazy-load-BP1b_UJk.js",
+    "name": "lazy-load",
+    "src": "src/js/libraries/lazy-load.js",
+    "isDynamicEntry": true
   }
 }

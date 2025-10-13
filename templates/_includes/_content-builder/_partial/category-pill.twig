@@ -1,3 +1,3 @@
-<div class="category-pill me-2 mb-2">
-    {{ tag.title }}
-</div>
+<a href="{{ cat.url }}" class="button button-white mr-2 mb-2 {% if category is defined %}{% if cat.slug == category.slug %}active{% endif %}{% endif %}">
+    {{ cat.title }}
+</a>

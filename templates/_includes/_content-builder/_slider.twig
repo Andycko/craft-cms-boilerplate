@@ -1,5 +1,5 @@
 
-<div class="outer py-5" style="background-color: {{ block.backgroundColour }};" id="anchor-{{ block.id }}">
+{# <div class="outer py-5" style="background-color: {{ block.backgroundColour }};" id="anchor-{{ block.id }}">
     <div class="container slider-block">
         <div class="row">
         {% if block.sliderMatrix.one %}
@@ -15,4 +15,57 @@
         {% endif %}    
         </div>
     </div>
-</div>          
+</div>  #}
+
+<section class="outer py-10 lg:py-20" style="background-color: {{ block.backgroundColour }}" id="anchor-{{ block.id }}">
+    <div class="container mx-auto">
+        <div data-hs-carousel='{"isDraggable": true, "loadingClasses": "opacity-0"}' class="relative">
+            <div class="hs-carousel relative overflow-hidden aspect-video">
+                <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+                    {% for item in block.sliderMatrix.all() %}
+                        <div class="hs-carousel-slide bg-cover bg-center bg-no-repeat overflow-hidden bg-gray-600 text-white p-5" style="background-image:url({{ item.url }});">
+                            {{ item.title }}
+                        </div>
+                    {% endfor %}
+                </div>    
+            </div>
+            {# <!-- Bottom dark gradient overlay -->
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div> #}
+
+            <div class="w-full mt-3">
+                {% if block.sliderMatrix | length > 1 %}
+                    <div>
+                        <button type="button" class="hs-carousel-prev mr-1">
+                            <span aria-hidden="true" class="cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" class="hover:opacity-65 w-[40px]">
+                                    <g data-name="Group 2032" transform="translate(56 56) rotate(180)">
+                                        <path data-name="Path 40" d="M0,0H25.314" transform="translate(14.416 28.882)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
+                                        <path data-name="Path 41" d="M0,14.146,14.146,0,28.293,14.146" transform="translate(41.583 14.915) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                        <g data-name="Ellipse 2" transform="translate(0 0)" fill="none" stroke="#000" stroke-width="2">
+                                            <circle cx="28" cy="28" r="28" stroke="none"/>
+                                            <circle cx="28" cy="28" r="27" fill="none"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button type="button" class="hs-carousel-next">
+                            <span class="sr-only">Next</span>
+                            <span aria-hidden="true" class="cursor-pointer">
+                                <svg data-name="Group 2032" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" class="hover:opacity-65 w-[40px]">
+                                    <path data-name="Path 40" d="M-9641.562-11575.063h25.313" transform="translate(9655.979 11603.177)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
+                                    <path data-name="Path 41" d="M0,14.146,14.146,0,28.293,14.146" transform="translate(41.583 14.147) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                    <g data-name="Ellipse 2" transform="translate(0 0)" fill="none" stroke="#000" stroke-width="2">
+                                        <circle cx="28" cy="28" r="28" stroke="none"/>
+                                        <circle cx="28" cy="28" r="27" fill="none"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

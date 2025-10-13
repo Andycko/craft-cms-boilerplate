@@ -1,6 +1,3 @@
-<a href="{{ button.customButton }}" class="button {{ classes }}"> 
-    {{ button.customButton.text ?? btnConfig.text }} 
-    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.00007 9.48528H17.9706M17.9706 9.48528L9.48535 1M17.9706 9.48528L9.48535 17.9706" stroke="#421828" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+<a href="{{ button.customButton ?? button.customLink }}" class="button {{ classes }}" {% if button.openInNewTab %}target="blank" rel="nopener noreferrer"{% endif %}> 
+    {{ title ?? button.title }}
 </a> 

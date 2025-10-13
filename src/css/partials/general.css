@@ -1,0 +1,184 @@
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.bg-navy {
+    background-color: #1D252A;
+}
+
+.bg-grey {
+    background-color: #f2f1ed;
+}
+
+.button {
+    padding: 0.60rem 1.25rem;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.button-outline {
+    border: 1px solid #000000; 
+    background: #ffffff;
+    color: #000000;
+    transition: all 0.2s ease-in;
+}
+
+.button-outline:hover {
+    border: 1px solid #000000; 
+    background: #000000;
+    color: #ffffff;
+    transition: all 0.2s ease-in;
+}
+
+.button-white {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    color: #000000;
+    transition: all 0.2s ease-in;
+}
+
+.button-white.active {
+    border: 1px solid #ffffff; 
+    background: #000000;
+    color: #ffffff;
+    transition: all 0.2s ease-in;
+}
+
+.button-white:hover {
+    border: 1px solid #ffffff; 
+    background: #000000;
+    color: #ffffff;
+    transition: all 0.2s ease-in;
+}
+
+.button-black {
+    border: 1px solid #000000;
+    background: #000000;
+    color: #ffffff;
+    transition: all 0.2s ease-in;
+}
+
+.button-black:hover {
+    border: 1px solid #000000; 
+    background: #ffffff;
+    color: #000000;
+    transition: all 0.2s ease-in;
+}
+
+.video-wrapper {
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.video-wrapper video, .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form form input[type=text], .form form input[type=email], .form form textarea {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #A1A5A7;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.form form input[type=checkbox] {
+    width: 14px !important;
+    height: 14px;
+}
+
+.form form input::placeholder,  .form form textarea::placeholder{
+    font-size: 1.8rem;
+    color: inherit;
+    opacity: 0.59;
+}
+
+.form form button {
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+
+.form form button:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form form label {
+    font-weight: 400 !important;
+}
+
+.form form label {
+    font-size: 0.9rem;
+    opacity: 0.59;
+}
+
+/* .form .freeform-fieldtype-text .freeform-label, .form .freeform-fieldtype-email .freeform-label, .form .freeform-fieldtype-textarea .freeform-label {
+    display: none !important;
+} */
+
+.form form .last-row label  {
+    display: block !important;
+}
+
+
+.form .link:hover {
+    text-decoration: underline;
+}
+
+.form .freeform-form-success {
+    padding: 15px;
+    border: 1px solid #d4edda;
+    background: #d4edda;
+    border-radius: 5px;
+    color: #155724;
+    margin-bottom: 20px;
+}
+
+.form .freeform-form-success p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .form form {
+        max-width: 500px;  
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form form input, .form form textarea {
+        text-align: center;
+    }
+
+    .form [data-freeform-controls] {
+        justify-content: center;
+    }
+
+    .form .freeform-input::placeholder {
+        font-size: 1.2rem; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .form form {
+        width: 100% !important;
+        max-width: unset !important;
+    }
+    .newsletter-block .form form input {
+        text-align: left;
+    }
+}

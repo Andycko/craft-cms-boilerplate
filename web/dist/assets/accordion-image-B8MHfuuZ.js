@@ -1,0 +1,1 @@
+function a(){const e=document.querySelectorAll("[data-img]"),c=document.getElementById("displayImage");e.forEach(t=>{t.addEventListener("click",()=>{c.src=t.getAttribute("data-img")})})}export{a as initAccordionImage};

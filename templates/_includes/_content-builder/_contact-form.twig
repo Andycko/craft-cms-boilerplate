@@ -1,37 +1,29 @@
-<div class="outer" style="background-color: {{ block.backgroundColour }}" id="anchor-{{ block.id }}">
-    <div class="container contactForm-block py-5" style="color: {{ block.textColour }};">
-        <div class="row">
-            {% if block.title | length %}
-                <div class="col-12 mb-lg-5 mb-4">
-                    <h2 class="mb-0">{{ block.title }}</h2>
+<section class="outer text-block py-10 lg:py-20" style="background-color: {{ block.backgroundColour }};" id="anchor-{{ block.id }}">
+    <div class="container mx-auto">
+        <div class="lg:grid grid-cols-12 gap-10 items-center">
+        {% if block.title | length %}
+            <div class="col-span-12">
+                <h2 class="text-4xl lg:text-5xl">{{ block.title }}</h2>
+            </div>
+        {% endif %}
+
+        <div class="lg:col-span-6 form">
+            {{ craft.freeform.form("contactForm", {}).render() }}
+        </div>
+        
+        <div class="lg:col-span-4 lg:pl-50">
+            {% if companyInfo.address | length %}
+                <div class="address mb-10">
+                    <div class="mb-3">Address</div>
+                    {{ companyInfo.address }}
                 </div>
             {% endif %}
-          
-            <div class="col-12 col-lg-4">
-                <div class="row">
-                    {% if block.text | length %}
-                        <div class="col-12 mb-4 {{ block.linkColour }}">{{ block.text }}</div>
-                    {% endif %}
-                    {% if companyInfo.address | length %}
-                        <div class="address col-6 mb-lg-0 mb-4">
-                            <div class="mb-3">Address</div>
-                            {{ companyInfo.address }}
-                        </div>
-                    {% endif %}
-                    {% if companyInfo.phoneNumber | length %}
-                        <div class="tel col-6 mb-lg-0 mb-5">
-                            <div class="mb-3">Phone Number</div>
-                            <a href="tel:{{ companyInfo.phoneNumber }}" style="color: {{ block.textColour }};">{{ companyInfo.phoneNumber }}</a>
-                        </div>
-                    {% endif %}
+            {% if companyInfo.phoneNumber | length %}
+                <div class="tel mb-5">
+                    <div class="mb-3">Phone Number</div>
+                    <a href="tel:{{ companyInfo.phoneNumber }}" style="color: {{ block.textColour }};">{{ companyInfo.phoneNumber }}</a>
                 </div>
-            </div>
-         
-            <div class="col-12 offset-lg-1 col-lg-7 form">
-                <div class="">
-                    {{ craft.freeform.form("contactForm", {}).render() }}
-                </div>
-            </div>
+            {% endif %}
         </div>
     </div>
-</div>
+</section>

@@ -1,0 +1,43 @@
+body.overflow-hidden nav svg path {
+    fill: #ffffff !important;
+}
+
+body.overflow-hidden nav #menu-btn {
+    color: #ffffff !important;
+}
+
+body.overflow-hidden nav .line {
+    background-color: #ffffff !important;
+}
+
+#mobile-menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    /* max-height: 100vh !important; */
+}
+
+ /* Animate hamburger -> X */
+.line { 
+    transition: transform 200ms ease, opacity 200ms ease, y 200ms ease; 
+}
+.top-rotate { 
+    transform: translateY(8px) rotate(45deg); 
+}
+.mid-fade { 
+    opacity: 0; 
+}
+.bot-rotate { 
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Chevron rotate */
+.chev {
+    transition: transform 200ms ease; 
+}
+.chev-rot { 
+    transform: rotate(180deg); 
+}

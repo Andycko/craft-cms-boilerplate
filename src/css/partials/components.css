@@ -1,0 +1,43 @@
+/*
+	Components
+	========================================
+	Styles related specifically to component-level elements.
+	- All styles should be wrapped inside Tailwind's @layer directive.
+	- Use Tailwind's @apply directive when possible.
+*/
+
+@layer components {
+
+	.container {
+		max-width: 90% !important;
+	}
+
+	/* Rich Text Block */
+	[data-rich-text] { 
+		h2 {
+			@apply text-3xl mb-4;
+		}
+
+		h3 {
+			@apply text-2xl mb-4;
+		}
+
+		h4 {
+			@apply text-xl mb-4;
+		}
+
+        ul {
+            @apply list-disc pl-5;
+        }
+
+		img {
+			@apply my-6 rounded-lg max-w-full;
+		}
+
+		a {
+			@apply underline hover:no-underline;
+		}
+		
+	}
+
+}

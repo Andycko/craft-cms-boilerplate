@@ -4,57 +4,65 @@ instructions: null
 name: Link
 searchable: false
 settings:
-  allowCustomText: true
-  allowTarget: true
-  autoNoReferrer: true
-  customTextMaxLength: 0
-  customTextRequired: true
-  defaultLinkName: entry
-  defaultText: 'Link Title'
-  enableAllLinkTypes: true
-  enableAriaLabel: false
-  enableElementCache: false
-  enableTitle: false
+  fullGraphqlData: true
+  maxLength: 255
+  showLabelField: false
   typeSettings:
-    asset:
-      allowCrossSiteLink: false
-      allowCustomQuery: false
-      enabled: false
-      sources: '*'
-    category:
-      allowCrossSiteLink: false
-      allowCustomQuery: false
-      enabled: false
-      sources: '*'
-    custom:
-      allowAliases: false
-      disableValidation: false
-      enabled: false
-    email:
-      allowAliases: false
-      disableValidation: false
-      enabled: false
-    entry:
-      allowCrossSiteLink: false
-      allowCustomQuery: false
-      enabled: false
-      sources: '*'
-    site:
-      enabled: false
-      sites: '*'
-    tel:
-      allowAliases: false
-      disableValidation: false
-      enabled: false
-    url:
-      allowAliases: false
-      disableValidation: false
-      enabled: false
-    user:
-      allowCrossSiteLink: false
-      allowCustomQuery: false
-      enabled: false
-      sources: '*'
+    __assoc__:
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - showUnpermittedSections
+              - ''
+            -
+              - showUnpermittedEntries
+              - ''
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - ''
+            -
+              - allowAnchors
+              - ''
+            -
+              - allowCustomSchemes
+              - ''
+      -
+        - asset
+        -
+          __assoc__:
+            -
+              - allowedKinds
+              - '*'
+            -
+              - showUnpermittedVolumes
+              - ''
+            -
+              - showUnpermittedFiles
+              - ''
+      -
+        - category
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+  types:
+    - entry
+    - url
+    - asset
+    - category
+    - email
+    - tel
+    - sms
 translationKeyFormat: null
 translationMethod: none
-type: lenz\linkfield\fields\LinkField
+type: craft\fields\Link

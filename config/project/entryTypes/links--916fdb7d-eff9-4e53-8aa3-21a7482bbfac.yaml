@@ -23,6 +23,36 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-13T09:59:07+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 143e4cef-2b9d-44a3-8a18-f565c5700e1f
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-04-24T10:36:31+00:00'
             editCondition: null
             elementCondition: null
@@ -39,11 +69,28 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-10-13T10:54:25+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 954e1f6e-280f-4b76-815f-388979c428c9 # Open in new Tab
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 437295c1-6d69-4d76-bd9e-871c18de6e16
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: cff15bbc-ba28-42d8-b8bc-1798113ec2af
         userCondition: null
 handle: links
-hasTitleField: false
+hasTitleField: true
 icon: link
 name: Links
 showSlugField: false
