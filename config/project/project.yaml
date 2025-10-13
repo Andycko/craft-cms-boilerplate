@@ -1,4 +1,4 @@
-dateModified: 1760361971
+dateModified: 1760365897
 elementSources:
   craft\elements\Entry:
     -
@@ -225,11 +225,6 @@ plugins:
     enabled: true
     licenseKey: 7LVFR2AP25MOQ999X51S4JL6
     schemaVersion: 2.1.1
-  neo:
-    edition: standard
-    enabled: true
-    licenseKey: ZPICGH68FLND71JVXT3VKDR9
-    schemaVersion: 5.1.0.1
   oembed:
     edition: standard
     enabled: true
@@ -279,10 +274,6 @@ plugins:
               - ' - {{ siteName }}'
       titleSuffix: null
       twitterHandle: ''
-  super-table:
-    edition: standard
-    enabled: true
-    schemaVersion: 4.0.0
   vite:
     edition: standard
     enabled: true

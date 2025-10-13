@@ -25,29 +25,36 @@ After that, just use ```npm run dev``` in the terminal to turn on the file watch
  
 ### Plugins installed
 - [craftcms/aws-s3](https://plugins.craftcms.com/aws-s3)
-- [supercool/buttonbox](https://plugins.craftcms.com/buttonbox)
 - [craftcms/ckeditor](http://plugins.craftcms.com/ckeditor)
 - [solspace/craft-freeform](https://plugins.craftcms.com/freeform)
 - [johnhenry/matrix-block-anchor](https://plugins.craftcms.com/matrix-block-anchor)
 - [verbb/navigation](https://plugins.craftcms.com/navigation)
 - [ether/seo](https://plugins.craftcms.com/seo)
-- [verbb/super-table](https://plugins.craftcms.com/super-table)
-- [sebastianlenz/linkfield](https://plugins.craftcms.com/typedlinkfield?craft5)
 - [nystudio107/craft-vite](https://plugins.craftcms.com/vite?craft5)
 - [wrav/oembed](https://plugins.craftcms.com/oembed?craft5)
+- [fortytwo-studio/cookie-consent](https://packagist.org/packages/fortytwo-studio/cookie-consent)
 
-### Bootstrap
-Bootstrap is installed as a node module and is imported via:
-- CSS: ```@webroot/src/css/style.css```
-- JS: ```@webroot/src/js/main.js```
+### TailwindCSS
+Tailwind is installed as a node module and is imported via:
+- CSS: ```@webroot/src/css/app.css```
+- JS: ```@webroot/src/js/app.js```
 
-### Splide (sliders)
-Splide is installed as a node module and is imported and initialised in: <br>
-```@webroot/src/js/libraries/splide.js```
+### Preline (components: accordion, sliders, modals, etc)
+Preline is installed as a node module and is imported and initialised in: <br>
+- CSS: ```@webroot/src/css/app.css```
+- JS: ```@webroot/src/js/app.js```
 
 ### vanilla-lazyload (lazyload)
 vanilla-lazyload is installed as a node module and is imported and initialised in: <br>
 ```@webroot/src/js/libraries/lazy-load.js```
+
+### infinite-scroll 
+infinite-scroll is installed as a node module and is imported and initialised in: <br>
+```@webroot/src/js/app.js```
+
+### countup.js (animated numbers counting up)
+countup.js is installed as a node module and is imported and initialised in: <br>
+```@webroot/src/js/components/stats.js```
 
 ### JQuery
 JQuery is installed as a node module. Can be imported into JS files via: <br>

@@ -12,7 +12,6 @@
         "nystudio107/craft-vite": "^5.0.1",
         "solspace/craft-freeform": "5.12.3",
         "verbb/navigation": "3.0.13",
-        "verbb/super-table": "4.0.5",
         "vlucas/phpdotenv": "^3.4.0",
         "wrav/oembed": "3.1.6"
     },
