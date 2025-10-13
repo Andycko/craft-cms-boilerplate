@@ -1,4 +1,4 @@
-dateModified: 1760353078
+dateModified: 1760359718
 elementSources:
   craft\elements\Entry:
     -
@@ -128,6 +128,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  forty-cookieconsent:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   freeform:
     edition: lite
     enabled: true

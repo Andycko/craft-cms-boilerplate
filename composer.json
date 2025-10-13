@@ -7,6 +7,7 @@
         "craftcms/ckeditor": "4.8.0",
         "craftcms/cms": "5.7.4",
         "ether/seo": "5.0.0",
+        "fortytwo-studio/cookie-consent": "^3.1",
         "johnhenry/matrix-block-anchor": "^2.0.1",
         "nystudio107/craft-vite": "^5.0.1",
         "solspace/craft-freeform": "5.10.11",

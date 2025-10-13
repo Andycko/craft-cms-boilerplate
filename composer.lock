@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be93e484a713e6bf39a59d510610b9e1",
+    "content-hash": "95e7f755a7854b32991870869ae0d708",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1719,6 +1719,66 @@
                 "fixtures"
             ],
             "time": "2024-11-21T13:46:39+00:00"
+        },
+        {
+            "name": "fortytwo-studio/cookie-consent",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fortytwostudio/cookie-consent.git",
+                "reference": "e63c71d1c2959a77f7e66f9c9ba2a66ea7a6927f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fortytwostudio/cookie-consent/zipball/e63c71d1c2959a77f7e66f9c9ba2a66ea7a6927f",
+                "reference": "e63c71d1c2959a77f7e66f9c9ba2a66ea7a6927f",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Cookie Consent",
+                "class": "fortytwostudio\\cookieconsent\\CookieConsent",
+                "handle": "forty-cookieconsent",
+                "developer": "Forty Two Studio",
+                "changelogUrl": "https://raw.githubusercontent.com/fortytwostudio/cookie-consent/main/CHANGELOG.md",
+                "developerUrl": "https://fortytwo.studio",
+                "documentationUrl": "https://github.com/fortytwostudio/cookie-consent/blob/main/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "fortytwostudio\\cookieconsent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Forty Two studio",
+                    "homepage": "https://fortytwo.studio"
+                }
+            ],
+            "description": "Craft CMS Plugin for managing cookies.",
+            "keywords": [
+                "consent-mode",
+                "cookie-consent",
+                "cookie-management",
+                "craftcms",
+                "craftcms-plugin",
+                "gdpr",
+                "google-consent-mode",
+                "privacy",
+                "user-consent"
+            ],
+            "support": {
+                "issues": "https://github.com/fortytwostudio/cookie-consent/issues",
+                "source": "https://github.com/fortytwostudio/cookie-consent/tree/3.1.0"
+            },
+            "time": "2025-09-15T12:20:00+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -9191,11 +9251,11 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },
