@@ -1,12 +1,12 @@
-<div class="col-6 col-md-6 col-lg-4 mb-4 article">
-    <a href="{{ item.url }}" class="d-flex flex-column">
+<div class="lg:col-span-4 mb-4 article">
+    <a href="{{ item.url }}" class="d-flex flex-column group">
         {% if item.summaryImage.one %}
-            <div class="zoomy--img img mb-4">
-                <img src="{{ item.summaryImage.one.url({ width: 500, height: 500, format: 'webp' }) }}" alt="{{ item.title }}" class="w-100 lazy">
+            <div class="zoomy--img img mb-4 overflow-hidden">
+                <img src="{{ item.summaryImage.one.url({ width: 500, height: 500, format: 'webp' }) }}" alt="{{ item.title }}" class="w-100 lazy transition-transform duration-250 ease-in-out group-hover:scale-110">
             </div>
         {% else %}
-            <div class="zoomy--img img mb-4">
-                <img src="https://placehold.co/1920x1080.jpg" alt="{{ item.title }}" class="w-100 lazy">
+            <div class="zoomy--img img mb-4 overflow-hidden">
+                <img src="https://placehold.co/1920x1080.jpg" alt="{{ item.title }}" class="w-full lazy transition-transform duration-250 ease-in-out group-hover:scale-110">
             </div>
         {% endif %}
         <div class="">{{ item.postDate | date("d.m.y") | upper }}</div>

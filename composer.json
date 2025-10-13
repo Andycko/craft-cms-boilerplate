@@ -9,7 +9,6 @@
         "ether/seo": "5.0.0",
         "johnhenry/matrix-block-anchor": "^2.0.1",
         "nystudio107/craft-vite": "^5.0.1",
-        "sebastianlenz/linkfield": "3.0.0-beta",
         "solspace/craft-freeform": "5.10.11",
         "verbb/buttonbox": "5.0.0",
         "verbb/navigation": "3.0.8",

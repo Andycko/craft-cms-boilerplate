@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6029680d659d1e9baee03cd74481acc",
+    "content-hash": "be93e484a713e6bf39a59d510610b9e1",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4711,78 +4711,6 @@
             "time": "2023-11-23T14:11:29+00:00"
         },
         {
-            "name": "sebastianlenz/craft-utils",
-            "version": "4.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastian-lenz/craft-utils.git",
-                "reference": "7d88bc0c1f468c27339362c00c7eedacc7a64f66"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/7d88bc0c1f468c27339362c00c7eedacc7a64f66",
-                "reference": "7d88bc0c1f468c27339362c00c7eedacc7a64f66",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.1.3",
-                "php": "^8.2"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^1.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "lenz\\craft\\utils\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A collection of utility classes for Craft CMS development",
-            "support": {
-                "source": "https://github.com/sebastian-lenz/craft-utils/tree/4.0.6"
-            },
-            "time": "2025-03-12T13:00:57+00:00"
-        },
-        {
-            "name": "sebastianlenz/linkfield",
-            "version": "3.0.0-beta",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/9262726f295c1cd71ec1529f579055329fcbe45c",
-                "reference": "9262726f295c1cd71ec1529f579055329fcbe45c",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.1.3",
-                "php": "^8.2",
-                "sebastianlenz/craft-utils": "^4.0.0-beta"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "typedlinkfield",
-                "name": "Typed link field",
-                "developer": "Sebastian Lenz",
-                "developerUrl": "https://github.com/sebastian-lenz/"
-            },
-            "autoload": {
-                "classmap": [
-                    "legacy"
-                ],
-                "psr-4": {
-                    "lenz\\linkfield\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "A Craft field type for selecting links",
-            "time": "2024-06-07T09:28:25+00:00"
-        },
-        {
             "name": "seld/cli-prompt",
             "version": "1.0.4",
             "dist": {
@@ -9263,9 +9191,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "sebastianlenz/linkfield": 10
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

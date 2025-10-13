@@ -1,63 +1,133 @@
-import $ from 'jquery';
+export function initNavigation() {
 
-/**
- * Finds a topmost parent element with a selector provided of the provided element
- * @param {Node} element
- * @param {string} selector
- * @returns {Node}
- */
-const findTopParentWithSelector = (element, selector) => {
-    let parent = element
-    while (parent.parentElement.closest(selector))
-        parent = parent.parentElement.closest(selector)
-    return parent
-}
+  // --- Helpers ---
+  const setMaxHeightToScroll = (el) => { el.style.maxHeight = el.scrollHeight + 'vh'; };
+  const closeMaxHeight = (el) => { el.style.maxHeight = '0px'; };
 
-/**
- * Check if an element is out of the viewport
- * (c) 2018 Chris Ferdinandi, MIT License, https://gomakethings.com
- * @param  {Node}  elem The element to check
- * @return {Object}     A set of booleans for each side of the element
- */
-const isOutOfViewport = function (elem) {
-    // Get element's bounding
-    const bounding = elem.getBoundingClientRect();
-    // Check if it's out of the viewport on each side
-    const out = {};
-    out.top = bounding.top < 0;
-    out.left = bounding.left < 0;
-    out.bottom = bounding.bottom > (window.innerHeight || document.documentElement.clientHeight);
-    out.right = bounding.right > (window.innerWidth || document.documentElement.clientWidth);
-    out.any = out.top || out.left || out.bottom || out.right;
-    out.all = out.top && out.left && out.bottom && out.right;
+  // --- Mobile panel toggling ---
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const topMenu = document.getElementById('top-menu');
+  const [topLine, midLine, botLine] = btn.querySelectorAll('.line');
 
-    return out;
-};
+  btn.addEventListener('click', () => {
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!isOpen));
 
-$(function () {
-    const nav_hamburger = document.querySelector('#mobile-navbar-toggle');
-    const mobile_nav = document.querySelector('#mobile-navbar-links');
-    nav_hamburger.onclick = () => {
-        nav_hamburger.classList.toggle('is-active');
-        mobile_nav.classList.toggle('active');
-        document.querySelector('html').classList.toggle('no-scroll')
+    // Icon animation
+    topLine.classList.toggle('top-rotate');
+    midLine.classList.toggle('mid-fade');
+    botLine.classList.toggle('bot-rotate');
+
+
+    if (isOpen) {
+      closeMaxHeight(menu);
+      document.body.classList.remove('overflow-hidden'); // enable scroll
+      topMenu.classList.remove('hidden'); // hides top menu
+
+    } else {
+      setMaxHeightToScroll(menu);
+      document.body.classList.add('overflow-hidden'); // disable scroll
+      topMenu.classList.add('hidden'); // hides top menu
+    }
+
+    // Slide panel
+    if (isOpen) {
+      closeMaxHeight(menu);
+      // Also close any open submenus
+      document.querySelectorAll('[data-accordion-panel]').forEach(p => closePanel(p));
+    } else {
+      setMaxHeightToScroll(menu);
+    }
+  });
+
+  // --- Accordion (mobile submenus) ---
+  const triggers = document.querySelectorAll('[data-accordion-trigger]');
+
+  function openPanel(panel, trigger, chev) {
+    setMaxHeightToScroll(panel);
+    trigger.setAttribute('aria-expanded', 'true');
+    chev?.classList.add('chev-rot');
+  }
+  function closePanel(panel, trigger, chev) {
+    closeMaxHeight(panel);
+    trigger?.setAttribute('aria-expanded', 'false');
+    chev?.classList.remove('chev-rot');
+  }
+
+  // Optional: only one submenu open at a time
+  const SINGLE_OPEN = false;
+
+  triggers.forEach(trigger => {
+    const panelId = trigger.getAttribute('aria-controls');
+    const panel = document.getElementById(panelId);
+    const chev = trigger.querySelector('.chev');
+
+    // Click / keyboard activation
+    const activate = (ev) => {
+      // Allow Space/Enter when button is focused
+      if (ev.type === 'keydown' && !(ev.key === 'Enter' || ev.key === ' ')) return;
+      ev.preventDefault();
+
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+      if (SINGLE_OPEN && !isOpen) {
+        // Close others
+        triggers.forEach(t => {
+          if (t !== trigger) {
+            const pid = t.getAttribute('aria-controls');
+            const p = document.getElementById(pid);
+            const c = t.querySelector('.chev');
+            closePanel(p, t, c);
+          }
+        });
+      }
+
+      isOpen ? closePanel(panel, trigger, chev) : openPanel(panel, trigger, chev);
+
+      // Ensure parent menu container grows/shrinks to fit
+      setMaxHeightToScroll(menu);
     };
 
-    // check dropdowns out of bounds
-    const dropdowns = document.querySelectorAll('.sub-menu')
-    dropdowns.forEach((el) => {
-        if (isOutOfViewport(el).any)
-            findTopParentWithSelector(el, '.sub-menu').classList.add('left')
-    })
+    trigger.addEventListener('click', activate);
+    trigger.addEventListener('keydown', activate);
+  });
 
-    const mobile_dropdowns = document.querySelectorAll('.mobile-navbar-links .item.parent')
-    mobile_dropdowns.forEach((el) => {
-        const btn = el.querySelector('button')
-        const submenu = el.querySelector('.sub-menu')
-        btn.onclick = () => {
-            submenu.classList.toggle('active')
-            btn.classList.toggle('active')
-        }
-    })
+ 
+  // Parent link toggles (accordion)
+  const parents = document.querySelectorAll('.parent-link');
+  parents.forEach(link => {
+    const submenuId = link.getAttribute('aria-controls');
+    const submenu = document.getElementById(submenuId);
+    const chev = link.querySelector('.chev');
 
-});
+    link.addEventListener('click', (e) => {
+      const expanded = link.getAttribute('aria-expanded') === 'true';
+
+      if (!expanded) {
+        e.preventDefault(); // stop navigation on first click
+
+        // Close other open dropdowns
+        parents.forEach(other => {
+          if (other !== link) {
+            const otherId = other.getAttribute('aria-controls');
+            const otherSub = document.getElementById(otherId);
+            const otherChev = other.querySelector('.chev');
+            other.setAttribute('aria-expanded', 'false');
+            closeMaxHeight(otherSub);
+            otherChev.classList.remove('chev-rot');
+          }
+        });
+
+        // Open this one
+        link.setAttribute('aria-expanded', 'true');
+        submenu.style.maxHeight = submenu.scrollHeight + 'px';
+        chev.classList.add('chev-rot');
+        setMaxHeightToScroll(menu);
+      } else {
+        // Already open -> second click will navigate
+        link.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+}

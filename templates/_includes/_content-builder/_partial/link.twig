@@ -1,3 +1,3 @@
-<a href="{{ link.customLink }}" class="link hover-link {{ classes }}" style="color:{{ colour }}"> 
-    {{ link.customLink.text }} 
+<a href="{{ link.customLink ?? button.customLink }}" class="link underline hover:no-underline {{ classes }}" style="color:{{ colour }}" {% if link.openInNewTab %}target="blank" rel="nopener noreferrer"{% endif %}> 
+    {{ title ?? button.title }} 
 </a> 

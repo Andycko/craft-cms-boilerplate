@@ -8,6 +8,36 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-13T09:58:48+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3ffc838b-1067-4d19-8d89-284f04538b6f
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-04-17T12:36:39+00:00'
             editCondition: null
             elementCondition: null
@@ -41,11 +71,28 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-10-13T10:53:56+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 954e1f6e-280f-4b76-815f-388979c428c9 # Open in new Tab
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c49867c-cc1f-42a1-9821-58d7e0ff19b2
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: ea9ccc87-686f-444e-a09d-45a66c8a464a
         userCondition: null
 handle: buttons
-hasTitleField: false
+hasTitleField: true
 icon: up-right-from-square
 name: Buttons
 showSlugField: false

@@ -93,6 +93,29 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-10-10T13:45:26+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5c7faf47-57df-483d-bfe5-86184ddbba2a # Navigation Theme
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efb169b1-1427-4db8-80b8-cceb508cd9ba
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: 586e18d5-b651-4365-8db6-0399443faf67
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
             dateAdded: '2025-04-21T15:01:05+00:00'
             editCondition: null
             elementCondition: null

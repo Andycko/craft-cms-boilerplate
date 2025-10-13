@@ -1,3 +1,5 @@
+import plugin from "tailwindcss/plugin";
+
 export default ({ addBase, theme }) => {
 	if (process.env.NODE_ENV !== "development") return;
 

@@ -1,9 +1,7 @@
-<div class="outer py-5" style="background-color: {{ block.backgroundColour }};" id="anchor-{{ block.id }}">
-    <div class="container embed-block">
-        <div class="row">
-            {% if block.embedCode | length %}
-                <div class="col-12">{{ block.embedCode | raw }}</div>
-            {% endif %}
-        </div>
+<section class="outer text-block py-10 lg:py-20" style="background-color: {{ block.backgroundColour }};" id="anchor-{{ block.id }}">
+    <div class="container mx-auto">
+       {% if block.embedCode | length %}
+            <div class="col-12">{{ block.embedCode | raw }}</div>
+        {% endif %}
     </div>
-</div>
+</section>

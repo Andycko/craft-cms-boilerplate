@@ -1,27 +1,26 @@
-<div class="outer" style="background-color: {{ block.backgroundColour }}" id="anchor-{{ block.id }}">
-    <div class="container latestArticles-block py-5" style="color: {{ block.textColour }}">
-        {% if block.title | length %}
-            <div class="row pt-lg-5">
-                <div class="col-12">
-                    <h2 class="eyebrow">{{ block.title }}</h2>
-                </div>
-            </div>
-        {% endif %}
-        <div class="row py-md-5 pt-5">
-            {% for item in craft.entries.section('latest').limit(3).all() %}
-                {% include '/_includes/_content-builder/_partial/article-card.twig' %}
-            {% endfor %}
-        </div>
-        <div class="row pb-lg-5">
-            <div class="col-12">
+<section class="outer py-10 lg:py-20 latestArticles-block" style="background-color: {{ block.backgroundColour }}" id="anchor-{{ block.id }}">
+	<div class="container mx-auto" style="color:{{ block.textColour }}">
 
-                {% set btnConfig = { 
-                    customButton: '/latest',
-                    text: 'All news'
-                } %} 
+		{% if block.title | length %}
+			<div class="mb-10">
+				<h2 class="text-3xl lg:text-4xl">{{ block.title | nl2br }}</h2>
+			</div>
+		{% endif %}
 
-                <div>{% include '/_includes/_content-builder/_partial/button.twig' with {'button': btnConfig, 'classes': 'button-white' } %}</div>
-            </div>
-        </div>
-    </div>
-</div>
+		<div class="lg:grid grid-cols-12 gap-10 mb-10">
+			{% for item in craft.entries.section('latest').limit(3).all() %}
+				{% include '/_includes/_content-builder/_partial/article-card.twig' %}
+			{% endfor %}
+		</div>
+
+		<div class="text-right">
+			{% set btnConfig = { 
+                    customLink: '/latest',
+                    title: 'Find out More',
+					openInNewTab: null
+                }
+            %}
+			<div>{% include '/_includes/_content-builder/_partial/button.twig' with {'button': btnConfig, 'classes': 'button button-black', 'colour': ''} %}</div>
+		</div>
+	</div>
+</section>

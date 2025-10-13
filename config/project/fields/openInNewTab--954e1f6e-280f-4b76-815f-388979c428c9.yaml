@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: openInNewTab
+instructions: 'Enable this switch to open the URL in a new tab (disabled by default)'
+name: 'Open in new Tab'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

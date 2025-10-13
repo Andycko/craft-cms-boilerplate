@@ -1,0 +1,16 @@
+/*
+	Fonts
+	========================================
+	Fonts to be bundled through the @font-face at-rule.
+	- Do not add any styles here. @font-face declarations only!
+*/
+
+/* @font-face {
+	font-family: "TT_Firs_Text_Regular";
+	src:
+		url("@/fonts/TT_Firs_Text_Regular.woff2") format("woff2"),
+		url("@/fonts/TT_Firs_Text_Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+} */
