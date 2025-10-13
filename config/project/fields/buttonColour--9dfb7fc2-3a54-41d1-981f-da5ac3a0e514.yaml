@@ -1,4 +1,4 @@
-columnSuffix: hyrdujjg
+columnSuffix: null
 handle: buttonColour
 instructions: null
 name: 'Button Colour'
@@ -15,11 +15,14 @@ settings:
           - value
           - button-black
         -
-          - cssColour
-          - '000'
+          - icon
+          - ''
+        -
+          - color
+          - '#000000'
         -
           - default
-          - ''
+          - '1'
     -
       __assoc__:
         -
@@ -29,12 +32,14 @@ settings:
           - value
           - button-white
         -
-          - cssColour
-          - fff
+          - icon
+          - ''
+        -
+          - color
+          - '#ffffff'
         -
           - default
           - ''
-  placeholderText: 'Select an option'
 translationKeyFormat: null
 translationMethod: none
-type: verbb\buttonbox\fields\Colours
+type: craft\fields\RadioButtons

@@ -1,54 +1,29 @@
 columnSuffix: null
-contentColumnType: string
 handle: socialProfiles
 instructions: null
 name: 'Social Profiles'
 searchable: false
 settings:
-  blockTypeFields: 0
-  changedFieldIndicator: 610108376
-  columns:
-    __assoc__:
-      -
-        - 1f6a1dc8-82d8-47a8-ae54-01af20652730
-        -
-          __assoc__:
-            -
-              - width
-              - ''
-      -
-        - 5cd6ad16-cb88-45ba-b275-1558f8f27c05
-        -
-          __assoc__:
-            -
-              - width
-              - ''
-      -
-        - a596aec7-c8ec-49d7-ab4d-97dcdf5ac990
-        -
-          __assoc__:
-            -
-              - width
-              - ''
-      -
-        - d9aafe6e-671c-45da-9958-ccb6470336d6
-        -
-          __assoc__:
-            -
-              - width
-              - ''
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
   entryTypes:
-    - dfd34224-0241-4c43-aec4-0c7abd7e9dab # Social Profiles Block
-  fieldLayout: table
+    -
+      __assoc__:
+        -
+          - uid
+          - dfd34224-0241-4c43-aec4-0c7abd7e9dab # Social Profile
+        -
+          - group
+          - General
+  includeTableView: false
   maxEntries: null
-  maxRows: null
   minEntries: null
-  minRows: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
-  selectionLabel: null
-  staticField: null
+  showCardsInGrid: false
   viewMode: blocks
 translationKeyFormat: null
-translationMethod: none
-type: verbb\supertable\fields\SuperTableField
+translationMethod: site
+type: craft\fields\Matrix

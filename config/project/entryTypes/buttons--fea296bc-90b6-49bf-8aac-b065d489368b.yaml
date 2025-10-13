@@ -1,6 +1,8 @@
 color: lime
+description: null
 fieldLayouts:
   a7879e4c-3900-49a8-9364-10058e05ea37:
+    cardThumbAlignment: end
     cardView:
       - 'layoutElement:e327b112-7875-4b2b-9377-b40b2570eb9a'
     tabs:
@@ -58,7 +60,7 @@ fieldLayouts:
             dateAdded: '2025-04-17T12:29:08+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: f015d92d-b254-4665-af27-dfbe1ab2ab62 # Button Colour
+            fieldUid: f015d92d-b254-4665-af27-dfbe1ab2ab62
             handle: null
             includeInCards: true
             instructions: null
@@ -68,6 +70,23 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: e327b112-7875-4b2b-9377-b40b2570eb9a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-13T13:20:55+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 9dfb7fc2-3a54-41d1-981f-da5ac3a0e514 # Button Colour
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 052f9217-3076-4d47-8cdb-19c14da13431
             userCondition: null
             warning: null
             width: 100

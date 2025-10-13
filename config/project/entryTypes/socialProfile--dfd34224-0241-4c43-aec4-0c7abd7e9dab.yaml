@@ -1,12 +1,14 @@
 color: null
+description: null
 fieldLayouts:
   f73678d2-2b29-48d7-99ef-179a914dc502:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dateAdded: null
+            dateAdded: '2025-10-13T13:12:06+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: 39237593-ff51-4bd3-851a-a9dfac329c0b # Page Summary
@@ -23,7 +25,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: null
+            dateAdded: '2025-10-13T13:12:06+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: 5cd6ad16-cb88-45ba-b275-1558f8f27c05
@@ -40,7 +42,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: null
+            dateAdded: '2025-10-13T13:12:06+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: a596aec7-c8ec-49d7-ab4d-97dcdf5ac990
@@ -57,7 +59,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: null
+            dateAdded: '2025-10-13T13:12:06+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: a596aec7-c8ec-49d7-ab4d-97dcdf5ac990
@@ -76,10 +78,10 @@ fieldLayouts:
         name: Content
         uid: 22f55445-1a39-4046-b6c1-a9f2c4fe6690
         userCondition: null
-handle: socialProfilesBlock
+handle: socialProfile
 hasTitleField: false
 icon: null
-name: 'Social Profiles Block'
+name: 'Social Profile'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
