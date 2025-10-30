@@ -84,19 +84,6 @@ async function initApp() {
 	// 	accordions.forEach((element) => initAccordion(element));
 	// } 
 
-
-	/**
-	 * @title Accordion + Image
-	 * @description Initialise for image change on accordion click
-	 **/ 
-	const accordionImageContainer = getAccordionImage();
-	if (isOnPage(accordionImageContainer)) {
-		const { initAccordionImage } = await import("./components/accordion-image");
-
-		initAccordionImage();  
-	}
-
-
 	/**
 	 * @title Stats
 	 * @description Initialise Count Up for Stats
