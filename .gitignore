@@ -25,6 +25,7 @@ craft/storage
 craft/config/license.key
 config/license.key
 craft/.htaccess
+/web/cpresources/*
 
 # BUILD FILES
 /bower_components/*
