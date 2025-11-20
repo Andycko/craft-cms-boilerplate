@@ -1,4 +1,4 @@
-dateModified: 1760365897
+dateModified: 1763631961
 elementSources:
   craft\elements\Entry:
     -
@@ -123,6 +123,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  environment-label:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   forty-cookieconsent:
     edition: standard
     enabled: true
@@ -131,7 +135,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: 45LJE1C1SPXLFJO87KF1XUKW
-    schemaVersion: 5.7.0
+    schemaVersion: 5.8.0
     settings:
       ajaxByDefault: true
       alertNotificationRecipients: null
