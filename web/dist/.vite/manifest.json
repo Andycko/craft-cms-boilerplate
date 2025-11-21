@@ -1,25 +1,18 @@
 {
   "src/js/app.js": {
-    "file": "assets/app-WUNIsyM9.js",
+    "file": "assets/app-D_JEImiw.js",
     "name": "app",
     "src": "src/js/app.js",
     "isEntry": true,
     "dynamicImports": [
       "src/js/libraries/lazy-load.js",
       "src/js/components/nav.js",
-      "src/js/components/accordion-image.js",
       "src/js/components/stats.js",
       "src/js/components/ticker.js"
     ],
     "css": [
-      "assets/app-GCaRm0Cs.css"
+      "assets/app-DphtdRdB.css"
     ]
-  },
-  "src/js/components/accordion-image.js": {
-    "file": "assets/accordion-image-B8MHfuuZ.js",
-    "name": "accordion-image",
-    "src": "src/js/components/accordion-image.js",
-    "isDynamicEntry": true
   },
   "src/js/components/nav.js": {
     "file": "assets/nav-B4O7KIaT.js",

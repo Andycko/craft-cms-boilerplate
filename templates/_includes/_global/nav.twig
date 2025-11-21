@@ -57,7 +57,7 @@
 						{% if item.children | length %}
 							<!-- Parent with children -->
 							<div>
-								<a href="{{ item.url }}" class="flex items-center justify-between py-3 text-3xl md:text-4xl rounded hover:underline text-white parent-link" aria-expanded="false" aria-controls="submenu-{{ item.title | lower }}">
+								<a href="{{ item.url }}" class="{{ item.active ? 'underline' }} flex items-center justify-between py-3 text-3xl md:text-4xl rounded hover:underline text-white parent-link" aria-expanded="false" aria-controls="submenu-{{ item.title | lower }}">
 									<span>{{ item.title }}</span>
 									<svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
@@ -66,12 +66,12 @@
 
 								<div id="submenu-{{ item.title | lower }}" class="overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out pl-6" role="region" aria-label="{{ item.title | lower }} submenu">
 									{% for child in item.children.all() %}
-										<a href="{{ child.url }}" class="block py-2 rounded hover:underline text-white">{{ child.title }}</a>
+										<a href="{{ child.url }}" class="{{ item.active ? 'underline' }} block py-2 rounded hover:underline text-white">{{ child.title }}</a>
 									{% endfor %}
 								</div>
 							</div>
 						{% else %}
-							<a href="{{ item.url }}" class="py-3 text-3xl md:text-4xl rounded hover:underline text-white">{{ item.title }}</a>
+							<a href="{{ item.url }}" class="{{ item.active ? 'underline' }} py-3 text-3xl md:text-4xl rounded hover:underline text-white">{{ item.title }}</a>
 						{% endif %}
 					{% endfor %}
 				</div>
